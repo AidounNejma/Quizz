@@ -1,4 +1,4 @@
-fetch('https://github.com/AidounNejma/Quizz/blob/main/assets/json/data.json')
+fetch('package.json')
                 .then(res => res.json())
                 .then(data => {
                     console.log(data)
