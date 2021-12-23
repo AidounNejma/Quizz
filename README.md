@@ -20,3 +20,12 @@
 - Chaque étape (wireframe, maquette, fonctionnalité, etc) doit faire l'objet d'un commit et/ou d'une branche si nécessaire
 - Les meilleurs scores doivent être conservés entre chaque session de navigation
 - L'utilisateur doit pouvoir identifier visuellement les questions auxquelles il a fourni une bonne réponse et celle auxquelles il a fourni une mauvaise réponse
+
+## Allumer le serveur pour la "database" json
+```bash 
+npm package.json
+```
+OU
+```bash 
+json-server --watch package.json
+```

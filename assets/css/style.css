@@ -1,0 +1,211 @@
+/* Général */
+
+* { /* "*" Permet de prendre tout du fichier html, on met ensuite les valeurs à 0 pour que tout colle (qu'il n'y est pas d'espace blanc sur les cotés) */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+a{ /* Je prends tous les liens du fichier (plus rapide) */
+    text-decoration: none; /* et je modifie le style basique des liens (qui est souligné)*/
+}
+
+/* Fin Général */
+
+/* --------------------------------------------------------------------------------------------------------------- */
+
+/* Header */
+nav{
+    margin-bottom: 2%;
+    padding: 1% 0;
+    box-shadow: 0 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+
+.logo{
+    width: 40px;
+}
+/* Fin Header */
+
+/* Main */
+body{
+    background: url('../img/cool-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content{
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 0 0 5px 10px rgba(0, 0, 0, 0.2);
+    margin: 0 25%;
+    overflow:hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+    text-align: center;
+}
+.title{
+    color: black;
+    font-size: 30px;
+    padding: 20px 0;
+}
+.shape, .shape2, .shape3, .shape4, a{
+    display: flex;
+    position: relative;
+    position: relative;
+    text-decoration: none;
+}
+
+/******** SHAPE 1 ********/
+.lienWidth{
+    width: 100%;
+}
+.shape a{
+    justify-content: flex-end;
+}
+
+.shape{
+    z-index:5;
+    height: 400px;
+    width: 100%;
+    background-image: url("../img/arrows-pointing-randomly-with-copy-space.jpg");
+    background-size: cover;
+    shape-margin: 20px;
+    shape-outside: polygon(0 0, 100% 0, 100% 120%, 0 85%);
+    clip-path: polygon(0 0, 100% 0, 100% 98%, 0 85%);
+    transition: 1s;
+    background-position: bottom;
+}
+
+.shape:hover {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    z-index: 6000;
+}
+
+/******** SHAPE 2 ********/
+.shape2 a{
+    justify-content: flex-start;
+}
+
+.shape2{
+    z-index: 4;
+    top: -60px;
+    height: 400px;
+    width: 100%;
+    background-image: url("../img/html.jpg");
+    background-size: cover;
+    shape-margin: 20px;
+    shape-outside: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 13%, 100% 85%, 0 100%);
+    transition: 1s;
+    background-position: bottom;
+}
+
+.shape2:hover {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    z-index:6000;
+
+}
+
+@keyframes move {
+    from { z-index: 4; }
+    to { z-index: 5; }
+}
+/******** SHAPE 3 ********/
+.shape3 a{
+    justify-content: flex-end;
+}
+
+.shape3{
+    z-index: 3;
+    top: -120px;
+    height: 400px;
+    width: 100%;
+    background-image: url("../img/css.jpg");
+    background-size: cover;
+    shape-margin: 20px;
+    shape-outside: polygon(0 0, 100% 0, 100% 120%, 0 85%);
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%);
+    transition: 1s;
+    background-position: bottom;
+}
+
+.shape3:hover {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    z-index:6000;
+}
+
+/******** SHAPE 4 ********/
+.shape4 a{
+    justify-content: flex-start;
+}
+
+.shape4{
+    z-index: 2;
+    top: -180px;
+    height: 400px;
+    width: 100%;
+    background-image: url("../img/javascript.jpg");
+    background-size: cover;
+    shape-outside: polygon(0 0, 100% 0, 100% 120%, 0 85%);
+    clip-path: polygon(0 0%, 100% 15%, 100% 100%, 0 100%);
+    transition: 1s;
+    background-position: bottom;
+}
+
+.shape4:hover {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    z-index:6000;
+}
+
+/******** IMAGES TEXT ********/
+.align{
+    width: 30%;
+    text-align: start;
+    background-color: rgb(48, 60, 71, 0.5);
+    padding: 0 20px 0 20px;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+    opacity: 0;
+}
+.shape:hover .align, .shape2:hover .align, .shape3:hover .align, .shape4:hover .align{
+    opacity: 1;
+}
+
+.shape:hover .align p, .shape2:hover .align p, .shape3:hover .align p, .shape4:hover .align p{
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.1s;
+}
+
+.shape:hover .align h2, .shape2:hover .align h2, .shape3:hover .align h2, .shape4:hover .align h2{
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.2s;
+}
+
+.align p{
+    color: white;
+    font-size: 14px;
+    padding: 30px 0 0 0;
+    transition: all 0.3s linear;
+    opacity: 0;
+    transform: translateY(100px);
+}
+.align h2{
+    color: white;
+    font-weight: 300;
+    padding: 30px 0 0 0;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    transform: translateY(-100px);
+}
+
+/* Fin Main */
