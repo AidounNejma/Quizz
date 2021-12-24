@@ -1,0 +1,58 @@
+1 - Récupération des données du fichier JSON
+    => grâce au fetch() (à voir si je fais une fonction asynchrone ou pas)
+
+
+2 - Création d'une constante qui affichera la question / l'image / la proposition
+    => const displayQuizz
+        => elem += `<div> </div>`
+        => elem.innerHtml = ma data du JSON... etc
+
+
+3 - Générateur de questions aléatoires
+    => Créer une fonction shuffle qui permettra de générer des questions aléatoiredans tout le fichier JSON
+    function shuffle(){
+         array.sort((a, b) => 0.5 - Math.random()); 
+    }
+    a. Je commence par trier mon tableau 
+    b. J'applique une valeur aléatoire entre 0 et 1 grace au math.random (le 0,5 permet d'avoir autant de chance de tomber en dessous ou au dessus de 0,5 )
+
+
+4 - Générateur de questions aléatoires par catégorie
+    => Récupérer la fonction shuffle et l'appliquer pour un seul array (catégorie)
+
+
+5 - Compteur du score
+    => Création d'une variable pour contenir le score
+    => Boucle for: for(let i = 0; i<...length; i++)
+        => Incrémenter cette valeur à chaque fois que la réponse est bonne (avec une condition):
+            if(bonneReponse == true){
+                i++
+            }
+
+
+6 - Enregistrer les 5 meilleurs scores + leur nom dans le local storage
+    => localStorage.setItem('score', '[]');
+    => let array = JSON.parse(localStorage.getItem('score'))
+    => array.push(new_score)
+
+
+7 - Affichage du score
+    => Evenement au submit : affichage des réponses et du score à l'aide de la boucle for:
+    for(let i = 0; i < questions.length; i++){
+        => Afficher une information complémentaire à l'affichage du score : 
+        elem.innerHtml = data.description
+        => Condition pour déterminer l'affichage des réponses : 
+        (if bonneReponse){
+            elem.backgroundColor = "green"
+        } else {
+            elem.backgroundColor = "red"
+        }
+    }
+   
+    
+
+8 - Gestion des erreurs
+    => Condition pour gérer les erreurs dans chaque fonction: 
+    ex: if(question == ""){ si la question est vide alors
+        *On ne l'affiche pas*
+    }
