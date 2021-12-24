@@ -1,330 +1,214 @@
 {
-  
   "HTML": [
     {
       "id": 1,
-      "image": "",
-          "question": "Quel acteur, chanteur et humoriste aimé des français s'appelait André Raimbourg ?",
+      "image": "assets/img/quizz_html/Question/1.jpeg",
+          "question": "Quelle balise utilisera-t-on de préférence pour le titre principal d'une page html ?",
           "propositions": [
-            "Fernandel",
-            "Rufus",
-            "Coluche",
-            "Bourvil"
+            "<h1>",
+            "<head>",
+            "<heading>",
+            "<h6>"
           ],
-          "réponse": "Bourvil",
-          "anecdote": "Bourvil a reçu le prix du meilleur acteur du festival de Venise pour son rôle dans le film « La Traversée de Paris » de Claude Autant-Lara."
+          "réponse": "<h1>",
+          "anecdote": "Le H1 (pour heading 1 ou balise H1) est le titre principal d'une page internet. Il existe 6 niveaux de H possibles : du H1 au H6.",
+          "imgAnswer": "assets/img/quizz_html/Answer/1.jpeg"
     },
     {
       "id": 2,
-      "image": "",
-          "question": "Quel fromage représente, avec la baguette et le béret, l'image traditionnelle des Français ?",
+      "image": "assets/img/quizz_html/Question/2.jpeg",
+          "question": "Parmi ces éléments, la partie HEAD d'un fichier HTML contient :",
           "propositions": [
-            "Fourme",
-            "Babybel",
-            "Camembert",
-            "Boursin"
+            "Toutes les balises d'un fichier HTML",
+            "Les balises du BODY",
+            "La balise TITLE",
+            "Aucune de ces réponses"
           ],
-          "réponse": "Camembert",
-          "anecdote": "Symbole de son aura, il existe dans le monde entier des collectionneurs de boîtes de camembert appelés tyrosémiophiles."
+          "réponse": "La balise TITLE",
+          "anecdote": "L'élément HTML <head> fournit des informations générales (métadonnées) sur le document, incluant son titre et des liens ou des définitions vers des scripts et feuilles de style.",
+          "imgAnswer": "assets/img/quizz_html/Answer/2.jpeg"
     },
     {
       "id": 3,
-      "image": "",
-      "question": "Qui a interprété « L'Homme de la Mancha » aux côtés de Dario Moreno ?",
+      "image": "assets/img/quizz_html/Question/3.jpeg",
+      "question": "Quand vous utilisez la balise <TITLE>, où est affiché le texte ?",
       "propositions": [
-        "Pierre Rapsat",
-        "Jacques Brel",
-        "Christian Vidal",
-        "Salvatore Adamo"
+        "Le titre est placé au début de la page HTML",
+        "Le titre est placé au début de chaque paragraphe",
+        "Le titre est affiché dans le haut des navigateurs",
+        "Le titre est affiché à la fin de la page HTML"
       ],
-      "réponse": "Jacques Brel",
-      "anecdote": "Fort de l'immense succès de Bruxelles, le spectacle est repris au théâtre des Champs-Élysées à Paris dès décembre 1968."
+      "réponse": "Le titre est affiché dans le haut des navigateurs",
+      "anecdote": "La Balise Title est une balise HTML qui contient une phrase reprise dans l’onglet du navigateur de l’internaute et les résultats de recherche du moteur.",
+      "imgAnswer": "assets/img/quizz_html/Answer/3.jpeg"
     },
     {
       "id": 4,
-      "image": "",
-      "question": "Quel roman a souvent été décrit comme le plus représentatif des années folles ?",
+      "image": "assets/img/quizz_html/Question/4.jpeg",
+      "question": "Que veut dire le mot HTML ?",
       "propositions": [
-        "Gatsby le Magnifique",
-        "Germinal",
-        "Moby Dick",
-        "David Copperfield"
+        "Home Tool Markup Language",
+        "Hyperlinks and Text Markup Language",
+        "Hyper Text Markup Language",
+        "Hyper Text machine Language"
       ],
-      "réponse": "Gatsby le Magnifique",
-      "anecdote": "Le public n'a pas bien accueilli ce roman : sur les 75 000 ventes escomptées, 24 000 exemplaires furent vendus à sa sortie."
+      "réponse": "Hyper Text Markup Language",
+      "anecdote": "L'HyperText Markup Language, HTML, désigne un type de langage informatique descriptif. Il s'agit plus précisément d'un format de données utilisé dans l'univers d'Internet pour la mise en forme des pages Web.",
+      "imgAnswer": "assets/img/quizz_html/Answer/4.jpeg"
     },
     {
       "id": 5,
-      "image": "",
-      "question": "En entomologie, quel insecte est parfois désigné comme demoiselle ?",
+      "image": "assets/img/quizz_html/Question/5.jpeg",
+      "question": "Quelle balise te permettra d'insérer une image dans ton HTML ?",
       "propositions": [
-        "Coccinelle",
-        "Libellule",
-        "Moustique",
-        "Mouche"
+        "<BODY BACKGROUND='image.gif'>",
+        "<IMG SRC='image.gif' alt='mon image'>",
+        "<BACKGROUND IMG='image.gif'>",
+        "<DIV link='image.gif'>"
       ],
-      "réponse": "Libellule",
-      "anecdote": "On les distingue des libellules au sens strict, surtout par leur corps plus grêle et leurs ailes généralement repliées au repos."
+      "réponse": "<IMG SRC='image.gif' alt='mon image'>",
+      "anecdote": "L'élément HTML <img> intègre une image dans le document. L'attribut src est obligatoire et contient le chemin de l'image qu'on souhaite afficher. L'attribut alt contient une description textuelle de l'image.",
+      "imgAnswer": "assets/img/quizz_html/Answer/5.jpeg"
     },
     {
       "id": 6,
-      "image": "",
-      "question": "Dans quel océan pouvez-vous vous baigner si vous voyagez en Argentine ?",
+      "image": "assets/img/quizz_html/Question/6.jpeg",
+      "question": "Dans quel ordre devez-vous placer correctement les balises dans une page HTML?",
       "propositions": [
-        "Atlantique",
-        "Pacifique",
-        "Indien",
-        "Arctique"
+        "<HTML> <TITLE><TITLE> <BODY></BODY> </HTML>",
+        "<HTML> <TITLE></TITLE> <BODY></BODY> </HTML>",
+        "<HTML> <TITLE></TITLE> <BODY> </HTML>",
+        "<HTML> <HEAD></TITLE> <BODY></BODY> </HTML>"
       ],
-      "réponse": "Atlantique",
-      "anecdote": "Le climat est typique de façade orientale des continents, subtropical humide dans le nord et subantarctique dans l'extrême sud du pays."
+      "réponse": "<HTML> <TITLE></TITLE> <BODY></BODY> </HTML>",
+      "anecdote": "Le bon ordre était <HTML> <TITLE></TITLE> <BODY></BODY> </HTML>. Faites attention à bien fermer vos balises. ",
+      "imgAnswer": "assets/img/quizz_html/Answer/6.jpeg"
     },
     {
       "id": 7,
-      "image": "",
-      "question": "La saignée a peu à peu médicalement remplacé quel hermaphrodite ?",
+      "image": "assets/img/quizz_html/Question/7.jpeg",
+      "question": "Une paire de balises HTML doit être utilisé dans vos pages web, une au début et l'autre sur la dernière ligne. De quelle paire s'agit-il?",
       "propositions": [
-        "Cochenille",
-        "Escargot",
-        "Sangsue",
-        "Lombric"
+        "<HTML> et </HTML>",
+        "<BODY> et </BODY>",
+        "<HEAD> et </HEAD>",
+        "<TITLE> et </TITLE>"
       ],
-      "réponse": "Sangsue",
-      "anecdote": "Certaines espèces font l'objet d'un usage médicinal mais la diversité des sangsues est encore aujourd'hui mal connue dans le monde."
+      "réponse": "<HTML> et </HTML>",
+      "anecdote": "Une balise HTML est un élément de base du système de codage HTML utilisé, en grande partie, pour la création d'une page Web. Ce sont les balises HTML qui permettent de hiérarchiser et de structurer le contenu d'une page Web grâce à une mise en forme particulière.",
+      "imgAnswer": "assets/img/quizz_html/Answer/7.jpeg"
     },
     {
       "id": 8,
-      "image": "",
-      "question": "Comment fut aussi appelé le mercure jusqu'au début du XIXe siècle ?",
+      "image": "assets/img/quizz_html/Question/8.jpeg",
+      "question": "La majorité des informations d'une page Web se trouve dans :",
       "propositions": [
-        "Vif-argent",
-        "Radon",
-        "Gallium",
-        "Étain"
+        "La balise HEAD",
+        "La balise TITLE",
+        "La balise BODY",
+        "La balise des commentaires <!-- ... -->"
       ],
-      "réponse": "Vif-argent",
-      "anecdote": "Le mercure, de symbole Hg, a longtemps été utilisé dans les thermomètres et les batteries avant d'être interdit en 1999."
+      "réponse": "La balise BODY",
+      "anecdote": "La grande majorité de votre travail se concentre sur le <body> de la page web. Cependant, le contenu de la balise <head> n'en est pas moins extrêmement important pour la qualité et les performances de votre page web.",
+      "imgAnswer": "assets/img/quizz_html/Answer/8.jpeg"
     },
     {
       "id": 9,
-      "image": "",
-      "question": "Quel pays a perdu environ quinze pourcents de sa population entre 1939 et 1945 ?",
+      "image": "assets/img/quizz_html/Question/9.jpeg",
+      "question": "Quand vous enregistrez vos pages HTML, quelle extension devez-vous utiliser ?",
       "propositions": [
-        "Luxembourg",
-        "Tchécoslovaquie",
-        "Norvège",
-        "Pologne"
+        ".txt",
+        ".json",
+        ".www",
+        ".html"
       ],
-      "réponse": "Pologne",
-      "anecdote": "L'invasion de la Pologne orientale par l'Armée rouge le 17 septembre 1939 asséna un coup fatal au plan de défense polonais."
+      "réponse": ".html",
+      "anecdote": "L'extension de fichier «. htm» ou «. html», tirant son nom de l'abréviation de l'anglicisme «Hypertext Markup Language», est un format de fichier contenant un code source HTML permettant l'affichage d'une page dans navigateur Web.",
+      "imgAnswer": "assets/img/quizz_html/Answer/9.jpeg"
     },
     {
       "id": 10,
-      "image": "",
-      "question": "Le tigre à dents de sabre (ou smilodon) est aujourd'hui une espèce...",
+      "image": "assets/img/quizz_html/Question/10.jpeg",
+      "question": "Quel organisme est responsable des standards du langage HTML ?",
       "propositions": [
-        "Menacée",
-        "Protégée",
-        "Légendaire",
-        "Disparue"
+        "The World Wide Web Consortium",
+        "Microsoft",
+        "Netscape",
+        "Intel"
       ],
-      "réponse": "Disparue",
-      "anecdote": "Semblable au lion, le smilodon était caractérisé par ses longues canines supérieures émergeant devant la mâchoire inférieure."
+      "réponse": "The World Wide Web Consortium",
+      "anecdote": "Le World Wide Web Consortium, abrégé par le sigle W3C, est un organisme de standardisation à but non lucratif, fondé en octobre 1994 chargé de promouvoir la compatibilité des technologies du World Wide Web telles que HTML5, HTML, XHTML, XML, RDF, SPARQL, CSS, XSL, PNG, SVG, MathML et SOAP.",
+      "imgAnswer": "assets/img/quizz_html/Answer/10.jpeg"
     },
     {
       "id": 11,
-      "image": "",
-      "question": "Quel est le diamètre approximatif de la place Charles-de-Gaulle à Paris ?",
+      "image": "assets/img/quizz_html/Question/11.jpeg",
+      "question": "Qui est l'auteur ou le concepteur du langage HTML ?",
       "propositions": [
-        "280 m",
-        "240 m",
-        "200 m",
-        "160 m"
+        "Tim Berners-Lee",
+        "La compagnie Microsoft",
+        "La compagnie Netscape",
+        "Le World Wide Web"
       ],
       "réponse": "240 m",
-      "anecdote": "Encore très connue sous son ancien nom (place de l'Étoile), cette place fut officiellement rebaptisée le 13 novembre 1970."
+      "anecdote": "Timothy John Berners-Lee, né le 8 juin 1955 à Londres, est un informaticien britannique. Il invente ses trois technologies fondatrices : les adresses Web sous forme d'URL, le protocole de communication HTTP, et le langage informatique HTML.",
+      "imgAnswer": "assets/img/quizz_html/Answer/11.jpeg"
     },
     {
       "id": 12,
-      "image": "",
-      "question": "Les USA sont entrés en guerre en 1915 suite au torpillage de quel paquebot ?",
+      "image": "assets/img/quizz_html/Question/12.jpeg",
+      "question": "Les balises <B> ... </B> permettent d'avoir du texte en...",
       "propositions": [
-        "Queen Elisabeth",
-        "Titanic",
-        "Lusitania",
-        "France"
+        "Gras",
+        "Citation",
+        "Interligne",
+        "Italique"
       ],
-      "réponse": "Lusitania",
-      "anecdote": "Le RMS Lusitania fut torpillé par un sous-marin allemand U-20, le 7 mai 1915, au large de l'Irlande, avec 1 200 passagers à bord."
+      "réponse": "Gras",
+      "anecdote": "L'élément HTML <b> permet d'attirer l'attention du lecteur sur un contenu qui n'a pas, pour autant, d'importance significative. Anciennement utilisé pour mettre le texte en gras. Cet élément ne doit pas être utilisé pour mettre en forme des éléments, c'est la propriété CSS font-weight qu'il faut utiliser. Si l'élément est d'une importance particulière, on utilisera l'élément HTML <strong>.",
+      "imgAnswer": "assets/img/quizz_html/Answer/12.jpeg"
     },
     {
       "id": 13,
-      "image": "",
-      "question": "Sur un planisphère, de quel côté se situe le mont Blanc par rapport au lac Léman ?",
+      "image": "assets/img/quizz_html/Question/13.jpeg",
+      "question": "Quelle balise permet d'avoir du texte rayé dans un document HTML ?",
       "propositions": [
-        "Est",
-        "Sud",
-        "Nord",
-        "Ouest"
+        "<S>",
+        "<U>",
+        "<I>",
+        "<B>"
       ],
-      "réponse": "Sud",
-      "anecdote": "Le Léman ou lac de Genève est traversé d'est en ouest par le Rhône qui constitue le principal affluent du lac."
+      "réponse": "<S>",
+      "anecdote": "L'élément HTML <s> permet d'afficher du texte qui est barré car il n'est plus pertinent ou car il est obsolète. <s> ne doit pas être employé pour indiquer des éditions dans un document (on utilisera alors <del> et <ins>).",
+      "imgAnswer": "assets/img/quizz_html/Answer/13.jpeg"
     },
     {
       "id": 14,
-      "image": "",
-      "question": "Quel célèbre peintre florentin a habité le manoir du Cloux, à Amboise ?",
+      "image": "assets/img/quizz_html/Question/14.jpeg",
+      "question": "Laquelle de ces balises permet d'écrire la formule H2O ?",
       "propositions": [
-        "Filippino Lippi",
-        "Bernardo Daddi",
-        "Valerio Cigoli",
-        "Léonard de Vinci"
+        "H<SUP>2</SUP>O",
+        "H<SUB>2</SUB>O",
+        "H<S>2</S>O",
+        "H<I>2</I>O"
       ],
-      "réponse": "Léonard de Vinci",
-      "anecdote": "C'est François 1er qui le mettra à la disposition de Léonard de Vinci qui y vivra trois ans, jusqu'à sa mort le 2 mai 1519."
+      "réponse": "H<SUB>2</SUB>O",
+      "anecdote": "L'élément HTML <sub> est utilisé, pour des raisons typographiques, afin d'afficher du texte souscrit (ou en indice) (plus bas et généralement plus petit) par rapport au bloc de texte environnant.",
+      "imgAnswer": "assets/img/quizz_html/Answer/14.jpeg"
     },
     {
       "id": 15,
-      "image": "",
-      "question": "Laquelle de ces tragédies n'a pas été écrite par William Shakespeare ?",
+      "image": "assets/img/quizz_html/Question/15.jpeg",
+      "question": "Quelle balise doit-on utiliser pour faire un changement de ligne ?",
       "propositions": [
-        "César et Rosalie",
-        "Roméo et Juliette",
-        "Antoine et Cléopâtre",
-        "Le Roi Lear"
+        "<BR>",
+        "<HR>",
+        "<UL>",
+        "<LI>"
       ],
-      "réponse": "César et Rosalie",
-      "anecdote": "Shakespeare est réputé pour sa maîtrise des formes poétiques et sa capacité à représenter les aspects de la nature humaine."
-    },
-    {
-      "id": 16,
-      "image": "",
-      "question": "Laquelle de ces professions Beaumarchais n'a-t-il pas exercé ?",
-      "propositions": [
-        "Espion",
-        "Négrier",
-        "Musicien",
-        "Pâtissier"
-      ],
-      "réponse": "Pâtissier",
-      "anecdote": "Figure importante du siècle des Lumières, Beaumarchais est estimé comme un des annonciateurs de la Révolution française."
-    },
-    {
-      "id": 17,
-      "image": "",
-      "question": "Comment se prénomme le valet de D'Artagnan créé par Alexandre Dumas ?",
-      "propositions": [
-        "Planchet",
-        "Carlos",
-        "Sancho",
-        "Dantès"
-      ],
-      "réponse": "Planchet",
-      "anecdote": "Bien que traité occasionnellement comme un personnage comique, Planchet se montre un serviteur efficace, intelligent et très dévoué."
-    },
-    {
-      "id": 18,
-      "image": "",
-      "question": "Quelle chanteuse s'est donné « 2 minutes 35 de bonheur » en 1967 ?",
-      "propositions": [
-        "Françoise Hardy",
-        "Brigitte Bardot",
-        "Sylvie Vartan",
-        "Alice Dona"
-      ],
-      "réponse": "Sylvie Vartan",
-      "anecdote": "« 2'35 de bonheur » est le sixième album de Sylvie Vartan, sorti en LP 33 tours en 1967 et chanté aux côtés de son ami Carlos."
-    },
-    {
-      "id": 19,
-      "image": "",
-      "question": "Quel journal a longtemps été l'organe officiel du Parti Communiste Français ?",
-      "propositions": [
-        "Libération",
-        "L'Opinion",
-        "L'Humanité",
-        "Le Figaro"
-      ],
-      "réponse": "L'Humanité",
-      "anecdote": "Comme de nombreux titres de la presse écrite, le journal fondé par Jean Jaurès bénéficie de subventions de la part de l'État français."
-    },
-    {
-      "id": 20,
-      "image": "",
-      "question": "Qui Marlon Brando séduit-il dans « Le Dernier Tango à Paris » ?",
-      "propositions": [
-        "Maria Schneider",
-        "Eva Marie Saint",
-        "Anna Magnani",
-        "Joanne Woodward"
-      ],
-      "réponse": "Maria Schneider",
-      "anecdote": "Le réalisateur avait fait le rêve de rencontrer une femme dans la rue et d'avoir avec elle un rapport sexuel sans connaître son nom."
-    },
-    {
-      "id": 21,
-      "image": "",
-      "question": "Qui incarne la première femme sur terre dans la mythologie grecque ?",
-      "propositions": [
-        "Psyché",
-        "Eurydice",
-        "Séléné",
-        "Pandore"
-      ],
-      "réponse": "Pandore",
-      "anecdote": "La boîte de Pandore contenait notamment la Vieillesse, la Maladie, la Guerre, la Famine, la Misère, la Folie, la Mort et le Vice."
-    },
-    {
-      "id": 22,
-      "image": "",
-      "question": "Dans quel pays consomme-t-on annuellement le plus de pommes de terre par habitant ?",
-      "propositions": [
-        "Russie",
-        "Inde",
-        "Allemagne",
-        "France"
-      ],
-      "réponse": "Russie",
-      "anecdote": "La pomme de terre est un aliment relativement riche en amidon et parfois considéré comme un féculent."
-    },
-    {
-      "id": 23,
-      "image": "",
-      "question": "Avec laquelle de ses épouses Clark Gable a-t-il déclaré avoir été le plus heureux ?",
-      "propositions": [
-        "Sylvia Ashley",
-        "Kay Williams",
-        "Josephine Dillon",
-        "Carole Lombard"
-      ],
-      "réponse": "Carole Lombard",
-      "anecdote": "Après son accident d'avion, Carole Lombard deviendra la première femme américaine victime de la Seconde Guerre mondiale."
-    },
-    {
-      "id": 24,
-      "image": "",
-      "question": "Quel code binaire est aussi appelé code télégraphique Alphabet International ?",
-      "propositions": [
-        "Code morse",
-        "Sémaphore",
-        "Code Baudot",
-        "Code Chappe"
-      ],
-      "réponse": "Code Baudot",
-      "anecdote": "Ce code inventé en 1877, bien que plus riche que le code Morse, ne traite pas les minuscules ni certains symboles."
-    },
-    {
-      "id": 25,
-      "image": "",
-      "question": "Dans quel pays peut-on manger du maniçoba servi avec du riz ?",
-      "propositions": [
-        "Vietnam",
-        "Inde",
-        "Brésil",
-        "Sénégal"
-      ],
-      "réponse": "Brésil",
-      "anecdote": "Ce plat festif est fait avec des feuilles de la plante Manioc qui ont été finement broyées et bouillies pendant une semaine."
+      "réponse": "<BR>",
+      "anecdote": "L'élément HTML <br> crée un saut de ligne (un retour chariot) dans le texte. Il s'avère utile lorsque les sauts de ligne ont une importance (par exemple lorsqu'on écrit une adresse ou un poème).",
+      "imgAnswer": "assets/img/quizz_html/Answer/15.jpeg"
     }
   ],
 
