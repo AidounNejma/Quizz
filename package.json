@@ -1,9 +1,9 @@
 {
   
-  "Culture": [
+  "HTML": [
     {
       "id": 1,
-      "niveau": "débutant",
+      "image": "",
           "question": "Quel acteur, chanteur et humoriste aimé des français s'appelait André Raimbourg ?",
           "propositions": [
             "Fernandel",
@@ -16,7 +16,7 @@
     },
     {
       "id": 2,
-      "niveau": "débutant",
+      "image": "",
           "question": "Quel fromage représente, avec la baguette et le béret, l'image traditionnelle des Français ?",
           "propositions": [
             "Fourme",
@@ -29,7 +29,7 @@
     },
     {
       "id": 3,
-      "niveau": "débutant",
+      "image": "",
       "question": "Qui a interprété « L'Homme de la Mancha » aux côtés de Dario Moreno ?",
       "propositions": [
         "Pierre Rapsat",
@@ -42,7 +42,7 @@
     },
     {
       "id": 4,
-      "niveau": "débutant",
+      "image": "",
       "question": "Quel roman a souvent été décrit comme le plus représentatif des années folles ?",
       "propositions": [
         "Gatsby le Magnifique",
@@ -55,7 +55,7 @@
     },
     {
       "id": 5,
-      "niveau": "débutant",
+      "image": "",
       "question": "En entomologie, quel insecte est parfois désigné comme demoiselle ?",
       "propositions": [
         "Coccinelle",
@@ -68,7 +68,7 @@
     },
     {
       "id": 6,
-      "niveau": "débutant",
+      "image": "",
       "question": "Dans quel océan pouvez-vous vous baigner si vous voyagez en Argentine ?",
       "propositions": [
         "Atlantique",
@@ -81,7 +81,7 @@
     },
     {
       "id": 7,
-      "niveau": "débutant",
+      "image": "",
       "question": "La saignée a peu à peu médicalement remplacé quel hermaphrodite ?",
       "propositions": [
         "Cochenille",
@@ -94,7 +94,7 @@
     },
     {
       "id": 8,
-      "niveau": "débutant",
+      "image": "",
       "question": "Comment fut aussi appelé le mercure jusqu'au début du XIXe siècle ?",
       "propositions": [
         "Vif-argent",
@@ -107,7 +107,7 @@
     },
     {
       "id": 9,
-      "niveau": "débutant",
+      "image": "",
       "question": "Quel pays a perdu environ quinze pourcents de sa population entre 1939 et 1945 ?",
       "propositions": [
         "Luxembourg",
@@ -120,7 +120,7 @@
     },
     {
       "id": 10,
-      "niveau": "débutant",
+      "image": "",
       "question": "Le tigre à dents de sabre (ou smilodon) est aujourd'hui une espèce...",
       "propositions": [
         "Menacée",
@@ -133,7 +133,7 @@
     },
     {
       "id": 11,
-      "niveau": "confirmé",
+      "image": "",
       "question": "Quel est le diamètre approximatif de la place Charles-de-Gaulle à Paris ?",
       "propositions": [
         "280 m",
@@ -146,7 +146,7 @@
     },
     {
       "id": 12,
-      "niveau": "confirmé",
+      "image": "",
       "question": "Les USA sont entrés en guerre en 1915 suite au torpillage de quel paquebot ?",
       "propositions": [
         "Queen Elisabeth",
@@ -159,7 +159,7 @@
     },
     {
       "id": 13,
-      "niveau": "confirmé",
+      "image": "",
       "question": "Sur un planisphère, de quel côté se situe le mont Blanc par rapport au lac Léman ?",
       "propositions": [
         "Est",
@@ -172,7 +172,7 @@
     },
     {
       "id": 14,
-      "niveau": "confirmé",
+      "image": "",
       "question": "Quel célèbre peintre florentin a habité le manoir du Cloux, à Amboise ?",
       "propositions": [
         "Filippino Lippi",
@@ -185,7 +185,7 @@
     },
     {
       "id": 15,
-      "niveau": "confirmé",
+      "image": "",
       "question": "Laquelle de ces tragédies n'a pas été écrite par William Shakespeare ?",
       "propositions": [
         "César et Rosalie",
@@ -198,7 +198,7 @@
     },
     {
       "id": 16,
-      "niveau": "confirmé",
+      "image": "",
       "question": "Laquelle de ces professions Beaumarchais n'a-t-il pas exercé ?",
       "propositions": [
         "Espion",
@@ -211,7 +211,7 @@
     },
     {
       "id": 17,
-      "niveau": "confirmé",
+      "image": "",
       "question": "Comment se prénomme le valet de D'Artagnan créé par Alexandre Dumas ?",
       "propositions": [
         "Planchet",
@@ -224,7 +224,7 @@
     },
     {
       "id": 18,
-      "niveau": "confirmé",
+      "image": "",
       "question": "Quelle chanteuse s'est donné « 2 minutes 35 de bonheur » en 1967 ?",
       "propositions": [
         "Françoise Hardy",
@@ -237,7 +237,7 @@
     },
     {
       "id": 19,
-      "niveau": "confirmé",
+      "image": "",
       "question": "Quel journal a longtemps été l'organe officiel du Parti Communiste Français ?",
       "propositions": [
         "Libération",
@@ -250,7 +250,7 @@
     },
     {
       "id": 20,
-      "niveau": "confirmé",
+      "image": "",
       "question": "Qui Marlon Brando séduit-il dans « Le Dernier Tango à Paris » ?",
       "propositions": [
         "Maria Schneider",
@@ -263,7 +263,7 @@
     },
     {
       "id": 21,
-      "niveau": "expert",
+      "image": "",
       "question": "Qui incarne la première femme sur terre dans la mythologie grecque ?",
       "propositions": [
         "Psyché",
@@ -276,7 +276,7 @@
     },
     {
       "id": 22,
-      "niveau": "expert",
+      "image": "",
       "question": "Dans quel pays consomme-t-on annuellement le plus de pommes de terre par habitant ?",
       "propositions": [
         "Russie",
@@ -289,7 +289,7 @@
     },
     {
       "id": 23,
-      "niveau": "expert",
+      "image": "",
       "question": "Avec laquelle de ses épouses Clark Gable a-t-il déclaré avoir été le plus heureux ?",
       "propositions": [
         "Sylvia Ashley",
@@ -302,7 +302,7 @@
     },
     {
       "id": 24,
-      "niveau": "expert",
+      "image": "",
       "question": "Quel code binaire est aussi appelé code télégraphique Alphabet International ?",
       "propositions": [
         "Code morse",
@@ -315,7 +315,7 @@
     },
     {
       "id": 25,
-      "niveau": "expert",
+      "image": "",
       "question": "Dans quel pays peut-on manger du maniçoba servi avec du riz ?",
       "propositions": [
         "Vietnam",
@@ -328,10 +328,10 @@
     }
   ],
 
-  "Rôles à l'écran": [
+  "CSS": [
     {
       "id": 1,
-      "niveau": "débutant",
+      "image": "",
       "question": "Qui est le patron d'une usine de fabrication de bateaux dans « Le Petit Baigneur » ?",
       "propositions": [
         "Bouvet",
@@ -344,7 +344,7 @@
     },
     {
       "id": 2,
-      "niveau": "débutant",
+      "image": "",
       "question": "Quel est le rôle de Jean Benguigui dans « Astérix et Obélix : Mission Cléopâtre » ?",
       "propositions": [
         "Itineris",
@@ -357,7 +357,7 @@
     },
     {
       "id": 3,
-      "niveau": "débutant",
+      "image": "",
       "question": "Comment se nomme le grand chef cuisinier dans le film « Le Grand Restaurant » ?",
       "propositions": [
         "M. Dixime",
@@ -370,7 +370,7 @@
     },
     {
       "id": 4,
-      "niveau": "débutant",
+      "image": "",
       "question": "Quels sont les prénoms des deux enfants de Morticia et Gomez ?",
       "propositions": [
         "Samedi et Wesley",
@@ -383,7 +383,7 @@
     },
     {
       "id": 5,
-      "niveau": "débutant",
+      "image": "",
       "question": "Quel personnage chante pendant la nuit dans « Les bronzés font du ski » ?",
       "propositions": [
         "Jean-Claude Dusse",
@@ -396,7 +396,7 @@
     },
     {
       "id": 6,
-      "niveau": "débutant",
+      "image": "",
       "question": "Si Monsieur Pignon est le gentil, alors, qui est le méchant ?",
       "propositions": [
         "Monsieur Leblanc",
@@ -409,7 +409,7 @@
     },
     {
       "id": 7,
-      "niveau": "débutant",
+      "image": "",
       "question": "Selon Steven Spielberg, quel soldat fut sauvé lors du débarquement allié en 1944 ?",
       "propositions": [
         "Bryan",
@@ -422,7 +422,7 @@
     },
     {
       "id": 8,
-      "niveau": "débutant",
+      "image": "",
       "question": "Quel est le prénom du brocanteur interprété par Victor Lanoux ?",
       "propositions": [
         "Victor",
@@ -435,7 +435,7 @@
     },
     {
       "id": 9,
-      "niveau": "débutant",
+      "image": "",
       "question": "Quel inspecteur a plusieurs fois été interprété par Clint Eastwood ?",
       "propositions": [
         "Gil Grissom",
@@ -448,7 +448,7 @@
     },
     {
       "id": 10,
-      "niveau": "débutant",
+      "image": "",
       "question": "Quelle Mrs. s'est déguisée afin de voir ses enfants pendant leur garde alternée ?",
       "propositions": [
         "Moneypenny",
@@ -461,7 +461,7 @@
     },
     {
       "id": 11,
-      "niveau": "confirmé",
+      "image": "",
       "question": "Quel est le surnom de Marie-France Pisier dans « L'As des as » ?",
       "propositions": [
         "Cathy",
@@ -474,7 +474,7 @@
     },
     {
       "id": 12,
-      "niveau": "confirmé",
+      "image": "",
       "question": "Quel est le prénom de Bourvil dans la pièce de théâtre « La Bonne Planque » ?",
       "propositions": [
         "Arsène",
@@ -487,7 +487,7 @@
     },
     {
       "id": 13,
-      "niveau": "confirmé",
+      "image": "",
       "question": "Quelle jeune juive est poursuivie par Hans Landa dans « Inglorious Basterds » ?",
       "propositions": [
         "Suzanne",
@@ -500,7 +500,7 @@
     },
     {
       "id": 14,
-      "niveau": "confirmé",
+      "image": "",
       "question": "Quel inspecteur de police devient RoboCop dans une société futuriste ?",
       "propositions": [
         "Murphy",
@@ -513,7 +513,7 @@
     },
     {
       "id": 15,
-      "niveau": "confirmé",
+      "image": "",
       "question": "Quel célèbre aventurier fut interprété par Harrisson Ford dans la saga « Indiana Jones » ?",
       "propositions": [
         "Harry Jones Junior",
@@ -526,7 +526,7 @@
     },
     {
       "id": 16,
-      "niveau": "confirmé",
+      "image": "",
       "question": "Dans quel film Steven Hiller sauve-t-il le monde d'une invasion extraterrestre ?",
       "propositions": [
         "Independance day",
@@ -539,7 +539,7 @@
     },
     {
       "id": 17,
-      "niveau": "confirmé",
+      "image": "",
       "question": "Lequel de ces gradés est encerclé avec ses hommes dans la forêt de Machecoul ?",
       "propositions": [
         "Capitaine Dumont",
@@ -552,7 +552,7 @@
     },
     {
       "id": 18,
-      "niveau": "confirmé",
+      "image": "",
       "question": "Qui a malencontreusement dû dégommer du méchant dans un piège de cristal ?",
       "propositions": [
         "John Wick",
@@ -565,7 +565,7 @@
     },
     {
       "id": 19,
-      "niveau": "confirmé",
+      "image": "",
       "question": "Quel célèbre flic de Beverly Hills donne des repas gratuits à des inspecteurs planqués ?",
       "propositions": [
         "Dany Brandt",
@@ -578,7 +578,7 @@
     },
     {
       "id": 20,
-      "niveau": "confirmé",
+      "image": "",
       "question": "Qui est mandaté par le Vatican pour élucider les mystères de Da Vinci Code ?",
       "propositions": [
         "John Langbert",
@@ -591,7 +591,7 @@
     },
     {
       "id": 21,
-      "niveau": "expert",
+      "image": "",
       "question": "Quel brocanteur a envie d'acheter un Modigliani tatoué sur une peau humaine ?",
       "propositions": [
         "Félicien Mazeret",
@@ -604,7 +604,7 @@
     },
     {
       "id": 22,
-      "niveau": "expert",
+      "image": "",
       "question": "Quelle cheffe de la résistance est interprétée par Marion Cotillard dans « Alliés » ?",
       "propositions": [
         "M. Beauvoyage",
@@ -617,7 +617,7 @@
     },
     {
       "id": 23,
-      "niveau": "expert",
+      "image": "",
       "question": "Quel est le nom de famille de la femme de ménage dans le film « Le Magnifique » ?",
       "propositions": [
         "Bouviers",
@@ -630,7 +630,7 @@
     },
     {
       "id": 24,
-      "niveau": "expert",
+      "image": "",
       "question": "Qui est le directeur du journal « Demain ne meurt jamais » dans un James Bond ?",
       "propositions": [
         "Elliot Carver",
@@ -643,7 +643,7 @@
     },
     {
       "id": 25,
-      "niveau": "expert",
+      "image": "",
       "question": "Quel personnage possède un animal de compagnie appelé Touffu ?",
       "propositions": [
         "Artaban",
@@ -656,7 +656,7 @@
     },
     {
       "id": 26,
-      "niveau": "expert",
+      "image": "",
       "question": "Qui est le sabotier dans le film français « La Soupe aux choux » ?",
       "propositions": [
         "Max Poulangeard",
@@ -669,7 +669,7 @@
     },
     {
       "id": 27,
-      "niveau": "expert",
+      "image": "",
       "question": "Quel détective privé doit retrouver la fille de Monsieur Bens, disparue au Mexique ?",
       "propositions": [
         "Campana",
@@ -682,7 +682,7 @@
     },
     {
       "id": 28,
-      "niveau": "expert",
+      "image": "",
       "question": "Quelle commissaire de fiction a deux enfants prénommés Babou et Sarah ?",
       "propositions": [
         "Julie Lescaut",
@@ -695,7 +695,7 @@
     },
     {
       "id": 29,
-      "niveau": "expert",
+      "image": "",
       "question": "Quel chien discute avec l'agent J aux côtés de l'agent K et de l'agent L ?",
       "propositions": [
         "Karl",
@@ -708,7 +708,7 @@
     },
     {
       "id": 30,
-      "niveau": "expert",
+      "image": "",
       "question": "Comment est surnommé Robert Lespinasse dans une célèbre comédie française ?",
       "propositions": [
         "Mickey",
@@ -721,10 +721,10 @@
     }
   ],                                   
 
-  "Géo pour tous": [
+  "Javascript": [
     {
       "id": 1,
-      "niveau": "débutant",
+      "image": "",
       "question": "Dans quel océan se déverse l'Amazone, de loin le plus élevé de tous les fleuves de la planète ?",
       "propositions": [
         "Océan Atlantique",
@@ -737,7 +737,7 @@
     },
     {
       "id": 2,
-      "niveau": "débutant",
+      "image": "",
       "question": "Où peut-on se rendre dans la plus grande île et le plus petit continent du monde ?",
       "propositions": [
         "Asie",
@@ -750,7 +750,7 @@
     },
     {
       "id": 3,
-      "niveau": "débutant",
+      "image": "",
       "question": "Où peut-on marcher sur la place Tian'anmen, au sud de la porte de la Paix céleste ?",
       "propositions": [
         "Pékin",
@@ -763,7 +763,7 @@
     },
     {
       "id": 4,
-      "niveau": "débutant",
+      "image": "",
       "question": "Quelle est la plus grande ville du Grand-Duché de Luxembourg ainsi que sa capitale ?",
       "propositions": [
         "Vianden",
@@ -776,7 +776,7 @@
     },
     {
       "id": 5,
-      "niveau": "débutant",
+      "image": "",
       "question": "Quel pays sans côte océanique partage en toute tranquillité le lac Majeur avec l'Italie ?",
       "propositions": [
         "L'Autriche",
@@ -789,7 +789,7 @@
     },
     {
       "id": 6,
-      "niveau": "débutant",
+      "image": "",
       "question": "Où se trouve Ankara, ville nouvelle aux origines pourtant très anciennes ?",
       "propositions": [
         "Au Pakistan",
@@ -802,7 +802,7 @@
     },
     {
       "id": 7,
-      "niveau": "débutant",
+      "image": "",
       "question": "Sur quel tropique se trouve Taiwan, connue comme la République de Chine ?",
       "propositions": [
         "Sagittaire",
@@ -815,7 +815,7 @@
     },
     {
       "id": 8,
-      "niveau": "débutant",
+      "image": "",
       "question": "Quel est le pays entouré par le Lichtenstein, l'Italie, l'Autriche, l'Allemagne et la France ?",
       "propositions": [
         "La Hongrie",
@@ -828,7 +828,7 @@
     },
     {
       "id": 9,
-      "niveau": "débutant",
+      "image": "",
       "question": "Dans quel pays allez-vous si vous partez à la recherche du comte Dragul, en Transylvanie ?",
       "propositions": [
         "Hongrie",
@@ -841,7 +841,7 @@
     },
     {
       "id": 10,
-      "niveau": "débutant",
+      "image": "",
       "question": "Quel tropique indiqué sur les cartes terrestres passe entre la Floride et Cuba ?",
       "propositions": [
         "Tropique du Cancer",
@@ -854,7 +854,7 @@
     },
     {
       "id": 11,
-      "niveau": "confirmé",
+      "image": "",
       "question": "Quel archipel du Pacifique est constitué de plus de 7 100 îles et îlots formant un état ?",
       "propositions": [
         "Malaisie",
@@ -867,7 +867,7 @@
     },
     {
       "id": 12,
-      "niveau": "confirmé",
+      "image": "",
       "question": "Quel fleuve et importante voie fluviale bleuit selon la météo dans la capitale de la Hongrie ?",
       "propositions": [
         "Elbe",
@@ -880,7 +880,7 @@
     },
     {
       "id": 13,
-      "niveau": "confirmé",
+      "image": "",
       "question": "Quelle mer du bassin Indo-Pacifique est reliée à la Méditerranée par le canal de Suez ?",
       "propositions": [
         "Mer Ionienne",
@@ -893,7 +893,7 @@
     },
     {
       "id": 14,
-      "niveau": "confirmé",
+      "image": "",
       "question": "Sachant que les Apennins se trouvent en Italie, où sont principalement situées les Appalaches ?",
       "propositions": [
         "Au Brésil",
@@ -906,7 +906,7 @@
     },
     {
       "id": 15,
-      "niveau": "confirmé",
+      "image": "",
       "question": "Quel fleuve d'Afrique occidentale, portant le nom d'un pays, borde le Sahel ?",
       "propositions": [
         "Le Niger",
@@ -919,7 +919,7 @@
     },
     {
       "id": 16,
-      "niveau": "confirmé",
+      "image": "",
       "question": "Vers quel pays allez-vous si vous quittez la ville italienne de Trieste vers l'Est ?",
       "propositions": [
         "Suisse",
@@ -932,7 +932,7 @@
     },
     {
       "id": 17,
-      "niveau": "confirmé",
+      "image": "",
       "question": "Quel port canadien situé sur le lac Ontario était jadis connu sous le nom de « Fort York » ?",
       "propositions": [
         "Toronto",
@@ -945,7 +945,7 @@
     },
     {
       "id": 18,
-      "niveau": "confirmé",
+      "image": "",
       "question": "Dans quel État des États-Unis pourrez-vous partir à la rencontre des Séminoles ?",
       "propositions": [
         "Floride",
@@ -958,7 +958,7 @@
     },
     {
       "id": 19,
-      "niveau": "confirmé",
+      "image": "",
       "question": "Quelle mer dépourvue de poissons et d'algues est partagée entre la Jordanie et Israël ?",
       "propositions": [
         "Mer Rouge",
@@ -971,7 +971,7 @@
     },
     {
       "id": 20,
-      "niveau": "confirmé",
+      "image": "",
       "question": "Où est Dubrovnik, dont les habitants ainsi que ce qui s'y rapporte s'appellent des ragusains ?",
       "propositions": [
         "En Yougoslavie",
@@ -984,7 +984,7 @@
     },
     {
       "id": 21,
-      "niveau": "expert",
+      "image": "",
       "question": "Sur quelle île à 120 km du sud de l'Angleterre se trouvent Grand Havre et Port Soif ?",
       "propositions": [
         "Guernesey",
@@ -997,7 +997,7 @@
     },
     {
       "id": 22,
-      "niveau": "expert",
+      "image": "",
       "question": "Dans quel pays peut-on par exemple passer une nuit à Mandalay et la suivante à Rangoon ?",
       "propositions": [
         "En Birmanie",
@@ -1010,7 +1010,7 @@
     },
     {
       "id": 23,
-      "niveau": "expert",
+      "image": "",
       "question": "Dans quel État du Midwest des États-Unis se trouvent Mineapolis et sa jumelle St Paul ?",
       "propositions": [
         "Montana",
@@ -1023,7 +1023,7 @@
     },
     {
       "id": 24,
-      "niveau": "expert",
+      "image": "",
       "question": "Vers quel lac la ville d'Irkoutsk plonge-t-elle son regard à 66 kilomètres à l'ouest ?",
       "propositions": [
         "Malawi",
@@ -1036,7 +1036,7 @@
     },
     {
       "id": 25,
-      "niveau": "expert",
+      "image": "",
       "question": "Quelle grande ville trouve-t-on sur la mer d'Oman, près de l'embouchure de l'Indus ?",
       "propositions": [
         "Islamabad",
@@ -1049,7 +1049,7 @@
     },
     {
       "id": 26,
-      "niveau": "expert",
+      "image": "",
       "question": "Quelle capitale pakistanaise, située au nord du pays, jouxte la ville de Rawalpindi ?",
       "propositions": [
         "Islamabad",
@@ -1062,7 +1062,7 @@
     },
     {
       "id": 27,
-      "niveau": "expert",
+      "image": "",
       "question": "Dans quel État américain du Nord-Est du pays se trouvent Rome, Syracuse et Albany ?",
       "propositions": [
         "Idaho",
@@ -1075,7 +1075,7 @@
     },
     {
       "id": 28,
-      "niveau": "expert",
+      "image": "",
       "question": "De quel pays situé à environ 200 km au nord de l'équateur Kuala Lumpur est-elle la capitale ?",
       "propositions": [
         "Birmanie",
@@ -1088,7 +1088,7 @@
     },
     {
       "id": 29,
-      "niveau": "expert",
+      "image": "",
       "question": "Combien de mers baignent la Russie, le plus vaste pays de notre planète ?",
       "propositions": [
         "Dix",
@@ -1101,7 +1101,7 @@
     },
     {
       "id": 30,
-      "niveau": "expert",
+      "image": "",
       "question": "Sur quelle île se trouve Manille, deuxième ville la plus peuplée des Philippines après Quezon ?",
       "propositions": [
         "Visayas",
@@ -1112,1577 +1112,7 @@
       "réponse": "Luçon",
       "anecdote": "La quasi totalité de la ville se trouve sur un sol alluvionnaire déplacé par la rivière Pasig et gagné sur la baie de Manille."
     }
-  ],
-  "Cuisine étrangère": [
-    {
-      "id": 1,
-      "niveau": "débutant",
-      "question": "Quel poisson faut-il pêcher pour obtenir du caviar à moindre coût ?",
-      "propositions": [
-        "Brochet",
-        "Sandre",
-        "Carpe",
-        "Esturgeon"
-      ],
-      "réponse": "Esturgeon",
-      "anecdote": "Leur croissance lente et leur maturité tardive les rendent particulièrement vulnérables à la pêche et à d'autres menaces."
-    },
-    {
-      "id": 2,
-      "niveau": "débutant",
-      "question": "Qu'y a-t-il dans un cappuccino et pas dans un expresso ni même dans un café viennois ?",
-      "propositions": [
-        "Du sucre",
-        "Du lait",
-        "Du café",
-        "De l'eau"
-      ],
-      "réponse": "Du lait",
-      "anecdote": "Alors que le cappuccino se fait avec du lait, quand on rajoute de la chantilly, il s'agit alors d'un café viennois."
-    },
-    {
-      "id": 3,
-      "niveau": "débutant",
-      "question": "Qu'est-ce qu'un blini, dont le nom vient du vieux slave « mlin », qui signifie « moudre » ?",
-      "propositions": [
-        "Un gâteau",
-        "Une tarte",
-        "Une gaufre",
-        "Une crêpe"
-      ],
-      "réponse": "Une crêpe",
-      "anecdote": "Le blini est une sorte de crêpe de grande taille très fine, souvent servie en relation avec un rituel ou des fêtes religieuses."
-    },
-    {
-      "id": 4,
-      "niveau": "débutant",
-      "question": "Quel fruit sert à la préparation d'un apfelstrudel, gâteau traditionnel autrichien ?",
-      "propositions": [
-        "Poire",
-        "Pêche",
-        "Pomme",
-        "Prune"
-      ],
-      "réponse": "Pomme",
-      "anecdote": "L'apfelstrudel est un gâteau fait d'une pâte feuilletée fine et fourrée de gros morceaux de pommes acidulées et de raisins secs."
-    },
-    {
-      "id": 5,
-      "niveau": "débutant",
-      "question": "Qu'y a-t-il dans un chili con carne en plus des haricots pimentés à la tomate ?",
-      "propositions": [
-        "Des ananas",
-        "Du sucre",
-        "Du raisin",
-        "De la viande"
-      ],
-      "réponse": "De la viande",
-      "anecdote": "Bien qu'on l'associe souvent au Mexique, le chili n'est pas d'origine mexicaine mais texane."
-    },
-    {
-      "id": 6,
-      "niveau": "débutant",
-      "question": "Où fabrique-t-on le mousseux italien nommé « Asti Spumante » ?",
-      "propositions": [
-        "Rivoli",
-        "Biella",
-        "Asti",
-        "Turin"
-      ],
-      "réponse": "Asti",
-      "anecdote": "Seuls ont droit à la DOCG les vins blancs récoltés à l'intérieur de l'aire de production définie par le décret."
-    },
-    {
-      "id": 7,
-      "niveau": "débutant",
-      "question": "Que trouve-t-on dans le sushi et dans le gohan japonais, cuit à l'eau sans aucun condiment ?",
-      "propositions": [
-        "Du boeuf",
-        "Du riz",
-        "Du saumon",
-        "Du canard"
-      ],
-      "réponse": "Du riz",
-      "anecdote": "Équivalent du pain des Occidentaux, le Gohan est le riz cuit à la japonaise, il signifie également repas en japonais."
-    },
-    {
-      "id": 8,
-      "niveau": "débutant",
-      "question": "Les feuilles de quelle plante met-on dans le thé au Maroc ?",
-      "propositions": [
-        "L'eucalyptus",
-        "Le bleuet",
-        "La menthe",
-        "L'anis"
-      ],
-      "réponse": "La menthe",
-      "anecdote": "Le thé à la menthe est une spécialité traditionnelle de la cuisine des pays du Maghreb."
-    },
-    {
-      "id": 9,
-      "niveau": "débutant",
-      "question": "Quelle ville située à l'est de Milan a donné son nom à un fromage bleu au goût prononcé ?",
-      "propositions": [
-        "Corbetta",
-        "Dresano",
-        "Bresso",
-        "Gorgonzola"
-      ],
-      "réponse": "Gorgonzola",
-      "anecdote": "Depuis le 12 juin 1996, la dénomination Gorgonzola est protégée au niveau européen par une appellation d'origine protégée (AOP)."
-    },
-    {
-      "id": 10,
-      "niveau": "débutant",
-      "question": "Que mettent les ménagères anglaises dans le Christmas Cake pour mieux le conserver ?",
-      "propositions": [
-        "Du sapin",
-        "De la gélatine",
-        "De la crème",
-        "Un alcool"
-      ],
-      "réponse": "Un alcool",
-      "anecdote": "Il convient de faire mariner tous les fruits secs dans le whisky et les jus de citron et d'orange durant deux bonnes heures."
-    },
-    {
-      "id": 11,
-      "niveau": "confirmé",
-      "question": "Quelle est la forme traditionnelle des samoussas dans tout l'océan indien ?",
-      "propositions": [
-        "Carrée",
-        "Ovale",
-        "Triangulaire",
-        "Ronde"
-      ],
-      "réponse": "Triangulaire",
-      "anecdote": "Le samoussa est composé d'une fine pâte de blé qui enrobe une farce traditionnellement faite de légumes ou de viande."
-    },
-    {
-      "id": 12,
-      "niveau": "confirmé",
-      "question": "Que vous offre votre hôte Chinois quand il vous propose du « cha » ?",
-      "propositions": [
-        "Du café",
-        "Du thé",
-        "Du whisky",
-        "Du chocolat"
-      ],
-      "réponse": "Du thé",
-      "anecdote": "Le thé est d'origine chinoise, en provenance des montagnes du Yunnan où il est connu depuis l'Antiquité."
-    },
-    {
-      "id": 13,
-      "niveau": "confirmé",
-      "question": "Quelle est la manière de cuisiner avec du beurre salé, du poivre et du jus de citron ?",
-      "propositions": [
-        "Citronnée",
-        "Beurrière",
-        "Meunière",
-        "Poivrière"
-      ],
-      "réponse": "Meunière",
-      "anecdote": "La qualité gustative, la consistance et la couleur du beurre fermier varient selon la saison, le terroir et la qualité des prairies."
-    },
-    {
-      "id": 14,
-      "niveau": "confirmé",
-      "question": "Avec quoi est fait le sashimi, mets traditionnel de la gastronomie japonaise ?",
-      "propositions": [
-        "Du canard laqué",
-        "Du vin blanc",
-        "Du porc salé",
-        "Du poisson cru"
-      ],
-      "réponse": "Du poisson cru",
-      "anecdote": "Le mot « sashimi » est un terme japonais francisé signifiant littéralement « corps taillé »."
-    },
-    {
-      "id": 15,
-      "niveau": "confirmé",
-      "question": "Qu'est-ce qu'une bombilla glissée dans le thé en Argentine ?",
-      "propositions": [
-        "Une pâte de fruit",
-        "Une cuillère",
-        "Une paille",
-        "Une cerise"
-      ],
-      "réponse": "Une paille",
-      "anecdote": "L'utilisation de pailles minimise le contact de la boisson avec les dents et permet ainsi de réduire le risque de carie."
-    },
-    {
-      "id": 16,
-      "niveau": "confirmé",
-      "question": "Que prenez-vous au petit-déjeuner à Osaka si vous vous pressez un mikan ?",
-      "propositions": [
-        "Un milk-shake",
-        "Un lait battu",
-        "Un thé",
-        "Un jus d'orange"
-      ],
-      "réponse": "Un jus d'orange",
-      "anecdote": "Mikan est un terme japonais générique pour un agrume doux, désignant notamment la mandarine satsuma."
-    },
-    {
-      "id": 17,
-      "niveau": "confirmé",
-      "question": "En Chine, à quel moment utilise-t-on avec dextérité des kuaizi ?",
-      "propositions": [
-        "En se levant",
-        "Avant de dormir",
-        "Au repas",
-        "En voiture"
-      ],
-      "réponse": "Au repas",
-      "anecdote": "L'usage des baguettes est attesté en Chine dès le temps de la dynastie Shang."
-    },
-    {
-      "id": 18,
-      "niveau": "confirmé",
-      "question": "Quels champignons met-on dans le riz du « djon-djon » haïtien ?",
-      "propositions": [
-        "Noirs",
-        "Rouges",
-        "Verts",
-        "Bleus"
-      ],
-      "réponse": "Noirs",
-      "anecdote": "L'oreille de Judas est communément appelée « champignon noir » en gastronomie asiatique."
-    },
-    {
-      "id": 19,
-      "niveau": "confirmé",
-      "question": "Quel est l'ingrédient principal d'un lassi que l'on peut boire en Inde ?",
-      "propositions": [
-        "Le yaourt",
-        "Le miel",
-        "Le vinaigre",
-        "Le vin"
-      ],
-      "réponse": "Le yaourt",
-      "anecdote": "Le lassi, aliment de base dans la région Pendjab, existe en plusieurs versions : nature, salée, épicée ou sucrée."
-    },
-    {
-      "id": 20,
-      "niveau": "confirmé",
-      "question": "Qu'est-ce que l'allium sativum, qui entre dans la composition de presque tous les plats coréens ?",
-      "propositions": [
-        "De l'ail",
-        "Du thym",
-        "Du céleri",
-        "Du cumin"
-      ],
-      "réponse": "De l'ail",
-      "anecdote": "Quand on cuisine de l'ail, certains conseillent de retirer le germe, qui serait moins digeste que le reste de la gousse."
-    },
-    {
-      "id": 21,
-      "niveau": "expert",
-      "question": "Quel contient le calalou que l'on vous proposera à la période de Pâques dans les Antilles ?",
-      "propositions": [
-        "Du cobra",
-        "Du faisan",
-        "Du sanglier",
-        "Du crabe"
-      ],
-      "réponse": "Du crabe",
-      "anecdote": "Le calalou, typique de la période de Pâques, est fait à partir de crabes de terre et est accommodé de riz blanc."
-    },
-    {
-      "id": 22,
-      "niveau": "expert",
-      "question": "Comment est le chocolat des confiseries nommées « gianduiotti » en Italie ?",
-      "propositions": [
-        "Au nougat",
-        "Aux fruits confits",
-        "Aux noisettes",
-        "Aux amandes"
-      ],
-      "réponse": "Aux noisettes",
-      "anecdote": "Ce chocolat originaire de Turin est produit avec du gianduja, une pâte de noisette et de cacao."
-    },
-    {
-      "id": 23,
-      "niveau": "expert",
-      "question": "Quel morceau de choix vous invite-t-on à gober au milieu d'un repas en Arabie Saoudite ?",
-      "propositions": [
-        "Queue de chat",
-        "Coeur de souris",
-        "Oeil de mouton",
-        "Langue de serpent"
-      ],
-      "réponse": "Oeil de mouton",
-      "anecdote": "Occupant 80 % de la péninsule Arabique, l'Arabie Saoudite est le plus grand pays du Moyen-Orient."
-    },
-    {
-      "id": 24,
-      "niveau": "expert",
-      "question": "Que mettent les Tibétains à fermenter afin de pouvoir boire le chang, leur bière locale ?",
-      "propositions": [
-        "Du riz",
-        "Du fromage",
-        "De la graisse",
-        "Du sel"
-      ],
-      "réponse": "Du riz",
-      "anecdote": "Ce type de bière au goût de cidre fermier se rencontre aussi en Inde, au Népal et au Bhoutan."
-    },
-    {
-      "id": 25,
-      "niveau": "expert",
-      "question": "Avec la purée de quel fruit est fait le nectar arabe appelé « kanar-eldin » ?",
-      "propositions": [
-        "Pêche",
-        "Pomme",
-        "Poire",
-        "Abricot"
-      ],
-      "réponse": "Abricot",
-      "anecdote": "La chair de l'abricot est sucrée, peu juteuse, ferme et jaune orangé suite à sa teneur en carotène, dimère de la vitamine A."
-    },
-    {
-      "id": 26,
-      "niveau": "expert",
-      "question": "Quelle propriété contient l'ail qui intervient dans presque tous les plats coréens ?",
-      "propositions": [
-        "Diurétique",
-        "Antalgique",
-        "Aphrodisiaque",
-        "Analgésique"
-      ],
-      "réponse": "Aphrodisiaque",
-      "anecdote": "Une tête d'ail se compose de plusieurs caïeux ou gousses d'ail, à l'odeur et au goût forts."
-    },
-    {
-      "id": 27,
-      "niveau": "expert",
-      "question": "Que vous fournira-t-on avec le sel pour mettre sur vos frites en Angleterre ?",
-      "propositions": [
-        "Du sucre",
-        "Du lait",
-        "Du sirop",
-        "Du vinaigre"
-      ],
-      "réponse": "Du vinaigre",
-      "anecdote": "La plupart des frites consommées dans le monde sont des frites surgelées produites industriellement."
-    },
-    {
-      "id": 28,
-      "niveau": "expert",
-      "question": "Qu'y a-t-il dans le miod, célèbre boisson polonaise, préférée des dieux de l'Olympe ?",
-      "propositions": [
-        "Raisin",
-        "Miel",
-        "Riz",
-        "Vodka"
-      ],
-      "réponse": "Miel",
-      "anecdote": "Les bienfaits du miel produit par les abeilles à miel sont multiples et différents selon le type de miel."
-    },
-    {
-      "id": 29,
-      "niveau": "expert",
-      "question": "Quel est l'ingrédient de base des rasgulla, confiseries indiennes traditionnelles ?",
-      "propositions": [
-        "Le chocolat",
-        "La pomme",
-        "Le miel",
-        "Le lait"
-      ],
-      "réponse": "Le lait",
-      "anecdote": "Ces boules de fromage non mûr ou de lait caillé sont recouvertes d'un sirop sucré."
-    },
-    {
-      "id": 30,
-      "niveau": "expert",
-      "question": "À quelle boisson les Tibétains rajoutent-ils leur tsampa matinal ?",
-      "propositions": [
-        "Au café",
-        "Au vin",
-        "Au champagne",
-        "Au thé"
-      ],
-      "réponse": "Au thé",
-      "anecdote": "La Tsampa, aliment traditionnel de base au Tibet, est le nom tibétain de la farine d'orge du Tibet grillée."
-    }
-  ],
-  "Histoire de France (Paris vaut bien une messe)": [
-    {
-      "id": 1,
-      "niveau": "débutant",
-      "question": "Quelle ville française était appelée la cité des papes au Moyen Âge ?",
-      "propositions": [
-        "Metz",
-        "Avignon",
-        "Nantes",
-        "Tours"
-      ],
-      "réponse": "Avignon",
-      "anecdote": "Avignon est l'une des rares villes françaises à avoir conservé ses remparts et son centre historique, composé du palais des papes."
-    },
-    {
-      "id": 2,
-      "niveau": "débutant",
-      "question": "Quel diplomate français a succédé au Cardinal de Richelieu ?",
-      "propositions": [
-        "Philippe Mancini",
-        "Antonio Barberini",
-        "Charles de Mantoue",
-        "Jules Mazarin"
-      ],
-      "réponse": "Jules Mazarin",
-      "anecdote": "Le cardinal choisit comme pièce principale de son blason le faisceau de licteur, un signe de romanité."
-    },
-    {
-      "id": 3,
-      "niveau": "débutant",
-      "question": "Quelle reine de France a porté le chapeau dans l'affaire du collier ?",
-      "propositions": [
-        "Marie-Louise",
-        "Marie-Antoinette",
-        "Marie-Thérèse",
-        "Marie-Joséphine"
-      ],
-      "réponse": "Marie-Antoinette",
-      "anecdote": "Les joailliers Boehmer et Bassenge réclamèrent à la reine 1,6 million de livres pour l'achat d'un collier de diamants."
-    },
-    {
-      "id": 4,
-      "niveau": "débutant",
-      "question": "Quand François Mitterrand fut-il élu président de la France pour la première fois ?",
-      "propositions": [
-        "1981",
-        "1976",
-        "1991",
-        "1986"
-      ],
-      "réponse": "1981",
-      "anecdote": "Mitterrand sera élu 21e président de la République française face à Valéry Giscard d'Estaing avec 51 % des suffrages exprimés."
-    },
-    {
-      "id": 5,
-      "niveau": "débutant",
-      "question": "Quelle ville Jeanne d'Arc a-t-elle héroïquement libérée des Anglais ?",
-      "propositions": [
-        "Orléans",
-        "Angers",
-        "Tours",
-        "Le Mans"
-      ],
-      "réponse": "Orléans",
-      "anecdote": "Jeanne d'Arc a été condamnée à être brûlée vive en 1431 après un procès en hérésie conduit par Pierre Cauchon."
-    },
-    {
-      "id": 6,
-      "niveau": "débutant",
-      "question": "Quel homme d'État français fut surnommé le Tigre ou encore le Père la victoire ?",
-      "propositions": [
-        "Clémenceau",
-        "Foch",
-        "Joffre",
-        "Poincaré"
-      ],
-      "réponse": "Clémenceau",
-      "anecdote": "Se désignant comme premier flic de France, Clémenceau réprimera les grèves et mettra fin à la querelle des inventaires."
-    },
-    {
-      "id": 7,
-      "niveau": "débutant",
-      "question": "Quelle héroïne de l'histoire de France était la Pucelle d'Orléans ?",
-      "propositions": [
-        "Rita de Cascia",
-        "Alessandra Scala",
-        "Hélène Duglioli",
-        "Jeanne d'Arc"
-      ],
-      "réponse": "Jeanne d'Arc",
-      "anecdote": "Elle parvint à insuffler aux soldats français une énergie nouvelle et à contraindre les Anglais à lever le siège de la ville."
-    },
-    {
-      "id": 8,
-      "niveau": "débutant",
-      "question": "Sur quelle principauté a régné la maison de Matignon ?",
-      "propositions": [
-        "Foucarmont",
-        "Monaco",
-        "Condé",
-        "Cambrai"
-      ],
-      "réponse": "Monaco",
-      "anecdote": "La maison de Goyon donna à la France, sous l'Ancien Régime, plusieurs maréchaux de France et évêques."
-    },
-    {
-      "id": 9,
-      "niveau": "débutant",
-      "question": "Quel journal a brillé en sortant le premier l'affaire des diamants de Bokassa ?",
-      "propositions": [
-        "Minute",
-        "Charlie Hebdo",
-        "Paris Match",
-        "Canard Enchaîné"
-      ],
-      "réponse": "Canard Enchaîné",
-      "anecdote": "Cette affaire pourrait être une des causes de sa défaite face au candidat du Parti socialiste, François Mitterrand."
-    },
-    {
-      "id": 10,
-      "niveau": "débutant",
-      "question": "Quel Guillaume, duc de Normandie, parfois surnommé le Bâtard, a conquis l'Angleterre ?",
-      "propositions": [
-        "Le Pieux",
-        "Le Chevelu",
-        "Le Hardi",
-        "Le Conquérant"
-      ],
-      "réponse": "Le Conquérant",
-      "anecdote": "Vers 1050, Guillaume épousa Mathilde de Flandre fille de Baudouin V avec qui il aura au moins dix enfants dont quatre fils."
-    },
-    {
-      "id": 11,
-      "niveau": "confirmé",
-      "question": "Quelle ville assiégée Gambetta a-t-il dû quitter en ballon ?",
-      "propositions": [
-        "Toulouse",
-        "Paris",
-        "Lyon",
-        "Rouen"
-      ],
-      "réponse": "Paris",
-      "anecdote": "Gambetta, d'abord réticent, fut sollicité par ses collègues ministres et le 7 octobre 1870, il quitta Paris en ballon monté."
-    },
-    {
-      "id": 12,
-      "niveau": "confirmé",
-      "question": "Quel roi a révoqué l'édit de Nantes en 1685, ayant donné la liberté de religion ?",
-      "propositions": [
-        "François II",
-        "Louis XIV",
-        "Henri IV",
-        "Charles IX"
-      ],
-      "réponse": "Louis XIV",
-      "anecdote": "La promulgation de cet édit a mis fin aux guerres de religion qui avaient ravagé le royaume de France depuis 1572."
-    },
-    {
-      "id": 13,
-      "niveau": "confirmé",
-      "question": "Quel était le surnom du fils de Napoléon 1er et de Marie-Louise ?",
-      "propositions": [
-        "Le Corsaire",
-        "Le Mal aimé",
-        "L'Incapable",
-        "L'Aiglon"
-      ],
-      "réponse": "L'Aiglon",
-      "anecdote": "Jusqu'à sa mort à l'âge de 21 ans, Napoléon II fut reconnu par les bonapartistes comme l'héritier du trône impérial."
-    },
-    {
-      "id": 14,
-      "niveau": "confirmé",
-      "question": "Quel chevalier franc et comte urbain a été trahi par Ganelon au col de Roncevaux ?",
-      "propositions": [
-        "Gauvain",
-        "Marsile",
-        "Perceval",
-        "Roland"
-      ],
-      "réponse": "Roland",
-      "anecdote": "Pour cette raison, Ganelon est d'une certaine manière devenu dans la tradition française l'archétype du félon ou du traître."
-    },
-    {
-      "id": 15,
-      "niveau": "confirmé",
-      "question": "De quelle manière François Ravaillac a-t-il tué le roi Henri IV ?",
-      "propositions": [
-        "Empoisonné",
-        "Décapité",
-        "Poignardé",
-        "Fusillé"
-      ],
-      "réponse": "Poignardé",
-      "anecdote": "Ravaillac sera condamné à mort par le Parlement de Paris au cours d'un procès de dix jours, présidé par Achille 1er de Harlay."
-    },
-    {
-      "id": 16,
-      "niveau": "confirmé",
-      "question": "Quel code régissait la vie d'une grande partie de la cour de Louis XIV ?",
-      "propositions": [
-        "Mayade",
-        "Pourboire",
-        "Étiquette",
-        "Bonjour"
-      ],
-      "réponse": "Étiquette",
-      "anecdote": "L'étiquette gouverne et restreint la manière dont les gens interagissent et sert à exprimer le respect dû à autrui."
-    },
-    {
-      "id": 17,
-      "niveau": "confirmé",
-      "question": "Quel pays Bertrand Du Guesclin a-t-il combattu durant toute sa vie ?",
-      "propositions": [
-        "Allemagne",
-        "Italie",
-        "Pays-Bas",
-        "Angleterre"
-      ],
-      "réponse": "Angleterre",
-      "anecdote": "Bertrand du Guesclin est considéré, selon les sources, soit comme un héros à la loyauté absolue, soit comme un traître."
-    },
-    {
-      "id": 18,
-      "niveau": "confirmé",
-      "question": "Quel âge avait Clovis lorsqu'il fut élu roi des Francs en 481 ?",
-      "propositions": [
-        "10 ans",
-        "12 ans",
-        "14 ans",
-        "16 ans"
-      ],
-      "réponse": "16 ans",
-      "anecdote": "Clovis est considéré dans l'historiographie comme un des personnages historiques les plus importants de l'histoire de France."
-    },
-    {
-      "id": 19,
-      "niveau": "confirmé",
-      "question": "À quelle élection présidentielle s'est présenté pour la première fois Michel Rocard ?",
-      "propositions": [
-        "1969",
-        "1972",
-        "1978",
-        "1975"
-      ],
-      "réponse": "1969",
-      "anecdote": "Michel Rocard fut chargé de la négociation internationale pour les pôles arctique et antarctique de 2009 à sa mort."
-    },
-    {
-      "id": 20,
-      "niveau": "confirmé",
-      "question": "Quel corsaire malouin s'est évadé d'Angleterre et a rejoint St-Malo à la rame ?",
-      "propositions": [
-        "Jean Bart",
-        "Philippe Bequel",
-        "Nicolas Surcouf",
-        "Jean Bernanos"
-      ],
-      "réponse": "Jean Bart",
-      "anecdote": "La bataille navale du Dogger Bank fut livrée en mer du Nord le 17 juin 1696, pendant la guerre de la Ligue d'Augsbourg."
-    },
-    {
-      "id": 21,
-      "niveau": "expert",
-      "question": "Quel droit adopté en 1792 a été rétabli par la loi Naquet en 1884 ?",
-      "propositions": [
-        "Droit au vote",
-        "Droit au divorce",
-        "Droit à l'euthanasie",
-        "Droit à la retraite"
-      ],
-      "réponse": "Droit au divorce",
-      "anecdote": "Devant le nombre élevé de divorces qui se produisit, certaines modifications furent apportées à cette loi sur le divorce."
-    },
-    {
-      "id": 22,
-      "niveau": "expert",
-      "question": "Quel roi a fait installer les premières boîtes aux lettres dans Paris ?",
-      "propositions": [
-        "François II",
-        "Henri IV",
-        "Louis XIV",
-        "Charles IX"
-      ],
-      "réponse": "Louis XIV",
-      "anecdote": "La Poste est issue des relais de poste créés par Louis XI en 1477 pour le transport des messages royaux."
-    },
-    {
-      "id": 23,
-      "niveau": "expert",
-      "question": "À quel fruit les caricaturistes comparaient-ils la tête du roi Louis-Philippe ?",
-      "propositions": [
-        "Poire",
-        "Fraise",
-        "Banane",
-        "Citron"
-      ],
-      "réponse": "Poire",
-      "anecdote": "Il fut caricaturé par Honoré Daumier qui accentua sa bedaine et ses rouflaquettes et le profilera en rat ou perroquet."
-    },
-    {
-      "id": 24,
-      "niveau": "expert",
-      "question": "Quel était l'emblème du régime de Vichy en France pendant la guerre ?",
-      "propositions": [
-        "Croix de Lorraine",
-        "Francisque",
-        "Fleur de lys",
-        "Cosse de genêts"
-      ],
-      "réponse": "Francisque",
-      "anecdote": "La francisque est le nom traditionnel de la hache de jet des Germains occidentaux, que popularisèrent les Francs."
-    },
-    {
-      "id": 25,
-      "niveau": "expert",
-      "question": "De quel roi de France le duc de Sully fut-il le ministre ?",
-      "propositions": [
-        "François II",
-        "Henri IV",
-        "Louis XIV",
-        "Charles IX"
-      ],
-      "réponse": "Henri IV",
-      "anecdote": "Sully eut de brillants conseillers, comme l'économiste Barthélemy de Laffemas, qui développa les manufactures et l'artisanat."
-    },
-    {
-      "id": 26,
-      "niveau": "expert",
-      "question": "Quel roi de la dynastie mérovingienne fut conseillé par Saint Eloi ?",
-      "propositions": [
-        "Sigebert",
-        "Childebert",
-        "Caribert",
-        "Dagobert"
-      ],
-      "réponse": "Dagobert",
-      "anecdote": "Sous son règne, la royauté mérovingienne jette un dernier éclat avant que la réalité du pouvoir ne passe aux maires du palais."
-    },
-    {
-      "id": 27,
-      "niveau": "expert",
-      "question": "Combien de prisonniers y avait-il dans la Bastille le 14 juillet 1789 ?",
-      "propositions": [
-        "47",
-        "7",
-        "1 257",
-        "167"
-      ],
-      "réponse": "7",
-      "anecdote": "L'événement fut sans précédent par ses répercussions, par ses implications politiques et son retentissement symbolique."
-    },
-    {
-      "id": 28,
-      "niveau": "expert",
-      "question": "Quelle expression a été utilisée pour la première fois à propos du Père Joseph ?",
-      "propositions": [
-        "Stratège bleu",
-        "Suprême rouge",
-        "Bérurier noir",
-        "Éminence grise"
-      ],
-      "réponse": "Éminence grise",
-      "anecdote": "François Leclerc du Tremblay était un capucin surnommé par ses détracteurs l'éminence grise du cardinal de Richelieu."
-    },
-    {
-      "id": 29,
-      "niveau": "expert",
-      "question": "Quel roi, connu sous le titre de comte d'Artois, a succédé à Louis XVIII ?",
-      "propositions": [
-        "Charles X",
-        "Henri IV",
-        "François II",
-        "Jean II"
-      ],
-      "réponse": "Charles X",
-      "anecdote": "Charles X est le dernier Bourbon (de la branche aînée) à avoir régné mais également le 68e et dernier roi de France."
-    },
-    {
-      "id": 30,
-      "niveau": "expert",
-      "question": "Quel évêque a baptisé Clovis à Reims un 25 décembre ?",
-      "propositions": [
-        "Saint Paul",
-        "Saint Justin",
-        "Saint Rémi",
-        "Saint André"
-      ],
-      "réponse": "Saint Rémi",
-      "anecdote": "Dans le diocèse de Reims, il est fêté le 1er octobre conformément à une tradition locale remontant à la fin du VIe siècle."
-    }
-  ],
-  "Orthoquizz (Des mots souvent difficiles à écrire)": [
-    {
-      "id": 1,
-      "niveau": "débutant",
-      "question": "Où faut-il généralement d'abord se rendre en arrivant à l'hôpital ?",
-      "propositions": [
-        "Acueil",
-        "Acceuil",
-        "Aceuil",
-        "Accueil"
-      ],
-      "réponse": "Accueil",
-      "anecdote": "Dans le monde du travail, l'accueil consiste à orienter un patient, un client ou un visiteur et à l'aider dans ses démarches."
-    },
-    {
-      "id": 2,
-      "niveau": "débutant",
-      "question": "Quel engin muni d'une planche et de deux roues est désormais électrique ?",
-      "propositions": [
-        "Trottinette",
-        "Trottinete",
-        "Trotinete",
-        "Trotinette"
-      ],
-      "réponse": "Trottinette",
-      "anecdote": "Servant de jouet d'enfant en 1930, la trottinette est devenue un moyen de transport individuel urbain depuis les années 2010."
-    },
-    {
-      "id": 3,
-      "niveau": "débutant",
-      "question": "À quoi procède un avion qui s'apprête à rejoindre la terre ferme ?",
-      "propositions": [
-        "Atterrisage",
-        "Atterissage",
-        "Atterrissage",
-        "Aterrissage"
-      ],
-      "réponse": "Atterrissage",
-      "anecdote": "Au début de l'aviation, le terme employé en place de l'atterrissage était la prise de terrain, terme toujours utilisé en parapente."
-    },
-    {
-      "id": 4,
-      "niveau": "débutant",
-      "question": "Quelle idée ou concept semble parfois être le remède à tous les maux ?",
-      "propositions": [
-        "Panascée",
-        "Panacée",
-        "Pannacée",
-        "Panassée"
-      ],
-      "réponse": "Panacée",
-      "anecdote": "Le mot est parfois redoublé, on ne parle plus simplement de panacée, mais de panacée universelle, ce qui est un pléonasme."
-    },
-    {
-      "id": 5,
-      "niveau": "débutant",
-      "question": "Quelle simple supposition peut être étudiée, confrontée, utilisée ou discutée ?",
-      "propositions": [
-        "Hypotèse",
-        "Hipothèse",
-        "Hyppothèse",
-        "Hypothèse"
-      ],
-      "réponse": "Hypothèse",
-      "anecdote": "Une hypothèse (sentimentale, religieuse ou politique) utilisée sans intention de la vérifier constitue dans ce cas un postulat."
-    },
-    {
-      "id": 6,
-      "niveau": "débutant",
-      "question": "Quelle bande de faible hauteur est souvent placée au pied des murs ?",
-      "propositions": [
-        "Plynthe",
-        "Plinte",
-        "Plainte",
-        "Plinthe"
-      ],
-      "réponse": "Plinthe",
-      "anecdote": "Élément décoratif et utilitaire, elle permet entre autres de cacher des raccords ou des espaces laissés par les poseurs de parquet."
-    },
-    {
-      "id": 7,
-      "niveau": "débutant",
-      "question": "Quelle science a pour objet la recherche de l'origine des mots ?",
-      "propositions": [
-        "Éthymologie",
-        "Hétymologie",
-        "Étymologie",
-        "Étimologie"
-      ],
-      "réponse": "Étymologie",
-      "anecdote": "L'étymologie s'appuie sur des lois de la phonétique historique (ascendance de ces mots) et sur l'évolution sémantique des termes."
-    },
-    {
-      "id": 8,
-      "niveau": "débutant",
-      "question": "Que dit-on d'une femme qui engage une relation durable pour de l'argent ?",
-      "propositions": [
-        "Vénnale",
-        "Vénale",
-        "Vainale",
-        "Veinale"
-      ],
-      "réponse": "Vénale",
-      "anecdote": "Ce terme est souvent utilisé lorsqu'une belle et jeune femme se marie avec un homme riche et beaucoup plus âgé qu'elle."
-    },
-    {
-      "id": 9,
-      "niveau": "débutant",
-      "question": "Quelle croyance semble être manifestement erronée au premier abord ?",
-      "propositions": [
-        "Mithe",
-        "Myte",
-        "Mythe",
-        "Mytthe"
-      ],
-      "réponse": "Mythe",
-      "anecdote": "Cette tradition orale propose une explication pour certains aspects fondamentaux du monde, qui a forgé ou qui véhicule ces mythes."
-    },
-    {
-      "id": 10,
-      "niveau": "débutant",
-      "question": "Quelle cavité verticale, souvent profonde, peut être naturelle ou artificielle ?",
-      "propositions": [
-        "Puit",
-        "Puis",
-        "Puits",
-        "Puy"
-      ],
-      "réponse": "Puits",
-      "anecdote": "Un puits est, à l'origine, une cavité physique verticale, connectant deux niveaux de profondeurs différentes, pénétrables ou non."
-    },
-    {
-      "id": 11,
-      "niveau": "confirmé",
-      "question": "Quelle plante annuelle ou vivace est symbole de longévité en Chine ?",
-      "propositions": [
-        "Crysanthème",
-        "Chrysantème",
-        "Chrysanthème",
-        "Crisanthème"
-      ],
-      "réponse": "Chrysanthème",
-      "anecdote": "Les plus connus des chrysanthèmes sont les chrysanthèmes d'automne, ou chrysanthèmes des fleuristes (pomponnettes)."
-    },
-    {
-      "id": 12,
-      "niveau": "confirmé",
-      "question": "Quel mammifère amphibien adulte n'a pas d'autre prédateur que l'homme ?",
-      "propositions": [
-        "Hipopotame",
-        "Hippopotame",
-        "Hipoppotame",
-        "Hypopotame"
-      ],
-      "réponse": "Hippopotame",
-      "anecdote": "Pour séduire une femelle les hippopotames peuvent se battre jusqu'à la mort, se combattant à l'aide de leurs défenses."
-    },
-    {
-      "id": 13,
-      "niveau": "confirmé",
-      "question": "Quelle plante Sim n'aimait-il pas dans une chanson de 1971 ?",
-      "propositions": [
-        "Rododindron",
-        "Rhododindron",
-        "Rhododendron",
-        "Rododundron"
-      ],
-      "réponse": "Rhododendron",
-      "anecdote": "On les rencontre dans les régions montagneuses, telles que les Alpes, les Pyrénées, le Caucase, les Carpates et l'Himalaya."
-    },
-    {
-      "id": 14,
-      "niveau": "confirmé",
-      "question": "Quelle infection à la couleur dorée est potentiellement mortelle ?",
-      "propositions": [
-        "Stafylocoque",
-        "Staphilocoque",
-        "Stafilocoque",
-        "Staphylocoque"
-      ],
-      "réponse": "Staphylocoque",
-      "anecdote": "Si un patient n'est pas traité suffisamment tôt, et notamment s'il est immunodéprimé, il peut développer une septicémie."
-    },
-    {
-      "id": 15,
-      "niveau": "confirmé",
-      "question": "Quelle mer, presque entièrement fermée, entoure une grande partie de l'Italie ?",
-      "propositions": [
-        "Méditerranée",
-        "Médittérrannée",
-        "Méditteranée",
-        "Métiterrannée"
-      ],
-      "réponse": "Méditerranée",
-      "anecdote": "L'ouverture de la mer Méditerranée vers l'océan Atlantique par le détroit de Gibraltar est large d'environ quatorze kilomètres."
-    },
-    {
-      "id": 16,
-      "niveau": "confirmé",
-      "question": "Quel animal semi-aquatique est endémique de l'est de l'Australie ?",
-      "propositions": [
-        "Ornitorynque",
-        "Ornitorinque",
-        "Ornithorynque",
-        "Ornythorinque"
-      ],
-      "réponse": "Ornithorynque",
-      "anecdote": "L'ornithorynque est l'une des cinq espèces de l'ordre des monotrèmes, seul ordre de mammifères qui pond des oeufs."
-    },
-    {
-      "id": 17,
-      "niveau": "confirmé",
-      "question": "Quel thérapeute irez-vous consulter pour retrouver l'usage d'une main ?",
-      "propositions": [
-        "Kinésitérapeute",
-        "Kynésithérapeute",
-        "Kinésythérapeute",
-        "Kinésithérapeute"
-      ],
-      "réponse": "Kinésithérapeute",
-      "anecdote": "Le kinésithérapeute cherchera à augmenter les capacités fonctionnelles de la personne dans le cadre de la rééducation."
-    },
-    {
-      "id": 18,
-      "niveau": "confirmé",
-      "question": "Quelle situation offrant une alternative mène à des résultats différents ?",
-      "propositions": [
-        "Dilemme",
-        "Dilème",
-        "Dylème",
-        "Dilemne"
-      ],
-      "réponse": "Dilemme",
-      "anecdote": "Généralement, les possibilités offertes sont présentées aussi attirantes ou repoussantes l'une que l'autre, mais sans intérêt."
-    },
-    {
-      "id": 19,
-      "niveau": "confirmé",
-      "question": "Quel moyen permet d'augmenter la mémorisation de l'information ?",
-      "propositions": [
-        "Mnémotechnique",
-        "Maimotechnique",
-        "Mémotechnique",
-        "Mnaimotechnique"
-      ],
-      "réponse": "Mnémotechnique",
-      "anecdote": "La première référence connue à un mnémonique est l'Art de mémoire, décrite dans « De Oratore » par Cicéron."
-    },
-    {
-      "id": 20,
-      "niveau": "confirmé",
-      "question": "Sur quelle structure rigide les éléments d'un véhicule terrestre sont-ils fixés ?",
-      "propositions": [
-        "Châssis",
-        "Chassi",
-        "Chassis",
-        "Châssit"
-      ],
-      "réponse": "Châssis",
-      "anecdote": "Par opposition à la carrosserie, on peut parler de châssis pour désigner l'ensemble des structures participant à la fonction de roulage."
-    },
-    {
-      "id": 21,
-      "niveau": "expert",
-      "question": "Quel soulèvement armé peut parfois avoir lieu contre le pouvoir en place ?",
-      "propositions": [
-        "Inssurection",
-        "Inssurrection",
-        "Insurrection",
-        "Insurexion"
-      ],
-      "réponse": "Insurrection",
-      "anecdote": "Constitue un mouvement insurrectionnel toute violence collective de nature à mettre en péril les institutions de la République."
-    },
-    {
-      "id": 22,
-      "niveau": "expert",
-      "question": "Quelle maladie grave du foie résulte d'une consommation chronique d'alcool ?",
-      "propositions": [
-        "Cyrrhose",
-        "Cyrose",
-        "Cirrose",
-        "Cirrhose"
-      ],
-      "réponse": "Cirrhose",
-      "anecdote": "La fibrose entraîne une élévation de la pression sanguine un épanchement de liquide dans l'abdomen susceptible de s'infecter."
-    },
-    {
-      "id": 23,
-      "niveau": "expert",
-      "question": "Quels organes de la gorge sont en partie visibles au fond de la bouche ?",
-      "propositions": [
-        "Ammydales",
-        "Amigdales",
-        "Amygdales",
-        "Ammidales"
-      ],
-      "réponse": "Amygdales",
-      "anecdote": "Elles jouent un rôle essentiel dans la défense immunitaire car situées, au niveau du pharynx, à l'entrée des voies respiratoires."
-    },
-    {
-      "id": 24,
-      "niveau": "expert",
-      "question": "Quelle transmission d'un bien d'un défunt est faite à titre gratuit ?",
-      "propositions": [
-        "Lègue",
-        "Leg",
-        "Legs",
-        "Legg"
-      ],
-      "réponse": "Legs",
-      "anecdote": "Le legs se distingue de la donation (effet du vivant et irrévocable) car il ne prend effet qu'au décès, et il est révocable."
-    },
-    {
-      "id": 25,
-      "niveau": "expert",
-      "question": "Qu'avez-vous probablement si vos selles sont fort liquides ?",
-      "propositions": [
-        "Dhiarrée",
-        "Diarrhée",
-        "Diarrée",
-        "Diarée"
-      ],
-      "réponse": "Diarrhée",
-      "anecdote": "Selon l'OMS, il s'agit de l'émission d'au moins trois selles molles ou liquides par jour, ou à une fréquence anormale pour l'individu."
-    },
-    {
-      "id": 26,
-      "niveau": "expert",
-      "question": "Quel os résulte de la soudure de quatre vertèbres atrophiées ?",
-      "propositions": [
-        "Coccyx",
-        "Cocyx",
-        "Coxis",
-        "Coccis"
-      ],
-      "réponse": "Coccyx",
-      "anecdote": "Le coccyx est un tout petit os triangulaire situé à l'extrémité de la colonne vertébrale chez certains primates dont l'Homme."
-    },
-    {
-      "id": 27,
-      "niveau": "expert",
-      "question": "Quelle gomme est à peu près similaire au baume de La Mecque ?",
-      "propositions": [
-        "Myrrhe",
-        "Mirre",
-        "Myre",
-        "Myrre"
-      ],
-      "réponse": "Myrrhe",
-      "anecdote": "La myrrhe fait partie des cadeaux apportés à Jésus par les rois mages, ce que rapporte l'Évangile selon Matthieu."
-    },
-    {
-      "id": 28,
-      "niveau": "expert",
-      "question": "Qu'observe-t-on sur la peau lorsque du sang quitte les vaisseaux ?",
-      "propositions": [
-        "Eccymose",
-        "Ecchymose",
-        "Ecquimose",
-        "Equimose"
-      ],
-      "réponse": "Ecchymose",
-      "anecdote": "Il s'agit de ce que l'on appelle plus communément un bleu, c'est à dire un épanchement diffus de sang sous la peau."
-    },
-    {
-      "id": 29,
-      "niveau": "expert",
-      "question": "Quelles sommes sont versées par un client avant une livraison de biens ?",
-      "propositions": [
-        "Arrhes",
-        "Hares",
-        "Ares",
-        "Arhes"
-      ],
-      "réponse": "Arrhes",
-      "anecdote": "Dans le cas d'une vente, l'acheteur se réserve ainsi le droit de ne pas donner suite (le vendeur conservant alors les arrhes données)."
-    },
-    {
-      "id": 30,
-      "niveau": "expert",
-      "question": "Quelle fleur symbolise l'ardeur du coeur dans le langage des fleurs ?",
-      "propositions": [
-        "Fuchsia",
-        "Fuchia",
-        "Fuschia",
-        "Fushia"
-      ],
-      "réponse": "Fuchsia",
-      "anecdote": "Les fuchsias sont des plantes très cultivées dans les jardins d'ornement, bien qu'elles ne soient pas rustiques en régions tempérées."
-    }
-  ],
-
-  "Nintendo (Pour les nostalgiques et les autres)": [
-  {
-    "id": 1,
-    "niveau": "débutant",
-    "question": "Quel plombier de jeu vidéo, vêtu de rouge, est également la mascotte de la société Nintendo ?",
-    "propositions": [
-      "Luigi",
-      "Peach",
-      "Mario",
-      "Wario"
-    ],
-    "réponse": "Mario",
-    "anecdote": "Mario est facilement reconnaissable à sa moustache, sa salopette, ses gants blancs et sa casquette rouge marquée d'un M."
-  },
-  {
-    "id": 2,
-    "niveau": "débutant",
-    "question": "Sur quelle console de chez Nintendo sont sortis les deux premiers jeux « Pokémon » ?",
-    "propositions": [
-      "Game Boy",
-      "Game Cube",
-      "Nintendo DS",
-      "Super Nintendo"
-    ],
-    "réponse": "Game Boy",
-    "anecdote": "Le joueur contrôle le personnage principal via une vue aérienne et le dirige dans l'ensemble de la région fictive de Kanto."
-  },
-  {
-    "id": 3,
-    "niveau": "débutant",
-    "question": "Lequel de ces personnages de jeu ne fait pas partie de l'univers de Mario ?",
-    "propositions": [
-      "Luigi",
-      "Mylord",
-      "Peach",
-      "Wario"
-    ],
-    "réponse": "Mylord",
-    "anecdote": "La série « Mario » est la plus vendue de l'histoire du jeu vidéo, avec plus de 195 millions d'exemplaires écoulés."
-  },
-  {
-    "id": 4,
-    "niveau": "débutant",
-    "question": "Quel jeu vidéo de sport, développé et édité par Nintendo, était offert pour l'achat d'une Wii ?",
-    "propositions": [
-      "Wii Mix",
-      "Wii Games",
-      "Wii Play",
-      "Wii Sports"
-    ],
-    "réponse": "Wii Sports",
-    "anecdote": "Le jeu a été inclus dans un paquetage promotionnel avec la Wii sur tous les territoires, excepté au Japon et en Corée du Sud."
-  },
-  {
-    "id": 5,
-    "niveau": "débutant",
-    "question": "Quel personnage fictif de jeu vidéo représente la fidèle monture de Mario ?",
-    "propositions": [
-      "Birbo",
-      "Peach",
-      "Yoshi",
-      "Kirby"
-    ],
-    "réponse": "Yoshi",
-    "anecdote": "Yoshi a fait sa première apparition (dans un jeu) dans le niveau 1-2 de « Super Mario World » sur Super Nintendo, sorti en 1990 au Japon."
-  },
-  {
-    "id": 6,
-    "niveau": "débutant",
-    "question": "Quel gorille costaud fut un des premiers personnages célèbres de la marque Nintendo ?",
-    "propositions": [
-      "Donkey Kong",
-      "King Kong",
-      "Mookie",
-      "Abu"
-    ],
-    "réponse": "Donkey Kong",
-    "anecdote": "Créé par Shigeru Miyamoto, ce gorille est à l'origine l'ennemi de Jumpman, son maître, dont il a enlevé la fiancée."
-  },
-  {
-    "id": 7,
-    "niveau": "débutant",
-    "question": "Que signifie le sigle DS de la Nintendo DS, console portable sortie en 2005 en Europe ?",
-    "propositions": [
-      "Detect System",
-      "Data Super",
-      "Direct Shot",
-      "Dual Screen"
-    ],
-    "réponse": "Dual Screen",
-    "anecdote": "La Nintendo DS est devenue la console la plus vendue de tous les temps au cours du mois de décembre 2012."
-  },
-  {
-    "id": 8,
-    "niveau": "débutant",
-    "question": "Parmi ces catégories de Game Boy, laquelle ne pourrez-vous jamais trouver en magasin ?",
-    "propositions": [
-      "Advance",
-      "Pocket",
-      "Color",
-      "Printer"
-    ],
-    "réponse": "Printer",
-    "anecdote": "Malgré la sortie de consoles portables technologiquement plus avancées, la Game Boy a véritablement connu un franc succès."
-  },
-  {
-    "id": 9,
-    "niveau": "débutant",
-    "question": "Quel accessoire prévu pour être connecté à la console Wii est associé au jeu « Wii Fit » ?",
-    "propositions": [
-      "Wii Gun",
-      "Wii Shot",
-      "Wii Zapper",
-      "Wii Balance Board"
-    ],
-    "réponse": "Wii Balance Board",
-    "anecdote": "La Wii Balance Board est un accessoire en forme de pèse-personne électronique conçu pour les consoles de jeu Wii et Wii U."
-  },
-  {
-    "id": 10,
-    "niveau": "débutant",
-    "question": "Dans l'univers Nintendo, quel habitant de Dream Land a la forme d'une boule rose ?",
-    "propositions": [
-      "Kirby",
-      "Yoshi",
-      "Pinky",
-      "Dadidou"
-    ],
-    "réponse": "Kirby",
-    "anecdote": "La particularité de Kirby est qu'il peut aspirer tout ce qu'il voit, que ce soit des objets ou des ennemis."
-  },
-
-  {
-    "id": 11,
-    "niveau": "confirmé",
-    "question": "Quelle arme est utilisée par Luigi dans « Luigi's Mansion » sous le nom Ectoblast 3000 ?",
-    "propositions": [
-      "Marteau",
-      "Raquette",
-      "Lance-flammes",
-      "Aspirateur"
-    ],
-    "réponse": "Aspirateur",
-    "anecdote": "Le jeu retrace les aventures de Luigi dans un manoir qu'il a gagné lors d'un concours auquel il n'a jamais participé."
-  },
-  {
-    "id": 12,
-    "niveau": "confirmé",
-    "question": "Quel a été le tout premier nom de Mario, apparu en 1981 dans le jeu « Donkey Kong » ?",
-    "propositions": [
-      "Jumpman",
-      "Zelda",
-      "Yoshi",
-      "Link"
-    ],
-    "réponse": "Jumpman",
-    "anecdote": "Les jeux de la série « Super Mario » ont joué un rôle important dans l'évolution du jeu de plates-formes."
-  },
-  {
-    "id": 13,
-    "niveau": "confirmé",
-    "question": "Quel était le nom de prototype de la Wii depuis la conférence de presse avant l'E3 de 2004 ?",
-    "propositions": [
-      "Nintendo 64",
-      "Super GameCube",
-      "Wiitendo",
-      "Revolution"
-    ],
-    "réponse": "Revolution",
-    "anecdote": "La Wii était jusqu'alors évoquée sous les noms de GCNext et de N5 (N5 signifiant cinquième génération de consoles Nintendo)."
-  },
-  {
-    "id": 14,
-    "niveau": "confirmé",
-    "question": "Quelle ville de la région de Kanto est la ville natale de Sacha dans « Pokémon » ?",
-    "propositions": [
-      "Bourg Palette",
-      "Kong City",
-      "Dream Land",
-      "Sacha Land"
-    ],
-    "réponse": "Bourg Palette",
-    "anecdote": "Kanto est la région utilisée dans les versions Vert (Japon uniquement), Rouge, Bleu, Jaune, Or, Argent et Rouge Feu."
-  },
-  {
-    "id": 15,
-    "niveau": "confirmé",
-    "question": "Quel accessoire transforme la wiimote et le nunchuk Wii en un simulateur de mitraillette ?",
-    "propositions": [
-      "Wii Wiz",
-      "Wii Zapper",
-      "Wii Shot",
-      "Wii Gun"
-    ],
-    "réponse": "Wii Zapper",
-    "anecdote": "Le Wii Zapper, vendu avec « Link's Crossbow Training », a reçu ce nom en référence au pistolet optique du NES, le NES Zapper."
-  },
-  {
-    "id": 16,
-    "niveau": "confirmé",
-    "question": "Créée en 1983, quelle fut la première console de salon de chez Nintendo ?",
-    "propositions": [
-      "Wii",
-      "Nintendo 64",
-      "Famicom",
-      "GameCube"
-    ],
-    "réponse": "Famicom",
-    "anecdote": "Nintendo a élargi sa clientèle en exportant en 1985 aux États-Unis la console rebaptisée Nintendo Entertainment System."
-  },
-  {
-    "id": 17,
-    "niveau": "confirmé",
-    "question": "À quelle console, au design très similaire, la Nintendo DSi a-t-elle succédé ?",
-    "propositions": [
-      "DS",
-      "Advance",
-      "DS Lite",
-      "Game Boy"
-    ],
-    "réponse": "DS Lite",
-    "anecdote": "La DSi est équipée de deux caméras, un lecteur de cartes SD, un navigateur web Opera intégré et un lecteur audio."
-  },
-  {
-    "id": 18,
-    "niveau": "confirmé",
-    "question": "Laquelle de ces consoles révolutionnaires de Nintendo peut fonctionner avec un stylet ?",
-    "propositions": [
-      "Famicom",
-      "GameCube",
-      "Nintendo 64",
-      "DS"
-    ],
-    "réponse": "DS",
-    "anecdote": "Son jeu phare, « New Super Mario Bros. », reste quant à lui l'un des jeux les plus vendus du monde."
-  },
-  {
-    "id": 19,
-    "niveau": "confirmé",
-    "question": "Quel message apparaît fréquemment derrière l'héroïne du jeu « Donkey Kong » ?",
-    "propositions": [
-      "PUSH",
-      "SMILE",
-      "BONUS",
-      "HELP !"
-    ],
-    "réponse": "HELP !",
-    "anecdote": "Malgré les doutes initiaux de l'équipe américaine, « Donkey Kong » fut un succès énorme au Japon et en Amérique du Nord."
-  },
-  {
-    "id": 20,
-    "niveau": "confirmé",
-    "question": "Laquelle de ces consoles fut considérée par Nintendo comme un échec commercial ?",
-    "propositions": [
-      "3DS",
-      "Wii",
-      "Virtual Boy",
-      "Game Cube"
-    ],
-    "réponse": "Virtual Boy",
-    "anecdote": "Le Virtual Boy est la console la moins vendue dans l'histoire des consoles de jeu vidéo de Nintendo (770 000 unités vendues)."
-  },
-  {
-    "id": 21,
-    "niveau": "expert",
-    "question": "Quel petit astronaute est un personnage imaginaire et emblématique de Nintendo ?",
-    "propositions": [
-      "Louie",
-      "Kirby",
-      "Olimar",
-      "Pikmin"
-    ],
-    "réponse": "Olimar",
-    "anecdote": "Olimar est équipé d'un scaphandre qu'il met toujours sur la Planète Lointaine car, pour lui, l'oxygène est toxique."
-  },
-  {
-    "id": 22,
-    "niveau": "expert",
-    "question": "Quel était le tout premier métier de Mario avant de devenir plombier dans « Mario Bros. » ?",
-    "propositions": [
-      "Magicien",
-      "Pizzaïolo",
-      "Charpentier",
-      "Boulanger"
-    ],
-    "réponse": "Charpentier",
-    "anecdote": "Le nom de Mario aurait été choisi en l'honneur du propriétaire des locaux de la société Nintendo of America de l'époque, Mario Segali."
-  },
-  {
-    "id": 23,
-    "niveau": "expert",
-    "question": "Quel était le nom de prototype de la  console de jeux vidéo de salon GameCube ?",
-    "propositions": [
-      "Revolution",
-      "Dolphin",
-      "Game 128",
-      "Famicom"
-    ],
-    "réponse": "Dolphin",
-    "anecdote": "C'est le 24 août 2000 que la machine est officiellement présentée avec son nouveau nom, la GameCube."
-  },
-  {
-    "id": 24,
-    "niveau": "expert",
-    "question": "Dans « Super Mario Kart », chaque course compte chacune combien de tours ?",
-    "propositions": [
-      "5",
-      "4",
-      "2",
-      "3"
-    ],
-    "réponse": "5",
-    "anecdote": "Dans « Super Mario Kart », le joueur contrôle l'un des huit personnages issus de l'univers « Super Mario »."
-  },
-  {
-    "id": 25,
-    "niveau": "expert",
-    "question": "Dans quelle ville se trouve le siège de la société Nintendo, fondée par Fusajiro Yamauchi ?",
-    "propositions": [
-      "Pékin",
-      "Shanghai",
-      "Kyoto",
-      "Tokyo"
-    ],
-    "réponse": "Kyoto",
-    "anecdote": "Nintendo est l'une des rares entreprises de jeu vidéo à avoir su faire rentrer certaines de ses licences, en particulier « Mario » ou « Pokémon »."
-  },
-  {
-    "id": 26,
-    "niveau": "expert",
-    "question": "Quelle déesse a créé la vie dans le jeu vidéo phare « Zelda : Ocarina of time » ?",
-    "propositions": [
-      "Farore",
-      "Eikichi",
-      "Nayru",
-      "Din"
-    ],
-    "réponse": "Farore",
-    "anecdote": "Les trois Déesses d'Hyrule sont Din, déesse de la Force, Nayru, déesse de la Sagesse et du Temps et Farore, déesse du Courage."
-  },
-  {
-    "id": 27,
-    "niveau": "expert",
-    "question": "Que produisait la société Nintendo avant de développer des jeux vidéo ?",
-    "propositions": [
-      "Dés à jouer",
-      "Livres",
-      "Montres",
-      "Cartes à jouer"
-    ],
-    "réponse": "Cartes à jouer",
-    "anecdote": "C'est à partir des années 1970 que la société Nintendo a diversifié ses activités en produisant des jouets et des bornes d'arcade."
-  },
-  {
-    "id": 28,
-    "niveau": "expert",
-    "question": "Quelle est le nom de la deuxième génération de console Nintendo DS ?",
-    "propositions": [
-      "DSi",
-      "DS Lite",
-      "Advance",
-      "DS3D"
-    ],
-    "réponse": "DS Lite",
-    "anecdote": "La Nintendo DS Lite, avec ses 93 millions de ventes, est aujourd'hui la console portable la mieux vendue de tous les temps."
-  },
-  {
-    "id": 29,
-    "niveau": "expert",
-    "question": "En quelle année la société Nintendo est-elle entrée en bourse ?",
-    "propositions": [
-      "1992",
-      "1972",
-      "1982",
-      "1962"
-    ],
-    "réponse": "1962",
-    "anecdote": "C'est grâce à un contrat signé avec Disney en 1959 que la société prend une envergure internationale et entre en bourse en 1962."
-  },
-  {
-    "id": 30,
-    "niveau": "expert",
-    "question": "Comment se prénomme la petite amie de Jumpman dans « Donkey Kong » ?",
-    "propositions": [
-      "Lady",
-      "Pauline",
-      "Daisy",
-      "Zelda"
-    ],
-    "réponse": "Lady",
-    "anecdote": "Maltraité par le charpentier, Donkey Kong s'échappe et kidnappe la petite amie de Jumpman, connue sous le nom de Lady."
-  }
-]         
+  ]
 
 }
   
