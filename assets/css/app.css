@@ -1,0 +1,57 @@
+/* Général */
+
+* { /* "*" Permet de prendre tout du fichier html, on met ensuite les valeurs à 0 pour que tout colle (qu'il n'y est pas d'espace blanc sur les cotés) */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+a{ /* Je prends tous les liens du fichier (plus rapide) */
+    text-decoration: none; /* et je modifie le style basique des liens (qui est souligné)*/
+}
+
+/* Fin Général */
+
+/* --------------------------------------------------------------------------------------------------------------- */
+
+/* Header */
+nav{
+    margin-bottom: 2%;
+    padding: 1% 0;
+    box-shadow: 0 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+
+.logo{
+    width: 40px;
+}
+/* Fin Header */
+
+/* Main */
+body{
+    background: url('../img/cool-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Fin Main */
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 2%;
+    padding: 2% 0;
+}
+
+footer p{
+    font-weight: bold;
+}
+/* Fin Footer */
