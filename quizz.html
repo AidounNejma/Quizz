@@ -22,27 +22,27 @@
     </header>
     <main>
         <h1 class="pageTitle">Quizz <span class="pageTitleChange"> </span></h1>
-        <h2 class="numberQuestion">Question n°<span class="number"></span>/10</h2>
-        <img src="assets/img/quizz_html/Question/1.jpeg" alt="" class="img">
-        <h3 class="question">Quelle balise doit être utilisée pour avoir la taille la plus grande ?</h3>
-        <form action="get">
+        <h2 class="numberQuestion">Question n°<span class="number" id="number"></span>/10</h2>
+        <img src="assets/img/quizz_html/Question/1.jpeg" alt="" class="img" id="img">
+        <h3 class="question" id="question"></h3>
+        <form action="">
             <div class="answers">
-                <input type="radio">
-                <label for="huey">Huey</label>
+                <input type="radio" class="suggestionsInput" value="">
+                <label for="huey" class="suggestionsLabel"></label>
             </div>
             <div class="answers">
-                <input type="radio">
-                <label for="huey">Huey</label>
+                <input type="radio" class="suggestionsInput">
+                <label for="huey" class="suggestionsLabel"></label>
             </div>
             <div class="answers">
-                <input type="radio">
-                <label for="huey">Huey</label>
+                <input type="radio" class="suggestionsInput">
+                <label for="huey" class="suggestionsLabel"></label>
             </div>
             <div class="answers">
-                <input type="radio">
-                <label for="huey">Huey</label>
+                <input type="radio" class="suggestionsInput">
+                <label for="huey" class="suggestionsLabel"></label>
             </div>
-            <button type="submit" class="next">Suivant</button>
+            <button type="submit" class="next" id="next">Suivant</button>
         </form>
     </main>
     <footer>
