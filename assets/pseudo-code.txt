@@ -48,8 +48,6 @@
             elem.backgroundColor = "red"
         }
     }
-   
-    
 
 8 - Gestion des erreurs
     => Condition pour gérer les erreurs dans chaque fonction: 

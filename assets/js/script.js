@@ -28,7 +28,17 @@ let submit = document.getElementById('submit');
 //console.log(submit)
 /* --------------------------------------------------------------- */
 
+/* Variables qui vont nous être utiles dans les fonctions */
+let currentArrayIndex = 0; /* Pour se positionner dans l'index de mon array */
+let questionCounter = 0; /* Pour compter le nombre de question qu'on a fait */
+let score = 0; /* Pour incrémenter le score */
+let numberIncrement = 0;  //Numéro des questions 
+var questionArray = [];
+
+/* --------------------------------------------------------------- */
+
 /* Récupération de la variable passée dans l'URL */
+
 var currentUrl = document.location.href;
 //console.log(' URL : \n' + currentUrl);
 var currentUrl = currentUrl.replace(/\/$/, ""); //Je supprimer le dernier slash de l'url 
@@ -72,6 +82,13 @@ window.onload = firstPage();
 
 /* --------------------------------------------------------------- */
 
+/* Fonction qui va faire un tableau aléatoire */
+const shuffleArray = (array) =>{
+    array.sort((a, b) => 0.5 - Math.random());
+}
+
+/* --------------------------------------------------------------- */
+
 /* Appel du fichier JSON  */
 const url = 'package.json'; /* Création constante contenant l'url de notre fichier JSON */
 
@@ -103,49 +120,48 @@ const getData = async() => { //Fonction asyncrone pour récupérer les données 
         return data.Javascript;
     }
 }
-
+window.onload = getData();
 /* --------------------------------------------------------------- */
 
-/* Fonction qui va faire un tableau aléatoire */
-const shuffleArray = (array) =>{
-    array.sort((a, b) => 0.5 - Math.random());
+/* Copie de l'array */
+
+const copyArray = async(data)=>{
+    const myData = await getData(data);
+    //console.log(myData)
+    questionArray.push(...myData);
+    return questionArray;
+
+    //console.log(questionArray);
 }
 
+window.onload = copyArray(); // j'appelle ma fonction au chargement de la page 
+//console.log(questionArray);
 /* --------------------------------------------------------------- */
 
 /* Fonction pour afficher tout ça */
-const displayQuizz = async(data)=>{
-    var arrayCopied = await copyArray(data);
-    console.log(arrayCopied)
-    displayQuestion(arrayCopied);
-    //console.log(myData)
-}
-
-const copyArray = async(data)=>{
-    var myData = await getData(data);
-    const promises = [];
-    promises.push(myData);
-    return promises[0];
+function displayQuizz(){
+    
+    displayQuestion(questionArray);
 }
 
 /* --------------------------------------------------------------- */
-
+var index = 0;
 /* Fonction qui va afficher les questions */
-const displayQuestion = (data) =>{
+function displayQuestion(data){
     eraseFirstPage();
-
-    let numberIncrement = 1; /* Numéro des questions */
-    number.innerHTML = numberIncrement;/* On l'attribut à l'endroit du numéro des questions  */
-    numberIncrement =+ 1; /* pour incrémenter */
-    
-    const questionsHTMLString = data.map(questions =>{
-        question.innerHTML = questions.question;
-        img.src = questions.image;
+    console.log(data);
+    number.innerHTML = index;
+    if(index < data.length){
+        index++;
+        question.innerHTML = data[index].question;
+        img.src = data[index].image;
         for(let n = 0; n < 4; n++){
-        suggestionsLabel[n].innerHTML = questions.propositions[n];
-        suggestionsInput[n].value = questions.propositions[n];
+        suggestionsLabel[n].innerHTML = data[index].propositions[n];
+        suggestionsLabel[n].setAttribute("for", data[index].propositions[n]);
+        suggestionsInput[n].setAttribute("value", data[index].propositions[n]);
+        suggestionsInput[n].setAttribute("id", data[index].propositions[n]);
+        }
     }
-    })
     
 }
 
