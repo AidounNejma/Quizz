@@ -29,11 +29,10 @@ let submit = document.getElementById('submit');
 /* --------------------------------------------------------------- */
 
 /* Variables qui vont nous être utiles dans les fonctions */
-let currentArrayIndex = 0; /* Pour se positionner dans l'index de mon array */
-let questionCounter = 0; /* Pour compter le nombre de question qu'on a fait */
+var index = 0; /* Pour se positionner dans l'index de mon array */
 let score = 0; /* Pour incrémenter le score */
-let numberIncrement = 0;  //Numéro des questions 
-var questionArray = [];
+let numberIncrement = 0;  // Numéro des questions 
+var questionArray = []; // Tableau vide pour copier ma data dedans
 
 /* --------------------------------------------------------------- */
 
@@ -135,31 +134,30 @@ const copyArray = async(data)=>{
 }
 
 window.onload = copyArray(); // j'appelle ma fonction au chargement de la page 
-//console.log(questionArray);
+console.log(questionArray);
+
 /* --------------------------------------------------------------- */
 
 /* Fonction pour afficher tout ça */
 function displayQuizz(){
-    
-    displayQuestion(questionArray);
+    displayQuestion();
 }
 
 /* --------------------------------------------------------------- */
-var index = 0;
+
 /* Fonction qui va afficher les questions */
-function displayQuestion(data){
-    eraseFirstPage();
-    console.log(data);
+function displayQuestion(){
+    console.log(questionArray);
     number.innerHTML = index;
-    if(index < data.length){
+    if(index < questionArray.length){
         index++;
-        question.innerHTML = data[index].question;
-        img.src = data[index].image;
+        question.innerHTML = questionArray[index].question;
+        img.src = questionArray[index].image;
         for(let n = 0; n < 4; n++){
-        suggestionsLabel[n].innerHTML = data[index].propositions[n];
-        suggestionsLabel[n].setAttribute("for", data[index].propositions[n]);
-        suggestionsInput[n].setAttribute("value", data[index].propositions[n]);
-        suggestionsInput[n].setAttribute("id", data[index].propositions[n]);
+        suggestionsLabel[n].innerHTML = questionArray[index].propositions[n];
+        suggestionsLabel[n].setAttribute("for", questionArray[index].propositions[n]);
+        suggestionsInput[n].setAttribute("value", questionArray[index].propositions[n]);
+        suggestionsInput[n].setAttribute("id", questionArray[index].propositions[n]);
         }
     }
     
@@ -171,6 +169,7 @@ next.addEventListener('click', displayQuizz);
 
 
 /* Fonction pour enregistrer les données dans le local Storage du navigateur */
+
 /* function storeAnswers(i){
     if(localStorage.getItem('answers') == null){
         localStorage.setItem('answers', '[]');
