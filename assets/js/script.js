@@ -81,38 +81,26 @@ const getData = async() => { //Fonction asyncrone pour récupérer les données 
     
     if (lastPieceUrl == "quizz.html?random") { //conditions pour récupérer les datas qui nous intéresse selon le clic de la page précédente
         //console.log(data);
-        const promises = [];
-        promises.push(data);
-        shuffleArray(promises[0]);
-        //console.log(promises[0]);
-        return promises[0];
+        shuffleArray(data);
+        return data;
     }
     
     if (lastPieceUrl == "quizz.html?html") {
         //console.log(data.HTML)
-        const promises = [];
-        promises.push(data.HTML);
-        shuffleArray(promises[0]);
-        //console.log(promises[0]);
-        return promises[0];
+        shuffleArray(data.HTML);
+        return data.HTML;
     }
     
     if (lastPieceUrl == "quizz.html?css") {
         //console.log(data.CSS)
-        const promises = [];
-        promises.push(data.CSS);
-        shuffleArray(promises[0]);
-        //console.log(promises[0]);
-        return promises[0];
+        shuffleArray(data.CSS);
+        return data.CSS;
     }
 
     if (lastPieceUrl == "quizz.html?javascript") {
         //console.log(data.Javascript)
-        const promises = [];
-        promises.push(data.Javascript);
-        shuffleArray(promises[0]);
-        //console.log(promises[0]);
-        return promises[0];
+        shuffleArray(data.Javascript);
+        return data.Javascript;
     }
 }
 
@@ -127,9 +115,17 @@ const shuffleArray = (array) =>{
 
 /* Fonction pour afficher tout ça */
 const displayQuizz = async(data)=>{
-    var myData = await getData(data);
-    displayQuestion(myData);
+    var arrayCopied = await copyArray(data);
+    console.log(arrayCopied)
+    displayQuestion(arrayCopied);
     //console.log(myData)
+}
+
+const copyArray = async(data)=>{
+    var myData = await getData(data);
+    const promises = [];
+    promises.push(myData);
+    return promises[0];
 }
 
 /* --------------------------------------------------------------- */
