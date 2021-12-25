@@ -23,7 +23,7 @@ json-server --watch package.json
         alt+L, alt+C
         ```
 
-    - Windows: pour ouvrir le serveur
+    - Mac: pour ouvrir le serveur
         ```bash 
         cmd+L cmd+O 
         ```

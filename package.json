@@ -5,12 +5,12 @@
       "image": "assets/img/quizz_html/Question/1.jpeg",
           "question": "Quelle balise utilisera-t-on de préférence pour le titre principal d'une page html ?",
           "propositions": [
-            "<h1>",
-            "<head>",
-            "<heading>",
-            "<h6>"
+            "&lt;h1&gt;",
+            "&lt;head&gt;",
+            "&lt;heading&gt;",
+            "&lt;h6&gt;"
           ],
-          "réponse": "<h1>",
+          "réponse": "&lt;h1&gt;",
           "anecdote": "Le H1 (pour heading 1 ou balise H1) est le titre principal d'une page internet. Il existe 6 niveaux de H possibles : du H1 au H6.",
           "imgAnswer": "assets/img/quizz_html/Answer/1.jpeg"
     },
@@ -25,13 +25,13 @@
             "Aucune de ces réponses"
           ],
           "réponse": "La balise TITLE",
-          "anecdote": "L'élément HTML <head> fournit des informations générales (métadonnées) sur le document, incluant son titre et des liens ou des définitions vers des scripts et feuilles de style.",
+          "anecdote": "L'élément HTML &lt;head&gt;&gt; fournit des informations générales (métadonnées) sur le document, incluant son titre et des liens ou des définitions vers des scripts et feuilles de style.",
           "imgAnswer": "assets/img/quizz_html/Answer/2.jpeg"
     },
     {
       "id": 3,
       "image": "assets/img/quizz_html/Question/3.jpeg",
-      "question": "Quand vous utilisez la balise <TITLE>, où est affiché le texte ?",
+      "question": "Quand vous utilisez la balise &lt;TITLE&gt;, où est affiché le texte ?",
       "propositions": [
         "Le titre est placé au début de la page HTML",
         "Le titre est placé au début de chaque paragraphe",
@@ -61,13 +61,13 @@
       "image": "assets/img/quizz_html/Question/5.jpeg",
       "question": "Quelle balise te permettra d'insérer une image dans ton HTML ?",
       "propositions": [
-        "<BODY BACKGROUND='image.gif'>",
-        "<IMG SRC='image.gif' alt='mon image'>",
-        "<BACKGROUND IMG='image.gif'>",
-        "<DIV link='image.gif'>"
+        "&lt;BODY BACKGROUND='image.gif'&gt;",
+        "&lt;IMG SRC='image.gif' alt='mon image'&gt;",
+        "&lt;BACKGROUND IMG='image.gif'&gt;",
+        "&lt;DIV link='image.gif'&gt;"
       ],
-      "réponse": "<IMG SRC='image.gif' alt='mon image'>",
-      "anecdote": "L'élément HTML <img> intègre une image dans le document. L'attribut src est obligatoire et contient le chemin de l'image qu'on souhaite afficher. L'attribut alt contient une description textuelle de l'image.",
+      "réponse": "&lt;IMG SRC='image.gif' alt='mon image'&gt;",
+      "anecdote": "L'élément HTML &lt;img&gt; intègre une image dans le document. L'attribut src est obligatoire et contient le chemin de l'image qu'on souhaite afficher. L'attribut alt contient une description textuelle de l'image.",
       "imgAnswer": "assets/img/quizz_html/Answer/5.jpeg"
     },
     {
@@ -75,13 +75,13 @@
       "image": "assets/img/quizz_html/Question/6.jpeg",
       "question": "Dans quel ordre devez-vous placer correctement les balises dans une page HTML?",
       "propositions": [
-        "<HTML> <TITLE><TITLE> <BODY></BODY> </HTML>",
-        "<HTML> <TITLE></TITLE> <BODY></BODY> </HTML>",
-        "<HTML> <TITLE></TITLE> <BODY> </HTML>",
-        "<HTML> <HEAD></TITLE> <BODY></BODY> </HTML>"
+        "&lt;TITLE&gt;&lt;TITLE&gt; &lt;BODY&gt;&lt;/BODY&gt;",
+        "&lt;TITLE&gt;&lt;/TITLE&gt; &lt;BODY&gt;&lt;/BODY&gt;",
+        "&lt;TITLE&gt;&lt;/TITLE&gt; &lt;BODY&gt;",
+        "&lt;HEAD&gt;&lt;/TITLE&gt; &lt;BODY&gt;&lt;/BODY&gt;"
       ],
-      "réponse": "<HTML> <TITLE></TITLE> <BODY></BODY> </HTML>",
-      "anecdote": "Le bon ordre était <HTML> <TITLE></TITLE> <BODY></BODY> </HTML>. Faites attention à bien fermer vos balises. ",
+      "réponse": "&lt;HTML&gt; &lt;TITLE&gt;&lt;/TITLE&gt; &lt;BODY&gt;&lt;/BODY&gt; &lt;/HTML&gt;",
+      "anecdote": "Le bon ordre était &lt;HTML&gt; &lt;TITLE&gt;&lt;/TITLE&gt; &lt;BODY&gt;&lt;/BODY&gt; &lt;/HTML&gt; &gt;. Faites attention à bien fermer vos balises. ",
       "imgAnswer": "assets/img/quizz_html/Answer/6.jpeg"
     },
     {
@@ -89,12 +89,12 @@
       "image": "assets/img/quizz_html/Question/7.jpeg",
       "question": "Une paire de balises HTML doit être utilisé dans vos pages web, une au début et l'autre sur la dernière ligne. De quelle paire s'agit-il?",
       "propositions": [
-        "<HTML> et </HTML>",
-        "<BODY> et </BODY>",
-        "<HEAD> et </HEAD>",
-        "<TITLE> et </TITLE>"
+        "&lt;HTML&gt; et &lt;/HTML&gt;",
+        "&lt;BODY&gt; et &lt;/BODY&gt;",
+        "&lt;HEAD&gt; et &lt;/HEAD&gt;",
+        "&lt;TITLE&gt; et &lt;/TITLE&gt;"
       ],
-      "réponse": "<HTML> et </HTML>",
+      "réponse": "&lt;HTML&gt; et &lt;/HTML&gt;",
       "anecdote": "Une balise HTML est un élément de base du système de codage HTML utilisé, en grande partie, pour la création d'une page Web. Ce sont les balises HTML qui permettent de hiérarchiser et de structurer le contenu d'une page Web grâce à une mise en forme particulière.",
       "imgAnswer": "assets/img/quizz_html/Answer/7.jpeg"
     },
@@ -106,10 +106,10 @@
         "La balise HEAD",
         "La balise TITLE",
         "La balise BODY",
-        "La balise des commentaires <!-- ... -->"
+        "La balise des commentaires &lt;!-- ... --&gt;"
       ],
       "réponse": "La balise BODY",
-      "anecdote": "La grande majorité de votre travail se concentre sur le <body> de la page web. Cependant, le contenu de la balise <head> n'en est pas moins extrêmement important pour la qualité et les performances de votre page web.",
+      "anecdote": "La grande majorité de votre travail se concentre sur le &lt;body&gt; de la page web. Cependant, le contenu de la balise &lt;head&gt; n'en est pas moins extrêmement important pour la qualité et les performances de votre page web.",
       "imgAnswer": "assets/img/quizz_html/Answer/8.jpeg"
     },
     {
@@ -157,7 +157,7 @@
     {
       "id": 12,
       "image": "assets/img/quizz_html/Question/12.jpeg",
-      "question": "Les balises <B> ... </B> permettent d'avoir du texte en...",
+      "question": "Les balises &lt;B&gt; ... &lt;B&gt; permettent d'avoir du texte en :",
       "propositions": [
         "Gras",
         "Citation",
@@ -165,7 +165,7 @@
         "Italique"
       ],
       "réponse": "Gras",
-      "anecdote": "L'élément HTML <b> permet d'attirer l'attention du lecteur sur un contenu qui n'a pas, pour autant, d'importance significative. Anciennement utilisé pour mettre le texte en gras. Cet élément ne doit pas être utilisé pour mettre en forme des éléments, c'est la propriété CSS font-weight qu'il faut utiliser. Si l'élément est d'une importance particulière, on utilisera l'élément HTML <strong>.",
+      "anecdote": "L'élément HTML &lt;b&gt; permet d'attirer l'attention du lecteur sur un contenu qui n'a pas, pour autant, d'importance significative. Anciennement utilisé pour mettre le texte en gras. Cet élément ne doit pas être utilisé pour mettre en forme des éléments, c'est la propriété CSS font-weight qu'il faut utiliser. Si l'élément est d'une importance particulière, on utilisera l'élément HTML &lt;strong&gt;.",
       "imgAnswer": "assets/img/quizz_html/Answer/12.jpeg"
     },
     {
@@ -173,13 +173,13 @@
       "image": "assets/img/quizz_html/Question/13.jpeg",
       "question": "Quelle balise permet d'avoir du texte rayé dans un document HTML ?",
       "propositions": [
-        "<S>",
-        "<U>",
-        "<I>",
-        "<B>"
+        "&lt;S&gt;",
+        "&lt;U&gt;",
+        "&lt;I&gt;",
+        "&lt;B&gt;"
       ],
-      "réponse": "<S>",
-      "anecdote": "L'élément HTML <s> permet d'afficher du texte qui est barré car il n'est plus pertinent ou car il est obsolète. <s> ne doit pas être employé pour indiquer des éditions dans un document (on utilisera alors <del> et <ins>).",
+      "réponse": "&lt;S&gt;",
+      "anecdote": "L'élément HTML &lt;s&gt; permet d'afficher du texte qui est barré car il n'est plus pertinent ou car il est obsolète. &lt;s&gt; ne doit pas être employé pour indiquer des éditions dans un document (on utilisera alors &lt;del&gt; et &lt;ins&gt;).",
       "imgAnswer": "assets/img/quizz_html/Answer/13.jpeg"
     },
     {
@@ -187,13 +187,13 @@
       "image": "assets/img/quizz_html/Question/14.jpeg",
       "question": "Laquelle de ces balises permet d'écrire la formule H2O ?",
       "propositions": [
-        "H<SUP>2</SUP>O",
-        "H<SUB>2</SUB>O",
-        "H<S>2</S>O",
-        "H<I>2</I>O"
+        "&lt;H&lt;SUP&gt;2&lt;/SUP&gt;O",
+        "&lt;H&lt;SUB&gt;2&lt;/SUB&gt;O",
+        "&lt;H&lt;S&gt;2&lt;/S&gt;O",
+        "&lt;H&lt;I&gt;2&lt;/I&gt;O"
       ],
-      "réponse": "H<SUB>2</SUB>O",
-      "anecdote": "L'élément HTML <sub> est utilisé, pour des raisons typographiques, afin d'afficher du texte souscrit (ou en indice) (plus bas et généralement plus petit) par rapport au bloc de texte environnant.",
+      "réponse": "H&lt;SUB&gt;2&lt;/SUB&gt;O",
+      "anecdote": "L'élément HTML &lt;sub&gt; est utilisé, pour des raisons typographiques, afin d'afficher du texte souscrit (ou en indice) (plus bas et généralement plus petit) par rapport au bloc de texte environnant.",
       "imgAnswer": "assets/img/quizz_html/Answer/14.jpeg"
     },
     {
@@ -201,13 +201,13 @@
       "image": "assets/img/quizz_html/Question/15.jpeg",
       "question": "Quelle balise doit-on utiliser pour faire un changement de ligne ?",
       "propositions": [
-        "<BR>",
-        "<HR>",
-        "<UL>",
-        "<LI>"
+        "&lt;BR&gt;",
+        "&lt;HR&gt;",
+        "&lt;UL&gt;",
+        "&lt;LI&gt;"
       ],
-      "réponse": "<BR>",
-      "anecdote": "L'élément HTML <br> crée un saut de ligne (un retour chariot) dans le texte. Il s'avère utile lorsque les sauts de ligne ont une importance (par exemple lorsqu'on écrit une adresse ou un poème).",
+      "réponse": "&lt;BR&gt;",
+      "anecdote": "L'élément HTML &lt;br&gt; crée un saut de ligne (un retour chariot) dans le texte. Il s'avère utile lorsque les sauts de ligne ont une importance (par exemple lorsqu'on écrit une adresse ou un poème).",
       "imgAnswer": "assets/img/quizz_html/Answer/15.jpeg"
     }
   ],
@@ -215,786 +215,426 @@
   "CSS": [
     {
       "id": 1,
-      "image": "",
-      "question": "Qui est le patron d'une usine de fabrication de bateaux dans « Le Petit Baigneur » ?",
+      "image": "assets/img/quizz_css/Question/1.jpeg",
+      "question": "Que veut dire l'abréviation CSS ?",
       "propositions": [
-        "Bouvet",
-        "Fourchaume",
-        "Pivert",
-        "Pasquier"
+        "Colorful Style Sheets",
+        "Computer Style Sheets",
+        "Creative Style Sheets",
+        "Cascading Style Sheets"
       ],
-      "réponse": "Fourchaume",
-      "anecdote": "Pierre Dac prononcera un discours de son style lors de l'inauguration de L'Increvable en y ajoutant une réplique improvisée."
+      "réponse": "Cascading Style Sheets",
+      "anecdote": "Le CSS pour Cascading Style Sheets, est un langage informatique utilisé sur Internet pour la mise en forme de fichiers et de pages HTML. On le traduit en français par feuilles de style en cascade.",
+      "imgAnswer": "assets/img/quizz_css/Answer/1.jpeg"
     },
     {
       "id": 2,
-      "image": "",
-      "question": "Quel est le rôle de Jean Benguigui dans « Astérix et Obélix : Mission Cléopâtre » ?",
+      "image": "assets/img/quizz_css/Question/2.jpeg",
+      "question": "Soit un conteneur 'div' auquel on veut donner une largeur *visible* totale de 760 pixels. Avec quel style obtiendra-t-on ce résultat ? Note : le modèle de boite standard des CSS est bien sûr appliqué.",
       "propositions": [
-        "Itineris",
-        "Malococsis",
-        "Partutatis",
-        "Cartapus"
+        "div {width: 760px; padding: 12px; border-width: 1px; margin: 0;}",
+        "div {width: 740px; padding: 1em; border-width: 0; margin: 0;}",
+        "div {width: 720px; padding: 5px; border-width: 5px; margin: 10px;}",
+        "div {width: 700px; padding: 29px; border-width: 1px; margin: 0;}"
       ],
-      "réponse": "Malococsis",
-      "anecdote": "Pierre Tchernia, narrateur dans plusieurs dessins animés de la franchise « Astérix », est également narrateur dans le film."
+      "réponse": "div {width: 700px; padding: 29px; border-width: 1px; margin: 0;}",
+      "anecdote": "Le modèle de boite standard, détaillé dans cet article d'Openweb, calcule la largeur totale d'un bloc en additionnant : la largeur de la zone de contenu ('width') + la largeur des marges internes latérales ('padding-left et padding-right') + la largeur des bordures latérales ('border-left et border-right'). Dans le cas qui nous intéresse, on a donc : 700px + (29px * 2) + (1px * 2) = 760px. Le compte est bon. Attention, les marges externes latérales ('margin-left' et 'margin-right') ne sont pas comprises dans la largeur visible totale !",
+      "imgAnswer": "assets/img/quizz_css/Answer/2.jpeg"
     },
     {
       "id": 3,
-      "image": "",
-      "question": "Comment se nomme le grand chef cuisinier dans le film « Le Grand Restaurant » ?",
+      "image": "assets/img/quizz_css/Question/3.jpeg",
+      "question": "Comment faire pour qu'une div prenne toute la largeur disponible dans son bloc conteneur ?",
       "propositions": [
-        "M. Dixime",
-        "M. Septime",
-        "M. Neuvime",
-        "M. Huitime"
+        "div {width: 100%; padding: 10%;}",
+        "div {min-width: 100%;}",
+        "div {width: 80%; padding: 10%;}",
+        "C'est automatique, pas besoin de spécifier une largeur."
       ],
-      "réponse": "M. Septime",
-      "anecdote": "« Le Grand Restaurant » sera le premier film pour lequel Louis de Funès participera directement à l'écriture du scénario."
+      "réponse": "C'est automatique, pas besoin de spécifier une largeur.",
+      "anecdote": "Tous les éléments de type bloc prennent par défaut toute la largeur disponible dans leur bloc conteneur. Il n'est donc pas nécessaire de préciser une largeur si ce comportement par défaut répond à nos attentes.",
+      "imgAnswer": "assets/img/quizz_css/Answer/3.jpeg"
     },
     {
       "id": 4,
-      "image": "",
-      "question": "Quels sont les prénoms des deux enfants de Morticia et Gomez ?",
+      "image": "assets/img/quizz_css/Question/4.jpeg",
+      "question": "Le positionnement relatif (position: relative)...",
       "propositions": [
-        "Samedi et Wesley",
-        "Mercredi et Bugsley",
-        "Vendredi et Shirley",
-        "Jeudi et Charley"
+        "permet de positionner un élément par rapport à un autre élément, pris comme repère;",
+        "permet de positionner un élément par rapport aux limites de son élément parent;",
+        "permet de décaler un élément A par rapport à sa position 'normale', en flux",
+        "permet d'appliquer la théorie de la relativité générale ET la théorie de la relativité restreinte à une mise en page."
       ],
-      "réponse": "Mercredi et Bugsley",
-      "anecdote": "« La Famille Addams » est une série de Charles Addams qui donna naissance à quatre films, six séries et plusieurs jeux."
+      "réponse": "permet de décaler un élément A par rapport à sa position 'normale', en flux",
+      "anecdote": "Le positionnement relatif permet de décaler un élément A par rapport à sa position 'normale', en flux. Explication : le positionnement relatif est très semblable au positionnement statique (position: static) qu'adoptent par défaut les éléments d'une page. Un élément positionné en relatif prendra sa place normale dans le flux du document (en fonction de la succession des éléments dans le code HTML, des marges des éléments, des éléments flottants...), mais sera décalé par rapport à cette position de base.",
+      "imgAnswer": "assets/img/quizz_css/Answer/4.jpeg"
     },
     {
       "id": 5,
-      "image": "",
-      "question": "Quel personnage chante pendant la nuit dans « Les bronzés font du ski » ?",
+      "image": "assets/img/quizz_css/Question/5.jpeg",
+      "question": "Où se placera un élément positionné en absolu (position: absolute) avec left: 100px ?",
       "propositions": [
-        "Jean-Claude Dusse",
-        "Jérôme Tarayre",
-        "Nathalie Morin",
-        "Gisèle André"
+        "À 100px du bord gauche de la fenêtre du navigateur;:",
+        "À 100px du bord gauche de l'élément body;",
+        "À 100px du bord gauche de son élément parent;",
+        "À 100px du bord gauche de son plus proche ancêtre positionné."
       ],
-      "réponse": "Jean-Claude Dusse",
-      "anecdote": "Le film trouvera son public au fil des diffusions à la télévision, faisant d'excellentes audiences, notamment en décembre 2008."
+      "réponse": "À 100px du bord gauche de son plus proche ancêtre positionné.",
+      "anecdote": "Explication : On pense souvent que les éléments positionnés en absolu se placent, à l'aide des propriétés top, right, bottom et left, par rapport aux limites de la zone d'affichage du navigateur, ou bien par rapport aux limites de l'élément body. Mais pour être très exact, un élément positionné en absolu, si on utilise les propriétés top, right, bottom et left (ce qui n'est pas nécessairement le cas), se placera par rapport aux limites de son plus proche ancêtre positionné.",
+      "imgAnswer": "assets/img/quizz_css/Answer/5.jpeg"
     },
     {
       "id": 6,
-      "image": "",
-      "question": "Si Monsieur Pignon est le gentil, alors, qui est le méchant ?",
+      "image": "assets/img/quizz_css/Question/6.jpeg",
+      "question": "Après une image flottante à droite (float: right;), on place un titre h2. Comment être sûr qu'il se placera en dessous de l'image flottante ?",
       "propositions": [
-        "Monsieur Leblanc",
-        "Monsieur Brochand",
-        "Monsieur Cheval",
-        "Monsieur Cordier"
+        "img {clear: left;}",
+        "img {clear: right;}",
+        "h2 {clear: left;}",
+        "h2 {clear: right;}"
       ],
-      "réponse": "Monsieur Brochand",
-      "anecdote": "Jacques Villeret recevra pour ce film le César du meilleur acteur et Daniel Prévost celui du meilleur acteur dans un second rôle."
+      "réponse": "h2 {clear: right;}",
+      "anecdote": "La propriété CSS clear doit être placée sur l'élément censé passer à la ligne. En l'occurrence, le titre de niveau 2. Pour que le titre se place en dessous des éléments flottants à droite le précédent, il faudra utiliser clear: right. Une autre possibilité aurait été d'utiliser clear: both, qui correspond en quelque sorte à un clear: left+right.",
+      "imgAnswer": "assets/img/quizz_css/Answer/6.jpeg"
     },
     {
       "id": 7,
-      "image": "",
-      "question": "Selon Steven Spielberg, quel soldat fut sauvé lors du débarquement allié en 1944 ?",
+      "image": "assets/img/quizz_css/Question/7.jpeg",
+      "question": "Comment déclarer une puce image au mieux ?",
       "propositions": [
-        "Bryan",
-        "Yvan",
-        "Ryan",
-        "Evan"
+        "li {image: url(image.png);}",
+        "li {list-style-type: disc; list-style-image: url(image.png);}",
+        "li {list-style-image: url(image.png);}",
+        "li {list-style: url(image.png);}"
       ],
-      "réponse": "Ryan",
-      "anecdote": "Pour le rôle principal du capitaine Miller, les producteurs avaient initialement envisagé les acteurs Harrison Ford ou Mel Gibson."
+      "réponse": "li {list-style-type: disc; list-style-image: url(image.png);}",
+      "anecdote": "Pour se prémunir d'une absence d'affichage en cas d'indisponibilité de l'image, le type de puce doit être indiqué en plus de la déclaration de l'image. La réponse la plus appropriée est donc celle qui cumule la propriété 'list-style-type' et 'list-style-image'. Vous aurez noté que la propriété 'image' n'existe pas.",
+      "imgAnswer": "assets/img/quizz_css/Answer/7.jpeg"
     },
     {
       "id": 8,
-      "image": "",
-      "question": "Quel est le prénom du brocanteur interprété par Victor Lanoux ?",
+      "image": "assets/img/quizz_css/Question/8.jpeg",
+      "question": "Comment peut-on figer la taille des caractères pour être sûr d'avoir exactement le même rendu partout ?",
       "propositions": [
-        "Victor",
-        "Louis",
-        "Paul",
-        "Charles"
+        "En précisant des tailles de police en EM (ex : font-size: 0.8em).",
+        "En précisant des tailles de police en pixels (ex : font-size: 12px).",
+        "En précisant des tailles de police en points (ex : font-size: 10pt).",
+        "On ne peut pas figer la taille des caractères pour être sûr d'avoir exactement le même rendu partout. C'est impossible."
       ],
-      "réponse": "Louis",
-      "anecdote": "En 2009, en plus de son AVC et de la mort de certains amis, Victor Lanoux, l'acteur principal de la série, déclarera arrêter la série."
+      "réponse": "On ne peut pas figer la taille des caractères pour être sûr d'avoir exactement le même rendu partout. C'est impossible.",
+      "anecdote": " La plupart des navigateurs actuels permettent à l'utilisateur de redimensionner le texte à sa guise, même lorsque le concepteur du site a demandé du texte en pixels (px) ou en points (pt) ! Seul Internet Explorer ne permet pas par défaut le redimensionnement du texte en pixels (c'est par contre une option que l'on peut activer). Quoi qu'il en soit, il y aura toujours une part non négligeable d'utilisateurs qui verront un texte plus gros ou plus petit que celui désiré par le concepteur. Il est donc vivement conseillé aux concepteurs de sites web de s'adapter à ces contraintes, par exemple en utilisant des tailles de texte relatives, et en donnant un peu plus de souplesse à leurs designs.",
+      "imgAnswer": "assets/img/quizz_css/Answer/8.jpeg"
     },
     {
       "id": 9,
-      "image": "",
-      "question": "Quel inspecteur a plusieurs fois été interprété par Clint Eastwood ?",
+      "image": "assets/img/quizz_css/Question/9.jpeg",
+      "question": "Quelle est la méthode conseillée pour limiter l'application d'une ou plusieurs règles CSS à Internet Explorer 6 ?",
       "propositions": [
-        "Gil Grissom",
-        "John McClane",
-        "Harry Callahan",
-        "Axel Folley"
+        "L'utilisation de la déclaration '!important'.",
+        "La préfixation du sélecteur par '* html'.",
+        "La préfixation du sélecteur par 'html > body'.",
+        "Aucune des solutions précédentes."
       ],
-      "réponse": "Harry Callahan",
-      "anecdote": "Harry Callahan est un personnage taciturne dont les méthodes de travail sont aussi efficaces que contestables, avec son Magnum 44."
+      "réponse": "Aucune des solutions précédentes.",
+      "anecdote": "Les trois premières solutions correspondent à un usage de Hack CSS. L'utilisation des hacks est déconseillée (notamment par Microsoft eux-même), et pour de multiples raisons, au profit des commentaires conditionnels.",
+      "imgAnswer": "assets/img/quizz_css/Answer/9.jpeg"
     },
     {
       "id": 10,
-      "image": "",
-      "question": "Quelle Mrs. s'est déguisée afin de voir ses enfants pendant leur garde alternée ?",
+      "image": "assets/img/quizz_css/Question/10.jpeg",
+      "question": "Si j'écris a:active {color: red;} dans ma feuille de style, quels liens seront de couleur rouge ?",
       "propositions": [
-        "Moneypenny",
-        "Olivia",
-        "Doubtfire",
-        "Poppins"
+        "les liens pointant vers des pages mises à jour régulièrement",
+        "les liens pointant vers la page en cours (par exemple dans un menu de navigation)",
+        "n'importe quel lien de la page, mais uniquement au moment où on clique sur ce lien",
+        "n'importe quel lien de la page, mais uniquement au moment où on survole ce lien avec le pointeur de la souris"
       ],
-      "réponse": "Doubtfire",
-      "anecdote": "Une pièce de théâtre écrite par Albert Algoud et mise en scène par Daniel Roussel est sortie en 2003, avec Michel Leeb."
+      "réponse": "n'importe quel lien de la page, mais uniquement au moment où on clique sur ce lien",
+      "anecdote": "La pseudo-classe CSS :active permet de passer des propriétés CSS à une ancre (un lien), propriétés qui ne s'appliqueront qu'à l'état 'activé', c'est à dire au moment où on active le lien avec la souris, en cliquant dessus.",
+      "imgAnswer": "assets/img/quizz_css/Answer/10.jpeg"
     },
     {
       "id": 11,
-      "image": "",
-      "question": "Quel est le surnom de Marie-France Pisier dans « L'As des as » ?",
+      "image": "assets/img/quizz_css/Question/11.jpeg",
+      "question": "À partir de quelle version d'Internet Explorer, Flexbox est-il supporté ?",
       "propositions": [
-        "Cathy",
-        "Nelly",
-        "Suzy",
-        "Gaby"
+        "IE8",
+        "IE9",
+        "IE10",
+        "IE11"
       ],
-      "réponse": "Gaby",
-      "anecdote": "C'est en 1980 que Gérard Oury soumettra à Jean-Paul Belmondo l'idée d'une comédie autour de la boxe au temps du nazisme."
+      "réponse": "IE10",
+      "anecdote": "Flexbox est reconnu à partir de IE10, pensez à consulter le célèbre site Caniuse si vous avez un doute sur la compatibilité d'une fonctionnalité HTML ou CSS.",
+      "imgAnswer": "assets/img/quizz_css/Answer/11.jpeg"
     },
     {
       "id": 12,
-      "image": "",
-      "question": "Quel est le prénom de Bourvil dans la pièce de théâtre « La Bonne Planque » ?",
+      "image": "assets/img/quizz_css/Question/12.jpeg",
+      "question": "Quelle propriété de Flexbox existe vraiment ?",
       "propositions": [
-        "Arsène",
-        "Alexandre",
-        "Anatole",
-        "Antoine"
+        "flex-wrap",
+        "corn-flex",
+        "tarti-flex",
+        "circon-flex"
       ],
-      "réponse": "Antoine",
-      "anecdote": "Enregistrée pour la télévision belge au théâtre du Vaudeville de Bruxelles en 1964, la pièce fut diffusée le 31 décembre 1964."
+      "réponse": "flex-wrap",
+      "anecdote": "A-t-on vraiment besoin d'explications ?",
+      "imgAnswer": "assets/img/quizz_css/Answer/12.jpeg"
     },
     {
       "id": 13,
-      "image": "",
-      "question": "Quelle jeune juive est poursuivie par Hans Landa dans « Inglorious Basterds » ?",
+      "image": "assets/img/quizz_css/Question/13.jpeg",
+      "question": "Quelle est l'orientation par défaut au sein d'un flex container ?",
       "propositions": [
-        "Suzanne",
-        "Shosanna",
-        "Charlotte",
-        "Julie"
+        "horizontale",
+        "verticale",
+        "diagonale",
+        "perpendiculaire"
       ],
-      "réponse": "Shosanna",
-      "anecdote": "Le titre du film est un hommage au titre anglophone d'« Une poignée de salopards » (The Inglorious Bastards, 1978), réalisé par Enzo G. Castellari."
+      "réponse": "horizontale",
+      "anecdote": "La direction au sein d'un flex-container est fixée par la propriété flex-direction dont la valeur par défaut est 'row', donc horizontale",
+      "imgAnswer": "assets/img/quizz_css/Answer/13.jpeg"
     },
     {
       "id": 14,
-      "image": "",
-      "question": "Quel inspecteur de police devient RoboCop dans une société futuriste ?",
+      "image": "assets/img/quizz_css/Question/14.jpeg",
+      "question": "Dans la propriété raccourcie flex: 1 0 auto; à quelle propriété se réfère la 2è valeur (ici 0) ?",
       "propositions": [
-        "Murphy",
-        "Lewis",
-        "Smith",
-        "Allen"
+        "à flex-grow",
+        "à flex-shrink",
+        "à flex-basis",
+        "à flex-flow"
       ],
-      "réponse": "Murphy",
-      "anecdote": "L'idée de RoboCop est venue à Edward Neumeier après qu'il a participé au tournage de « Blade Runner » (1982) de Ridley Scott."
+      "réponse": "à flex-shrink",
+      "anecdote": "La propriété flex est un raccourci de ces trois propriétés, dans l'ordre ; flex-grow, flex-shrink, flex-basis.",
+      "imgAnswer": "assets/img/quizz_css/Answer/14.jpeg"
     },
     {
       "id": 15,
-      "image": "",
-      "question": "Quel célèbre aventurier fut interprété par Harrisson Ford dans la saga « Indiana Jones » ?",
+      "image": "assets/img/quizz_css/Question/15.jpeg",
+      "question": "Quelle est la valeur par défaut de flex-flow ?",
       "propositions": [
-        "Harry Jones Junior",
-        "Henri Jones Junior",
-        "Jerry Jones Junior",
-        "Dany Jones Junior"
+        "auto",
+        "normal",
+        "row nowrap",
+        "row wrap"
       ],
-      "réponse": "Henri Jones Junior",
-      "anecdote": "Le personnage serait inspiré de celui d'Hiram Bingham, un archéologue américain découvreur du Machu Picchu au Pérou."
-    },
-    {
-      "id": 16,
-      "image": "",
-      "question": "Dans quel film Steven Hiller sauve-t-il le monde d'une invasion extraterrestre ?",
-      "propositions": [
-        "Independance day",
-        "Mars Attack",
-        "Armageddon",
-        "Invasion"
-      ],
-      "réponse": "Independance day",
-      "anecdote": "Jada Pinkett, épouse de Will Smith, devait incarner Jasmine Dubrow, mais dut y renoncer puisqu'elle jouait dans « Le Professeur foldingue »."
-    },
-    {
-      "id": 17,
-      "image": "",
-      "question": "Lequel de ces gradés est encerclé avec ses hommes dans la forêt de Machecoul ?",
-      "propositions": [
-        "Capitaine Dumont",
-        "Capitaine Durond",
-        "Capitaine Dusson",
-        "Capitaine Dupont"
-      ],
-      "réponse": "Capitaine Dumont",
-      "anecdote": "Robert Lamoureux a écrit son film en se basant sur une partie de son histoire personnelle vécue pendant la débâcle de juin 1940."
-    },
-    {
-      "id": 18,
-      "image": "",
-      "question": "Qui a malencontreusement dû dégommer du méchant dans un piège de cristal ?",
-      "propositions": [
-        "John Wick",
-        "John Rambo",
-        "John McClane",
-        "John Doe"
-      ],
-      "réponse": "John McClane",
-      "anecdote": "À l'étranger, le recueil de critiques Rotten Tomatoes rapporte que 93 % des 76 critiques ont donné un avis positif au film."
-    },
-    {
-      "id": 19,
-      "image": "",
-      "question": "Quel célèbre flic de Beverly Hills donne des repas gratuits à des inspecteurs planqués ?",
-      "propositions": [
-        "Dany Brandt",
-        "Alex Foley",
-        "Jerry Grant",
-        "Axel Foley"
-      ],
-      "réponse": "Axel Foley",
-      "anecdote": "Harold Faltermeyer composera le célèbre thème « Axel F » avec trois synthés : Roland Jupiter-8, Roland JX-3P et Yamaha DX-7."
-    },
-    {
-      "id": 20,
-      "image": "",
-      "question": "Qui est mandaté par le Vatican pour élucider les mystères de Da Vinci Code ?",
-      "propositions": [
-        "John Langbert",
-        "Norbert Langfon",
-        "Lambert Johnson",
-        "Robert Langdon"
-      ],
-      "réponse": "Robert Langdon",
-      "anecdote": "Pour certaines scènes, le ministère français de la Culture a accepté que le tournage se déroule de nuit à l'intérieur du Louvre."
-    },
-    {
-      "id": 21,
-      "image": "",
-      "question": "Quel brocanteur a envie d'acheter un Modigliani tatoué sur une peau humaine ?",
-      "propositions": [
-        "Félicien Mazeret",
-        "Félicien Mazelaid",
-        "Félicien Mézeray",
-        "Félicien Villeret"
-      ],
-      "réponse": "Félicien Mézeray",
-      "anecdote": "La rémunération des deux vedettes diffère : Jean Gabin a un cachet de 100 millions d'anciens francs, contre 150 millions pour Louis de Funès."
-    },
-    {
-      "id": 22,
-      "image": "",
-      "question": "Quelle cheffe de la résistance est interprétée par Marion Cotillard dans « Alliés » ?",
-      "propositions": [
-        "M. Beauvoyage",
-        "M. Beauséjour",
-        "M. Bellescale",
-        "M. Beautalon"
-      ],
-      "réponse": "M. Beauséjour",
-      "anecdote": "Brad Pitt a suggéré que les scènes soient tournées dans l'ordre chronologique de l'intrigue, chose plutôt rare dans cette industrie."
-    },
-    {
-      "id": 23,
-      "image": "",
-      "question": "Quel est le nom de famille de la femme de ménage dans le film « Le Magnifique » ?",
-      "propositions": [
-        "Bouviers",
-        "Mouton",
-        "Lagneau",
-        "Berger"
-      ],
-      "réponse": "Berger",
-      "anecdote": "Le film « Le Magnifique » présente une particularité : aucun scénariste n'est mentionné, ni au générique de début ni dans celui de fin."
-    },
-    {
-      "id": 24,
-      "image": "",
-      "question": "Qui est le directeur du journal « Demain ne meurt jamais » dans un James Bond ?",
-      "propositions": [
-        "Elliot Carver",
-        "Dr Kaufman",
-        "M. Stamper",
-        "Henry Gupta"
-      ],
-      "réponse": "Elliot Carver",
-      "anecdote": "Ce film est dédié à Albert R. Broccoli, producteur des seize premiers James Bond (bien que son nom soit mentionné dans « GoldenEye »)."
-    },
-    {
-      "id": 25,
-      "image": "",
-      "question": "Quel personnage possède un animal de compagnie appelé Touffu ?",
-      "propositions": [
-        "Artaban",
-        "Tchikita",
-        "Carlos",
-        "Hagrid"
-      ],
-      "réponse": "Hagrid",
-      "anecdote": "Hagrid, de la saga « Harry Potter », vit dans une cabane construite à sa mesure dans le parc de Poudlard, en bordure de la forêt interdite."
-    },
-    {
-      "id": 26,
-      "image": "",
-      "question": "Qui est le sabotier dans le film français « La Soupe aux choux » ?",
-      "propositions": [
-        "Max Poulangeard",
-        "Claude Ratinier",
-        "Francis Chérasse",
-        "Robert Lamouette"
-      ],
-      "réponse": "Claude Ratinier",
-      "anecdote": "Dans « La Soupe aux choux », Jacques Villeret incarne l'extraterrestre venu de la planète Oxo et surnommé la Denrée par le Glaude."
-    },
-    {
-      "id": 27,
-      "image": "",
-      "question": "Quel détective privé doit retrouver la fille de Monsieur Bens, disparue au Mexique ?",
-      "propositions": [
-        "Campana",
-        "Fernando",
-        "Meyer",
-        "Perrin"
-      ],
-      "réponse": "Campana",
-      "anecdote": "Les rôles de Campana et de Perrin devaient à l'origine être tenus par Lino Ventura et Jacques Villeret, en désaccord sur leurs cachets."
-    },
-    {
-      "id": 28,
-      "image": "",
-      "question": "Quelle commissaire de fiction a deux enfants prénommés Babou et Sarah ?",
-      "propositions": [
-        "Julie Lescaut",
-        "Alice Nevers",
-        "Isabelle Florent",
-        "Candice Renoir"
-      ],
-      "réponse": "Julie Lescaut",
-      "anecdote": "« Julie Lescaut » est une série télévisée policière française en 101 épisodes de 90 minutes, créée par Alexis Lecaye en 1991."
-    },
-    {
-      "id": 29,
-      "image": "",
-      "question": "Quel chien discute avec l'agent J aux côtés de l'agent K et de l'agent L ?",
-      "propositions": [
-        "Karl",
-        "Mitch",
-        "Paul",
-        "Frank"
-      ],
-      "réponse": "Frank",
-      "anecdote": "Le rôle de K a été proposé à Clint Eastwood, qui a refusé. Will Smith a quant à lui failli refuser le rôle de J, après avoir lu le script."
-    },
-    {
-      "id": 30,
-      "image": "",
-      "question": "Comment est surnommé Robert Lespinasse dans une célèbre comédie française ?",
-      "propositions": [
-        "Mickey",
-        "Popeye",
-        "Bob l'éponge",
-        "Pinnochio"
-      ],
-      "réponse": "Popeye",
-      "anecdote": "« Les Bronzés » est un film français écrit et interprété par la troupe du Splendid, réalisé par Patrice Leconte et sorti le 22 novembre 1978."
+      "réponse": "row nowrap",
+      "anecdote": "flex-flow est une propriété raccourcie de deux propriétés, flex-direction et flex-wrap, dont les valeurs par défaut sont respectivement row et nowrap",
+      "imgAnswer": "assets/img/quizz_css/Answer/15.jpeg"
     }
   ],                                   
 
   "Javascript": [
     {
       "id": 1,
-      "image": "",
-      "question": "Dans quel océan se déverse l'Amazone, de loin le plus élevé de tous les fleuves de la planète ?",
+      "image": "assets/img/quizz_javascript/Question/1.jpeg",
+      "question": "Quel est le rapport entre Java et JavaScript ?",
       "propositions": [
-        "Océan Atlantique",
-        "Océan Arctique",
-        "Océan Pacifique",
-        "Océan Indien"
+        "C'est le même langage, mais le nom  JavaScript  est utilisé pour le code s'exécutant dans une page Web.",
+        "Ce sont deux langages différents, malgré quelques points communs dans la syntaxe.",
+        "Java est une version améliorée de JavaScript.",
+        "Java est une île, ça n'a rien à voir !"
       ],
-      "réponse": "Océan Atlantique",
-      "anecdote": "La démesure de l'Amazone s'apprécie aussi en constatant qu'aucun pont ni barrage ne le franchit sur des milliers de kilomètres."
+      "réponse": "Ce sont deux langages différents, malgré quelques points communs dans la syntaxe.",
+      "anecdote": "Le nom  JavaScript  a été choisi en raison des similitudes de syntaxe, et aussi (surtout ?) parce que le nom  Java  était à la mode.",
+      "imgAnswer": "assets/img/quizz_javascript/Answer/1.jpeg"
     },
     {
       "id": 2,
-      "image": "",
-      "question": "Où peut-on se rendre dans la plus grande île et le plus petit continent du monde ?",
+      "image": "assets/img/quizz_javascript/Question/2.jpeg",
+      "question": "Laquelle de ces syntaxes est correcte ?",
       "propositions": [
-        "Asie",
-        "Afrique",
-        "Europe",
-        "Australie"
+        "if (a != 2) {}",
+        "if a != 2 {}",
+        "if (a <> 2) {}",
+        "if a <> 2 {}"
       ],
-      "réponse": "Australie",
-      "anecdote": "Sa population est principalement concentrée dans les grandes villes côtières de Sydney, Melbourne, Brisbane, Perth et Adélaïde."
+      "réponse": "if (a != 2) {}",
+      "anecdote": "La condition d'un if doit toujours être entourée de parenthèses. L'opérateur 'différent de' s'écrit != en JavaScript.",
+      "imgAnswer": "assets/img/quizz_javascript/Answer/2.jpeg"
     },
     {
       "id": 3,
-      "image": "",
-      "question": "Où peut-on marcher sur la place Tian'anmen, au sud de la porte de la Paix céleste ?",
+      "image": "assets/img/quizz_javascript/Question/3.jpeg",
+      "question": "Quel attribut des noeuds de l'arbre DOM correspond à l'attribut (X)HTML class ?",
       "propositions": [
-        "Pékin",
-        "Canton",
-        "Shanghai",
-        "Shenzhen"
+        "class",
+        "CLASS",
+        "className",
+        "kiwi"
       ],
-      "réponse": "Pékin",
-      "anecdote": "La place Tian'anmen doit notamment sa célébrité aux nombreux événements qui s'y sont déroulés dans l'histoire chinoise."
+      "réponse": "className",
+      "anecdote": "Il n'a pas été possible d'utiliser class dans le DOM car c'est un mot-clé réservé pour les futures versions de la spécification ECMAScript.",
+      "imgAnswer": "assets/img/quizz_javascript/Answer/3.jpeg"
     },
     {
       "id": 4,
-      "image": "",
-      "question": "Quelle est la plus grande ville du Grand-Duché de Luxembourg ainsi que sa capitale ?",
+      "image": "assets/img/quizz_javascript/Question/4.jpeg",
+      "question": "Dans un fichier JavaScript externe (.js), il faut:",
       "propositions": [
-        "Vianden",
-        "Wiltz",
-        "Luxembourg",
-        "Diekirch"
+        "entourer le code avec les balises &lt;script&gt; et &lt;/script&gt;.",
+        "préciser l’encodage du fichier avec la règle @charset.",
+        "échapper les caractères spéciaux (X)HTML.",
+        "Aucune des réponses précédentes."
       ],
-      "réponse": "Luxembourg",
-      "anecdote": "Après avoir été surnommée « la Gibraltar du Nord » en raison de sa forteresse, elle est dite aujourd'hui le « Coeur vert de l'Europe »."
+      "réponse": "Aucune des réponses précédentes.",
+      "anecdote": "L’un des avantages du fait d’utiliser un fichier externe est justement de s’affranchir des problèmes d’inclusion du code JavaScript dans une page (X)HTML. On n’a donc pas à utiliser les balises &lt;script&gt; et &lt;/script&gt;, et les caractères spéciaux (X)HTML n’ont pas à être échappés. Quant à l’encodage, il doit être déclaré dans l’en-tête HTTP Content-Type.",
+      "imgAnswer": "assets/img/quizz_javascript/Answer/4.jpeg"
     },
     {
       "id": 5,
-      "image": "",
-      "question": "Quel pays sans côte océanique partage en toute tranquillité le lac Majeur avec l'Italie ?",
+      "image": "assets/img/quizz_javascript/Question/5.jpeg",
+      "question": "Lequel de ces types d'événements n'existe pas?",
       "propositions": [
-        "L'Autriche",
-        "La Suisse",
-        "La Pologne",
-        "Le Danemark"
+        "blur",
+        "load",
+        "mouseclick",
+        "mouseout"
       ],
-      "réponse": "La Suisse",
-      "anecdote": "Le lac Majeur est célèbre par ses sites touristiques comme les îles Borromées et les îles de Brissago."
+      "réponse": "mouseclick",
+      "anecdote": "Il faut utiliser click, qui a d'ailleurs l'avantage de se déclencher aussi avec l'activation par le clavier.",
+      "imgAnswer": "assets/img/quizz_javascript/Answer/5.jpeg"
     },
     {
       "id": 6,
-      "image": "",
-      "question": "Où se trouve Ankara, ville nouvelle aux origines pourtant très anciennes ?",
+      "image": "assets/img/quizz_javascript/Question/6.jpeg",
+      "question": "Quelle méthode n'existe pas dans le DOM?",
       "propositions": [
-        "Au Pakistan",
-        "En Turquie",
-        "En Birmanie",
-        "En Inde"
+        "document.getElementsByClassName",
+        "document.getElementsByTagName",
+        "document.getElementsByAttribute",
+        "document.getElementById"
       ],
-      "réponse": "En Turquie",
-      "anecdote": "Certains vestiges hittites découverts dans la citadelle attestent la présence d'une cité (Ankuva) du temps de l'Empire hittite."
+      "réponse": "document.getElementsByAttribute",
+      "anecdote": "On peut rechercher les éléments par classe, id, nom de balise (tag).",
+      "imgAnswer": "assets/img/quizz_javascript/Answer/6.jpeg"
     },
     {
       "id": 7,
-      "image": "",
-      "question": "Sur quel tropique se trouve Taiwan, connue comme la République de Chine ?",
+      "image": "assets/img/quizz_javascript/Question/7.jpeg",
+      "question": "Laquelle de ces propositions est un nom de variable valide en JavaScript?",
       "propositions": [
-        "Sagittaire",
-        "Cancer",
-        "Capricorne",
-        "Taureau"
+        "var",
+        "2a",
+        "NaN",
+        "$b"
       ],
-      "réponse": "Cancer",
-      "anecdote": "Taïwan fut officiellement gouverné par la Chine de 1683 à 1895, puis cédé au Japon par le traité de Shimonoseki en 1895."
+      "réponse": "$b",
+      "anecdote": "var est un mot-clé ; 2a n'est pas valide car un identifiant ne peut pas commencer par un chiffre ; int est un mot-clé réservé pour les futures versions de la spécification ECMAScript.",
+      "imgAnswer": "assets/img/quizz_javascript/Answer/7.jpeg"
     },
     {
       "id": 8,
-      "image": "",
-      "question": "Quel est le pays entouré par le Lichtenstein, l'Italie, l'Autriche, l'Allemagne et la France ?",
+      "image": "assets/img/quizz_javascript/Question/8.jpeg",
+      "question": "Dans une boucle, l'instruction continue permet de:",
       "propositions": [
-        "La Hongrie",
-        "Les Pays-Bas",
-        "La Grèce",
-        "La Suisse"
+        "continuer l'exécution du code après la boucle.",
+        "passer à l'itération suivante.",
+        "revenir au début de l'itération courante.",
+        "supprimer toutes les variables globales."
       ],
-      "réponse": "La Suisse",
-      "anecdote": "La Suisse est un pays sans côte océanique mais dispose d'un accès direct à la mer par le Rhin (Convention de Mannheim)."
+      "réponse": "passer à l'itération suivante.",
+      "anecdote": "Il est à noter que cette instruction peut être associée à un label, comme expliqué dans la documentation de Mozilla.",
+      "imgAnswer": "assets/img/quizz_javascript/Answer/8.jpeg"
     },
     {
       "id": 9,
-      "image": "",
-      "question": "Dans quel pays allez-vous si vous partez à la recherche du comte Dragul, en Transylvanie ?",
+      "image": "assets/img/quizz_javascript/Question/9.jpeg",
+      "question": "var iNum = 12; iNum %= 2; A la suite de cette expression, combien vaut iNum?",
       "propositions": [
-        "Hongrie",
-        "Bulgarie",
-        "Australie",
-        "Roumanie"
+        "6",
+        "14",
+        "0.12",
+        "0"
       ],
-      "réponse": "Roumanie",
-      "anecdote": "Écrit à la fin du XIXe siècle, « Dracula » est un roman épistolaire dont le personnage principal est un vampire."
+      "réponse": "0",
+      "anecdote": "Le modulo suivi de l'affectation divise la variable iNum par 2 puis affecte le reste de la division à iNum, soit zéro.",
+      "imgAnswer": "assets/img/quizz_javascript/Answer/9.jpeg"
     },
     {
       "id": 10,
-      "image": "",
-      "question": "Quel tropique indiqué sur les cartes terrestres passe entre la Floride et Cuba ?",
+      "image": "assets/img/quizz_javascript/Question/10.jpeg",
+      "question": "Quelle méthode permet de comparer deux chaînes texte?",
       "propositions": [
-        "Tropique du Cancer",
-        "Tropique du Loup",
-        "Tropique du Chat",
-        "Tropique du Lion"
+        "charAt()",
+        "charCodeAt()",
+        "indexOf()",
+        "localeCompare()"
       ],
-      "réponse": "Tropique du Cancer",
-      "anecdote": "Le tropique du Cancer porte ce nom car, il y a environ 2000 ans, le Soleil entrait dans la constellation du Cancer lors du solstice de juin."
+      "réponse": "localeCompare()",
+      "anecdote": "La bonne réponse est localeCompare().",
+      "imgAnswer": "assets/img/quizz_javascript/Answer/10.jpeg"
     },
     {
       "id": 11,
-      "image": "",
-      "question": "Quel archipel du Pacifique est constitué de plus de 7 100 îles et îlots formant un état ?",
+      "image": "assets/img/quizz_javascript/Question/11.jpeg",
+      "question": "Quels sont les types de nombres définis en JavaScript?",
       "propositions": [
-        "Malaisie",
-        "Indonésie",
-        "Birmanie",
-        "Philippines"
+        "Integer et Float.",
+        "Number.",
+        "Number et Double.",
+        "Number et Integer."
       ],
-      "réponse": "Philippines",
-      "anecdote": "Un peu plus de 2 000 seulement sont habitées, alors qu'environ 2 400 îles n'ont même pas encore reçu de nom."
+      "réponse": "Number.",
+      "anecdote": "JavaScript ne fait pas la différence entre les nombres entiers et décimaux.",
+      "imgAnswer": "assets/img/quizz_javascript/Answer/11.jpeg"
     },
     {
       "id": 12,
-      "image": "",
-      "question": "Quel fleuve et importante voie fluviale bleuit selon la météo dans la capitale de la Hongrie ?",
+      "image": "assets/img/quizz_javascript/Question/12.jpeg",
+      "question": "Que signifie l'acronyme AJAX ?",
       "propositions": [
-        "Elbe",
-        "Rhin",
-        "Danube",
-        "Rhône"
+        "Advanced JavaScript with XMLHttpRequest.",
+        "Asynchronous JavaScript and XML.",
+        "JavaScript extensible.",
+        "Rien, c’est juste une suite de lettres sans aucune signification."
       ],
-      "réponse": "Danube",
-      "anecdote": "En suivant le Danube qui forme alors la frontière entre la Hongrie et la Slovaquie, la première ville importante rencontrée est Gyor."
+      "réponse": "Asynchronous JavaScript and XML.",
+      "anecdote": "'Asynchronous JavaScript and XML' signifie 'XML et JavaScript asynchrones'. La portée de ce terme est assez floue, en raison de l’énorme effet de mode qui y est associé. Il désigne en général la combinaison d’un ensemble de technologies (JavaScript, DOM, XMLHTTPRequest, (X)HTML, CSS,...) dans le but d’offrir à l'utilisateur un mode de navigation plus réactif et plus proche des interfaces graphiques lourdes.",
+      "imgAnswer": "assets/img/quizz_javascript/Answer/12.jpeg"
     },
     {
       "id": 13,
-      "image": "",
-      "question": "Quelle mer du bassin Indo-Pacifique est reliée à la Méditerranée par le canal de Suez ?",
+      "image": "assets/img/quizz_javascript/Question/13.jpeg",
+      "question": "Quel est l'équivalent pour un noeud de l'arbre DOM de node.childNodes[1] (en supposant que le noeud demandé existe) ?",
       "propositions": [
-        "Mer Ionienne",
-        "Mer Rouge",
-        "Mer de Java",
-        "Mer Noire"
+        "node.firstChild",
+        "node.firstChild.nextSibling",
+        "node.previousSibling.parentNode",
+        "node.lastChild.previousSibling"
       ],
-      "réponse": "Mer Rouge",
-      "anecdote": "Il arrive que ses eaux soient peuplées d'algues qui, lorsqu'elles meurent, donnent à l'eau une couleur rougeâtre."
+      "réponse": "node.firstChild.nextSibling",
+      "anecdote": "node.childNodes[1] signifie 'le second fils de ce noeud'.",
+      "imgAnswer": "assets/img/quizz_javascript/Answer/13.jpeg"
     },
     {
       "id": 14,
-      "image": "",
-      "question": "Sachant que les Apennins se trouvent en Italie, où sont principalement situées les Appalaches ?",
+      "image": "assets/img/quizz_javascript/Question/14.jpeg",
+      "question": "Quelle syntaxe est correcte pour que la fonction init soit appelée au chargement de la page?",
       "propositions": [
-        "Au Brésil",
-        "Aux États-Unis",
-        "En Russie",
-        "En Inde"
+        "window.onload = init;",
+        "window.onload = init();",
+        "window.onload() = init;",
+        "window.onload() = init();"
       ],
-      "réponse": "Aux États-Unis",
-      "anecdote": "Les Appalaches séparent la plaine côtière atlantique (à l'est) du bassin du fleuve Mississippi et des Grands Lacs (à l'ouest)."
+      "réponse": "window.onload = init;",
+      "anecdote": "On attribue à l'attribut onload de l'objet window ( window.onload) la référence à la fonction init (et non pas le résultat de l'appel à init, que l'on aurait écrit init()).",
+      "imgAnswer": "assets/img/quizz_javascript/Answer/14.jpeg"
     },
     {
       "id": 15,
-      "image": "",
-      "question": "Quel fleuve d'Afrique occidentale, portant le nom d'un pays, borde le Sahel ?",
+      "image": "assets/img/quizz_javascript/Question/15.jpeg",
+      "question": "Quand l'événement 'load' se déclenche-t-il pour une page?",
       "propositions": [
-        "Le Niger",
-        "Le Congo",
-        "Le Sénégal",
-        "Le Zambèze"
+        "Dès que le navigateur commence à recevoir le code HTML.",
+        "Quand le code HTML a fini d'être chargé.",
+        "Quand l'arbre DOM a été construit.",
+        "Quand l'arbre DOM a été construit et toutes les ressources chargées (images, ...)."
       ],
-      "réponse": "Le Niger",
-      "anecdote": "Le fleuve Niger fait partie de ces fleuves (tout comme le Sénégal) qui ont été fortement aménagés depuis les années 1980."
-    },
-    {
-      "id": 16,
-      "image": "",
-      "question": "Vers quel pays allez-vous si vous quittez la ville italienne de Trieste vers l'Est ?",
-      "propositions": [
-        "Suisse",
-        "Grèce",
-        "Espagne",
-        "Slovénie"
-      ],
-      "réponse": "Slovénie",
-      "anecdote": "Géographiquement, Trieste est considérée comme la dernière ville du Nord-Est de l'Italie ou comme la ville de l'extrême Sud."
-    },
-    {
-      "id": 17,
-      "image": "",
-      "question": "Quel port canadien situé sur le lac Ontario était jadis connu sous le nom de « Fort York » ?",
-      "propositions": [
-        "Toronto",
-        "Windsor",
-        "Oshawa",
-        "Hamilton"
-      ],
-      "réponse": "Toronto",
-      "anecdote": "Fort York fut construit à l'entrée du port naturel de la ville, abrité par un long banc de sable en forme de péninsule."
-    },
-    {
-      "id": 18,
-      "image": "",
-      "question": "Dans quel État des États-Unis pourrez-vous partir à la rencontre des Séminoles ?",
-      "propositions": [
-        "Floride",
-        "Nevada",
-        "Michigan",
-        "Arkansas"
-      ],
-      "réponse": "Floride",
-      "anecdote": "Les Amérindiens Calusa furent les premiers habitants de ces marais subtropicaux qu'ils baptisèrent « Pa-hay-okee » ou « eaux herbeuses »."
-    },
-    {
-      "id": 19,
-      "image": "",
-      "question": "Quelle mer dépourvue de poissons et d'algues est partagée entre la Jordanie et Israël ?",
-      "propositions": [
-        "Mer Rouge",
-        "Mer Blanche",
-        "Mer Morte",
-        "Mer Jaune"
-      ],
-      "réponse": "Mer Morte",
-      "anecdote": "Alors que la salinité moyenne de l'eau de mer oscille entre 2 et 4 %, celle de la mer Morte est d'approximativement 27.5 %."
-    },
-    {
-      "id": 20,
-      "image": "",
-      "question": "Où est Dubrovnik, dont les habitants ainsi que ce qui s'y rapporte s'appellent des ragusains ?",
-      "propositions": [
-        "En Yougoslavie",
-        "En Estonie",
-        "En Sibérie",
-        "En Roumanie"
-      ],
-      "réponse": "En Yougoslavie",
-      "anecdote": "De son ancien nom français Raguse, Dubrovnik a pour devise : « La liberté ne se vend pas même pour tout l'or du monde »."
-    },
-    {
-      "id": 21,
-      "image": "",
-      "question": "Sur quelle île à 120 km du sud de l'Angleterre se trouvent Grand Havre et Port Soif ?",
-      "propositions": [
-        "Guernesey",
-        "Ortac",
-        "Aurigny",
-        "Herm"
-      ],
-      "réponse": "Guernesey",
-      "anecdote": "Victor Hugo a séjourné à Guernesey et y a écrit « Les Misérables » en 1862 et « Les Travailleurs de la mer » en 1866."
-    },
-    {
-      "id": 22,
-      "image": "",
-      "question": "Dans quel pays peut-on par exemple passer une nuit à Mandalay et la suivante à Rangoon ?",
-      "propositions": [
-        "En Birmanie",
-        "En Indonésie",
-        "Aux Philippines",
-        "En Malaisie"
-      ],
-      "réponse": "En Birmanie",
-      "anecdote": "Capitale royale entre 1860 et 1885, réputée pour son jade, Mandalay était alors surnommée la « cité des joyaux »."
-    },
-    {
-      "id": 23,
-      "image": "",
-      "question": "Dans quel État du Midwest des États-Unis se trouvent Mineapolis et sa jumelle St Paul ?",
-      "propositions": [
-        "Montana",
-        "Missouri",
-        "Michigan",
-        "Minnesota"
-      ],
-      "réponse": "Minnesota",
-      "anecdote": "Le mot Minnesota vient de mnisota, nom donné au fleuve Minnesota par les Dakotas, tribu Sioux."
-    },
-    {
-      "id": 24,
-      "image": "",
-      "question": "Vers quel lac la ville d'Irkoutsk plonge-t-elle son regard à 66 kilomètres à l'ouest ?",
-      "propositions": [
-        "Malawi",
-        "Tanganyika",
-        "Érié",
-        "Baïkal"
-      ],
-      "réponse": "Baïkal",
-      "anecdote": "Irkoutsk se trouve dans une région de collines couvertes de taïga, paysage typique de la Sibérie orientale."
-    },
-    {
-      "id": 25,
-      "image": "",
-      "question": "Quelle grande ville trouve-t-on sur la mer d'Oman, près de l'embouchure de l'Indus ?",
-      "propositions": [
-        "Islamabad",
-        "Karachi",
-        "Burewala",
-        "Mingora"
-      ],
-      "réponse": "Karachi",
-      "anecdote": "Karachi est l'une des villes les plus peuplées au monde et la plus peuplée du monde musulman."
-    },
-    {
-      "id": 26,
-      "image": "",
-      "question": "Quelle capitale pakistanaise, située au nord du pays, jouxte la ville de Rawalpindi ?",
-      "propositions": [
-        "Islamabad",
-        "Quetta",
-        "Wah",
-        "Karachi"
-      ],
-      "réponse": "Islamabad",
-      "anecdote": "Devenue en 1967 la capitale du pays, au détriment de Karachi, Islamabad en constitue le coeur administratif et politique."
-    },
-    {
-      "id": 27,
-      "image": "",
-      "question": "Dans quel État américain du Nord-Est du pays se trouvent Rome, Syracuse et Albany ?",
-      "propositions": [
-        "Idaho",
-        "New York",
-        "Alabama",
-        "Maryland"
-      ],
-      "réponse": "New York",
-      "anecdote": "Si la ville de New York se trouve dans l'État de New York, sa principale agglomération se trouve dans les États voisins."
-    },
-    {
-      "id": 28,
-      "image": "",
-      "question": "De quel pays situé à environ 200 km au nord de l'équateur Kuala Lumpur est-elle la capitale ?",
-      "propositions": [
-        "Birmanie",
-        "Cambodge",
-        "Malaisie",
-        "Laos"
-      ],
-      "réponse": "Malaisie",
-      "anecdote": "Arrachée à la jungle dans les années 1850, la ville doit sa naissance et sa fortune aux abondants gisements d'étain."
-    },
-    {
-      "id": 29,
-      "image": "",
-      "question": "Combien de mers baignent la Russie, le plus vaste pays de notre planète ?",
-      "propositions": [
-        "Dix",
-        "Six",
-        "Huit",
-        "Douze"
-      ],
-      "réponse": "Douze",
-      "anecdote": "Bien qu'entourée de mers et de deux océans, la Russie est caractérisée par un climat continental aux milieux froids et hostiles."
-    },
-    {
-      "id": 30,
-      "image": "",
-      "question": "Sur quelle île se trouve Manille, deuxième ville la plus peuplée des Philippines après Quezon ?",
-      "propositions": [
-        "Visayas",
-        "Guam",
-        "Shikoku",
-        "Luçon"
-      ],
-      "réponse": "Luçon",
-      "anecdote": "La quasi totalité de la ville se trouve sur un sol alluvionnaire déplacé par la rivière Pasig et gagné sur la baie de Manille."
+      "réponse": "Quand l'arbre DOM a été construit et toutes les ressources chargées (images, ...).",
+      "anecdote": "Ce comportement peut d'ailleurs être parfois gênant si l'on veut éviter un 'clignotement' au chargement de la page. Il faut alors se tourner vers des solutions propriétaires comme l'événement DOMContentLoaded supporté par Firefox et Opera.",
+      "imgAnswer": "assets/img/quizz_javascript/Answer/15.jpeg"
     }
   ]
 

@@ -23,26 +23,28 @@
     <main>
         <h1 class="pageTitle">Quizz <span class="pageTitleChange"> </span></h1>
         <h2 class="numberQuestion">Question n°<span class="number" id="number"></span>/10</h2>
-        <img src="assets/img/quizz_html/Question/1.jpeg" alt="" class="img" id="img">
+        <img src="" alt="" class="img" id="img">
         <h3 class="question" id="question"></h3>
-        <form action="">
+        <form>
+            <p id="startParagraph">Cliquez sur le bouton pour commencer notre test !</p>
             <div class="answers">
-                <input type="radio" class="suggestionsInput" value="">
+                <input type="radio" class="suggestionsInput" value="" name="oneAnswer">
                 <label for="huey" class="suggestionsLabel"></label>
             </div>
             <div class="answers">
-                <input type="radio" class="suggestionsInput">
+                <input type="radio" class="suggestionsInput" value="" name="oneAnswer">
                 <label for="huey" class="suggestionsLabel"></label>
             </div>
             <div class="answers">
-                <input type="radio" class="suggestionsInput">
+                <input type="radio" class="suggestionsInput" value="" name="oneAnswer">
                 <label for="huey" class="suggestionsLabel"></label>
             </div>
             <div class="answers">
-                <input type="radio" class="suggestionsInput">
+                <input type="radio" class="suggestionsInput" value="" name="oneAnswer">
                 <label for="huey" class="suggestionsLabel"></label>
             </div>
-            <button type="submit" class="next" id="next">Suivant</button>
+            <button type="button" class="next" id="next">Commencer test</button>
+            <button type="submit" id="submit"></button>
         </form>
     </main>
     <footer>

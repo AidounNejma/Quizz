@@ -19,6 +19,10 @@
     font-size: 30px;
 }
 
+#startParagraph{
+    font-size: 20px;
+}
+
 form{
     border: solid 2px black;
     margin: 0 15%;
