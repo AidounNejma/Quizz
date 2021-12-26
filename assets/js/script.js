@@ -46,8 +46,8 @@ var submit = document.getElementById('submit'); // Bouton submit du formulaire
 var index = 0; /* Pour se positionner dans l'index de mon array */
 number.innerHTML = index; /* J'attribue à l'endroit du numéro de mes questions la variable index */
 var score = 0; /* Pour incrémenter le score */
-var questionArray = []; // Tableau vide pour copier ma data dedans
-var globalData = []; //Tableau vide pour copier la data général de mon fichier JSON
+const questionArray = []; // Tableau vide pour copier ma data dedans
+const globalData = []; //Tableau vide pour copier la data général de mon fichier JSON
 
 /* --------------------------------------------------------------- */
 
@@ -182,6 +182,7 @@ window.onload = copyArray(); // J'appelle ma fonction au chargement de la page
 function displayQuizz(){
     
     if(index <= questionArray.length){ /* Si l'index est inf ou égal à la longueur de mon array alors */
+        index++; // J'incrémente mon index
         displayQuestion();
         //storeAnswers()
         //recordScore()
@@ -202,7 +203,6 @@ next.addEventListener('click', displayQuizz); // fonction displayQuizz qui se d�
 function displayQuestion(){
     console.log(questionArray);
     /* Incrémenter le nombre de questions */
-    index++; // J'incrémente mon index
     number.innerHTML = index; // J'attribue à l'endroit du numéro des questions mon index
     number2.innerHTML = questionArray.length; // J'attribue la taille de l'array (15)
 
@@ -223,7 +223,7 @@ function displayQuestion(){
 /* Pour incrémenter le score à chaque bonne réponse */
 function recordScore(){
     
-    if(questionArray[index].réponse == suggestionsInput[index].checked.value){ // Si la réponse stockée dans mon questionArray (la bonne réponse) est égale à la valeur de l'input radio qui est cochée alors:
+    if(questionArray[index].reponse == suggestionsInput[index].checked.value){ // Si la réponse stockée dans mon questionArray (la bonne réponse) est égale à la valeur de l'input radio qui est cochée alors:
         score++; // J'incrémente de 1
     } else { //Sinon
         score + 0; // J'ajoute 0

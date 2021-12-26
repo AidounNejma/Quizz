@@ -10,7 +10,7 @@
             "&lt;heading&gt;",
             "&lt;h6&gt;"
           ],
-          "réponse": "&lt;h1&gt;",
+          "reponse": "&lt;h1&gt;",
           "anecdote": "Le H1 (pour heading 1 ou balise H1) est le titre principal d'une page internet. Il existe 6 niveaux de H possibles : du H1 au H6.",
           "imgAnswer": "assets/img/quizz_html/Answer/1.jpeg"
     },
@@ -24,7 +24,7 @@
             "La balise TITLE",
             "Aucune de ces réponses"
           ],
-          "réponse": "La balise TITLE",
+          "reponse": "La balise TITLE",
           "anecdote": "L'élément HTML &lt;head&gt;&gt; fournit des informations générales (métadonnées) sur le document, incluant son titre et des liens ou des définitions vers des scripts et feuilles de style.",
           "imgAnswer": "assets/img/quizz_html/Answer/2.jpeg"
     },
@@ -38,7 +38,7 @@
         "Le titre est affiché dans le haut des navigateurs",
         "Le titre est affiché à la fin de la page HTML"
       ],
-      "réponse": "Le titre est affiché dans le haut des navigateurs",
+      "reponse": "Le titre est affiché dans le haut des navigateurs",
       "anecdote": "La Balise Title est une balise HTML qui contient une phrase reprise dans l’onglet du navigateur de l’internaute et les résultats de recherche du moteur.",
       "imgAnswer": "assets/img/quizz_html/Answer/3.jpeg"
     },
@@ -52,7 +52,7 @@
         "Hyper Text Markup Language",
         "Hyper Text machine Language"
       ],
-      "réponse": "Hyper Text Markup Language",
+      "reponse": "Hyper Text Markup Language",
       "anecdote": "L'HyperText Markup Language, HTML, désigne un type de langage informatique descriptif. Il s'agit plus précisément d'un format de données utilisé dans l'univers d'Internet pour la mise en forme des pages Web.",
       "imgAnswer": "assets/img/quizz_html/Answer/4.jpeg"
     },
@@ -66,7 +66,7 @@
         "&lt;BACKGROUND IMG='image.gif'&gt;",
         "&lt;DIV link='image.gif'&gt;"
       ],
-      "réponse": "&lt;IMG SRC='image.gif' alt='mon image'&gt;",
+      "reponse": "&lt;IMG SRC='image.gif' alt='mon image'&gt;",
       "anecdote": "L'élément HTML &lt;img&gt; intègre une image dans le document. L'attribut src est obligatoire et contient le chemin de l'image qu'on souhaite afficher. L'attribut alt contient une description textuelle de l'image.",
       "imgAnswer": "assets/img/quizz_html/Answer/5.jpeg"
     },
@@ -80,7 +80,7 @@
         "&lt;TITLE&gt;&lt;/TITLE&gt; &lt;BODY&gt;",
         "&lt;HEAD&gt;&lt;/TITLE&gt; &lt;BODY&gt;&lt;/BODY&gt;"
       ],
-      "réponse": "&lt;HTML&gt; &lt;TITLE&gt;&lt;/TITLE&gt; &lt;BODY&gt;&lt;/BODY&gt; &lt;/HTML&gt;",
+      "reponse": "&lt;HTML&gt; &lt;TITLE&gt;&lt;/TITLE&gt; &lt;BODY&gt;&lt;/BODY&gt; &lt;/HTML&gt;",
       "anecdote": "Le bon ordre était &lt;HTML&gt; &lt;TITLE&gt;&lt;/TITLE&gt; &lt;BODY&gt;&lt;/BODY&gt; &lt;/HTML&gt; &gt;. Faites attention à bien fermer vos balises. ",
       "imgAnswer": "assets/img/quizz_html/Answer/6.jpeg"
     },
@@ -94,7 +94,7 @@
         "&lt;HEAD&gt; et &lt;/HEAD&gt;",
         "&lt;TITLE&gt; et &lt;/TITLE&gt;"
       ],
-      "réponse": "&lt;HTML&gt; et &lt;/HTML&gt;",
+      "reponse": "&lt;HTML&gt; et &lt;/HTML&gt;",
       "anecdote": "Une balise HTML est un élément de base du système de codage HTML utilisé, en grande partie, pour la création d'une page Web. Ce sont les balises HTML qui permettent de hiérarchiser et de structurer le contenu d'une page Web grâce à une mise en forme particulière.",
       "imgAnswer": "assets/img/quizz_html/Answer/7.jpeg"
     },
@@ -108,7 +108,7 @@
         "La balise BODY",
         "La balise des commentaires &lt;!-- ... --&gt;"
       ],
-      "réponse": "La balise BODY",
+      "reponse": "La balise BODY",
       "anecdote": "La grande majorité de votre travail se concentre sur le &lt;body&gt; de la page web. Cependant, le contenu de la balise &lt;head&gt; n'en est pas moins extrêmement important pour la qualité et les performances de votre page web.",
       "imgAnswer": "assets/img/quizz_html/Answer/8.jpeg"
     },
@@ -122,7 +122,7 @@
         ".www",
         ".html"
       ],
-      "réponse": ".html",
+      "reponse": ".html",
       "anecdote": "L'extension de fichier «. htm» ou «. html», tirant son nom de l'abréviation de l'anglicisme «Hypertext Markup Language», est un format de fichier contenant un code source HTML permettant l'affichage d'une page dans navigateur Web.",
       "imgAnswer": "assets/img/quizz_html/Answer/9.jpeg"
     },
@@ -136,7 +136,7 @@
         "Netscape",
         "Intel"
       ],
-      "réponse": "The World Wide Web Consortium",
+      "reponse": "The World Wide Web Consortium",
       "anecdote": "Le World Wide Web Consortium, abrégé par le sigle W3C, est un organisme de standardisation à but non lucratif, fondé en octobre 1994 chargé de promouvoir la compatibilité des technologies du World Wide Web telles que HTML5, HTML, XHTML, XML, RDF, SPARQL, CSS, XSL, PNG, SVG, MathML et SOAP.",
       "imgAnswer": "assets/img/quizz_html/Answer/10.jpeg"
     },
@@ -150,7 +150,7 @@
         "La compagnie Netscape",
         "Le World Wide Web"
       ],
-      "réponse": "240 m",
+      "reponse": "240 m",
       "anecdote": "Timothy John Berners-Lee, né le 8 juin 1955 à Londres, est un informaticien britannique. Il invente ses trois technologies fondatrices : les adresses Web sous forme d'URL, le protocole de communication HTTP, et le langage informatique HTML.",
       "imgAnswer": "assets/img/quizz_html/Answer/11.jpeg"
     },
@@ -164,7 +164,7 @@
         "Interligne",
         "Italique"
       ],
-      "réponse": "Gras",
+      "reponse": "Gras",
       "anecdote": "L'élément HTML &lt;b&gt; permet d'attirer l'attention du lecteur sur un contenu qui n'a pas, pour autant, d'importance significative. Anciennement utilisé pour mettre le texte en gras. Cet élément ne doit pas être utilisé pour mettre en forme des éléments, c'est la propriété CSS font-weight qu'il faut utiliser. Si l'élément est d'une importance particulière, on utilisera l'élément HTML &lt;strong&gt;.",
       "imgAnswer": "assets/img/quizz_html/Answer/12.jpeg"
     },
@@ -178,7 +178,7 @@
         "&lt;I&gt;",
         "&lt;B&gt;"
       ],
-      "réponse": "&lt;S&gt;",
+      "reponse": "&lt;S&gt;",
       "anecdote": "L'élément HTML &lt;s&gt; permet d'afficher du texte qui est barré car il n'est plus pertinent ou car il est obsolète. &lt;s&gt; ne doit pas être employé pour indiquer des éditions dans un document (on utilisera alors &lt;del&gt; et &lt;ins&gt;).",
       "imgAnswer": "assets/img/quizz_html/Answer/13.jpeg"
     },
@@ -192,7 +192,7 @@
         "&lt;H&lt;S&gt;2&lt;/S&gt;O",
         "&lt;H&lt;I&gt;2&lt;/I&gt;O"
       ],
-      "réponse": "H&lt;SUB&gt;2&lt;/SUB&gt;O",
+      "reponse": "H&lt;SUB&gt;2&lt;/SUB&gt;O",
       "anecdote": "L'élément HTML &lt;sub&gt; est utilisé, pour des raisons typographiques, afin d'afficher du texte souscrit (ou en indice) (plus bas et généralement plus petit) par rapport au bloc de texte environnant.",
       "imgAnswer": "assets/img/quizz_html/Answer/14.jpeg"
     },
@@ -206,7 +206,7 @@
         "&lt;UL&gt;",
         "&lt;LI&gt;"
       ],
-      "réponse": "&lt;BR&gt;",
+      "reponse": "&lt;BR&gt;",
       "anecdote": "L'élément HTML &lt;br&gt; crée un saut de ligne (un retour chariot) dans le texte. Il s'avère utile lorsque les sauts de ligne ont une importance (par exemple lorsqu'on écrit une adresse ou un poème).",
       "imgAnswer": "assets/img/quizz_html/Answer/15.jpeg"
     }
@@ -223,7 +223,7 @@
         "Creative Style Sheets",
         "Cascading Style Sheets"
       ],
-      "réponse": "Cascading Style Sheets",
+      "reponse": "Cascading Style Sheets",
       "anecdote": "Le CSS pour Cascading Style Sheets, est un langage informatique utilisé sur Internet pour la mise en forme de fichiers et de pages HTML. On le traduit en français par feuilles de style en cascade.",
       "imgAnswer": "assets/img/quizz_css/Answer/1.jpeg"
     },
@@ -237,7 +237,7 @@
         "div {width: 720px; padding: 5px; border-width: 5px; margin: 10px;}",
         "div {width: 700px; padding: 29px; border-width: 1px; margin: 0;}"
       ],
-      "réponse": "div {width: 700px; padding: 29px; border-width: 1px; margin: 0;}",
+      "reponse": "div {width: 700px; padding: 29px; border-width: 1px; margin: 0;}",
       "anecdote": "Le modèle de boite standard, détaillé dans cet article d'Openweb, calcule la largeur totale d'un bloc en additionnant : la largeur de la zone de contenu ('width') + la largeur des marges internes latérales ('padding-left et padding-right') + la largeur des bordures latérales ('border-left et border-right'). Dans le cas qui nous intéresse, on a donc : 700px + (29px * 2) + (1px * 2) = 760px. Le compte est bon. Attention, les marges externes latérales ('margin-left' et 'margin-right') ne sont pas comprises dans la largeur visible totale !",
       "imgAnswer": "assets/img/quizz_css/Answer/2.jpeg"
     },
@@ -251,7 +251,7 @@
         "div {width: 80%; padding: 10%;}",
         "C'est automatique, pas besoin de spécifier une largeur."
       ],
-      "réponse": "C'est automatique, pas besoin de spécifier une largeur.",
+      "reponse": "C'est automatique, pas besoin de spécifier une largeur.",
       "anecdote": "Tous les éléments de type bloc prennent par défaut toute la largeur disponible dans leur bloc conteneur. Il n'est donc pas nécessaire de préciser une largeur si ce comportement par défaut répond à nos attentes.",
       "imgAnswer": "assets/img/quizz_css/Answer/3.jpeg"
     },
@@ -265,7 +265,7 @@
         "permet de décaler un élément A par rapport à sa position 'normale', en flux",
         "permet d'appliquer la théorie de la relativité générale ET la théorie de la relativité restreinte à une mise en page."
       ],
-      "réponse": "permet de décaler un élément A par rapport à sa position 'normale', en flux",
+      "reponse": "permet de décaler un élément A par rapport à sa position 'normale', en flux",
       "anecdote": "Le positionnement relatif permet de décaler un élément A par rapport à sa position 'normale', en flux. Explication : le positionnement relatif est très semblable au positionnement statique (position: static) qu'adoptent par défaut les éléments d'une page. Un élément positionné en relatif prendra sa place normale dans le flux du document (en fonction de la succession des éléments dans le code HTML, des marges des éléments, des éléments flottants...), mais sera décalé par rapport à cette position de base.",
       "imgAnswer": "assets/img/quizz_css/Answer/4.jpeg"
     },
@@ -279,7 +279,7 @@
         "À 100px du bord gauche de son élément parent;",
         "À 100px du bord gauche de son plus proche ancêtre positionné."
       ],
-      "réponse": "À 100px du bord gauche de son plus proche ancêtre positionné.",
+      "reponse": "À 100px du bord gauche de son plus proche ancêtre positionné.",
       "anecdote": "Explication : On pense souvent que les éléments positionnés en absolu se placent, à l'aide des propriétés top, right, bottom et left, par rapport aux limites de la zone d'affichage du navigateur, ou bien par rapport aux limites de l'élément body. Mais pour être très exact, un élément positionné en absolu, si on utilise les propriétés top, right, bottom et left (ce qui n'est pas nécessairement le cas), se placera par rapport aux limites de son plus proche ancêtre positionné.",
       "imgAnswer": "assets/img/quizz_css/Answer/5.jpeg"
     },
@@ -293,7 +293,7 @@
         "h2 {clear: left;}",
         "h2 {clear: right;}"
       ],
-      "réponse": "h2 {clear: right;}",
+      "reponse": "h2 {clear: right;}",
       "anecdote": "La propriété CSS clear doit être placée sur l'élément censé passer à la ligne. En l'occurrence, le titre de niveau 2. Pour que le titre se place en dessous des éléments flottants à droite le précédent, il faudra utiliser clear: right. Une autre possibilité aurait été d'utiliser clear: both, qui correspond en quelque sorte à un clear: left+right.",
       "imgAnswer": "assets/img/quizz_css/Answer/6.jpeg"
     },
@@ -307,7 +307,7 @@
         "li {list-style-image: url(image.png);}",
         "li {list-style: url(image.png);}"
       ],
-      "réponse": "li {list-style-type: disc; list-style-image: url(image.png);}",
+      "reponse": "li {list-style-type: disc; list-style-image: url(image.png);}",
       "anecdote": "Pour se prémunir d'une absence d'affichage en cas d'indisponibilité de l'image, le type de puce doit être indiqué en plus de la déclaration de l'image. La réponse la plus appropriée est donc celle qui cumule la propriété 'list-style-type' et 'list-style-image'. Vous aurez noté que la propriété 'image' n'existe pas.",
       "imgAnswer": "assets/img/quizz_css/Answer/7.jpeg"
     },
@@ -321,7 +321,7 @@
         "En précisant des tailles de police en points (ex : font-size: 10pt).",
         "On ne peut pas figer la taille des caractères pour être sûr d'avoir exactement le même rendu partout. C'est impossible."
       ],
-      "réponse": "On ne peut pas figer la taille des caractères pour être sûr d'avoir exactement le même rendu partout. C'est impossible.",
+      "reponse": "On ne peut pas figer la taille des caractères pour être sûr d'avoir exactement le même rendu partout. C'est impossible.",
       "anecdote": " La plupart des navigateurs actuels permettent à l'utilisateur de redimensionner le texte à sa guise, même lorsque le concepteur du site a demandé du texte en pixels (px) ou en points (pt) ! Seul Internet Explorer ne permet pas par défaut le redimensionnement du texte en pixels (c'est par contre une option que l'on peut activer). Quoi qu'il en soit, il y aura toujours une part non négligeable d'utilisateurs qui verront un texte plus gros ou plus petit que celui désiré par le concepteur. Il est donc vivement conseillé aux concepteurs de sites web de s'adapter à ces contraintes, par exemple en utilisant des tailles de texte relatives, et en donnant un peu plus de souplesse à leurs designs.",
       "imgAnswer": "assets/img/quizz_css/Answer/8.jpeg"
     },
@@ -335,7 +335,7 @@
         "La préfixation du sélecteur par 'html > body'.",
         "Aucune des solutions précédentes."
       ],
-      "réponse": "Aucune des solutions précédentes.",
+      "reponse": "Aucune des solutions précédentes.",
       "anecdote": "Les trois premières solutions correspondent à un usage de Hack CSS. L'utilisation des hacks est déconseillée (notamment par Microsoft eux-même), et pour de multiples raisons, au profit des commentaires conditionnels.",
       "imgAnswer": "assets/img/quizz_css/Answer/9.jpeg"
     },
@@ -349,7 +349,7 @@
         "n'importe quel lien de la page, mais uniquement au moment où on clique sur ce lien",
         "n'importe quel lien de la page, mais uniquement au moment où on survole ce lien avec le pointeur de la souris"
       ],
-      "réponse": "n'importe quel lien de la page, mais uniquement au moment où on clique sur ce lien",
+      "reponse": "n'importe quel lien de la page, mais uniquement au moment où on clique sur ce lien",
       "anecdote": "La pseudo-classe CSS :active permet de passer des propriétés CSS à une ancre (un lien), propriétés qui ne s'appliqueront qu'à l'état 'activé', c'est à dire au moment où on active le lien avec la souris, en cliquant dessus.",
       "imgAnswer": "assets/img/quizz_css/Answer/10.jpeg"
     },
@@ -363,7 +363,7 @@
         "IE10",
         "IE11"
       ],
-      "réponse": "IE10",
+      "reponse": "IE10",
       "anecdote": "Flexbox est reconnu à partir de IE10, pensez à consulter le célèbre site Caniuse si vous avez un doute sur la compatibilité d'une fonctionnalité HTML ou CSS.",
       "imgAnswer": "assets/img/quizz_css/Answer/11.jpeg"
     },
@@ -377,7 +377,7 @@
         "tarti-flex",
         "circon-flex"
       ],
-      "réponse": "flex-wrap",
+      "reponse": "flex-wrap",
       "anecdote": "A-t-on vraiment besoin d'explications ?",
       "imgAnswer": "assets/img/quizz_css/Answer/12.jpeg"
     },
@@ -391,7 +391,7 @@
         "diagonale",
         "perpendiculaire"
       ],
-      "réponse": "horizontale",
+      "reponse": "horizontale",
       "anecdote": "La direction au sein d'un flex-container est fixée par la propriété flex-direction dont la valeur par défaut est 'row', donc horizontale",
       "imgAnswer": "assets/img/quizz_css/Answer/13.jpeg"
     },
@@ -405,7 +405,7 @@
         "à flex-basis",
         "à flex-flow"
       ],
-      "réponse": "à flex-shrink",
+      "reponse": "à flex-shrink",
       "anecdote": "La propriété flex est un raccourci de ces trois propriétés, dans l'ordre ; flex-grow, flex-shrink, flex-basis.",
       "imgAnswer": "assets/img/quizz_css/Answer/14.jpeg"
     },
@@ -419,7 +419,7 @@
         "row nowrap",
         "row wrap"
       ],
-      "réponse": "row nowrap",
+      "reponse": "row nowrap",
       "anecdote": "flex-flow est une propriété raccourcie de deux propriétés, flex-direction et flex-wrap, dont les valeurs par défaut sont respectivement row et nowrap",
       "imgAnswer": "assets/img/quizz_css/Answer/15.jpeg"
     }
@@ -436,7 +436,7 @@
         "Java est une version améliorée de JavaScript.",
         "Java est une île, ça n'a rien à voir !"
       ],
-      "réponse": "Ce sont deux langages différents, malgré quelques points communs dans la syntaxe.",
+      "reponse": "Ce sont deux langages différents, malgré quelques points communs dans la syntaxe.",
       "anecdote": "Le nom  JavaScript  a été choisi en raison des similitudes de syntaxe, et aussi (surtout ?) parce que le nom  Java  était à la mode.",
       "imgAnswer": "assets/img/quizz_javascript/Answer/1.jpeg"
     },
@@ -450,7 +450,7 @@
         "if (a <> 2) {}",
         "if a <> 2 {}"
       ],
-      "réponse": "if (a != 2) {}",
+      "reponse": "if (a != 2) {}",
       "anecdote": "La condition d'un if doit toujours être entourée de parenthèses. L'opérateur 'différent de' s'écrit != en JavaScript.",
       "imgAnswer": "assets/img/quizz_javascript/Answer/2.jpeg"
     },
@@ -464,7 +464,7 @@
         "className",
         "kiwi"
       ],
-      "réponse": "className",
+      "reponse": "className",
       "anecdote": "Il n'a pas été possible d'utiliser class dans le DOM car c'est un mot-clé réservé pour les futures versions de la spécification ECMAScript.",
       "imgAnswer": "assets/img/quizz_javascript/Answer/3.jpeg"
     },
@@ -478,7 +478,7 @@
         "échapper les caractères spéciaux (X)HTML.",
         "Aucune des réponses précédentes."
       ],
-      "réponse": "Aucune des réponses précédentes.",
+      "reponse": "Aucune des réponses précédentes.",
       "anecdote": "L’un des avantages du fait d’utiliser un fichier externe est justement de s’affranchir des problèmes d’inclusion du code JavaScript dans une page (X)HTML. On n’a donc pas à utiliser les balises &lt;script&gt; et &lt;/script&gt;, et les caractères spéciaux (X)HTML n’ont pas à être échappés. Quant à l’encodage, il doit être déclaré dans l’en-tête HTTP Content-Type.",
       "imgAnswer": "assets/img/quizz_javascript/Answer/4.jpeg"
     },
@@ -492,7 +492,7 @@
         "mouseclick",
         "mouseout"
       ],
-      "réponse": "mouseclick",
+      "reponse": "mouseclick",
       "anecdote": "Il faut utiliser click, qui a d'ailleurs l'avantage de se déclencher aussi avec l'activation par le clavier.",
       "imgAnswer": "assets/img/quizz_javascript/Answer/5.jpeg"
     },
@@ -506,7 +506,7 @@
         "document.getElementsByAttribute",
         "document.getElementById"
       ],
-      "réponse": "document.getElementsByAttribute",
+      "reponse": "document.getElementsByAttribute",
       "anecdote": "On peut rechercher les éléments par classe, id, nom de balise (tag).",
       "imgAnswer": "assets/img/quizz_javascript/Answer/6.jpeg"
     },
@@ -520,7 +520,7 @@
         "NaN",
         "$b"
       ],
-      "réponse": "$b",
+      "reponse": "$b",
       "anecdote": "var est un mot-clé ; 2a n'est pas valide car un identifiant ne peut pas commencer par un chiffre ; int est un mot-clé réservé pour les futures versions de la spécification ECMAScript.",
       "imgAnswer": "assets/img/quizz_javascript/Answer/7.jpeg"
     },
@@ -534,7 +534,7 @@
         "revenir au début de l'itération courante.",
         "supprimer toutes les variables globales."
       ],
-      "réponse": "passer à l'itération suivante.",
+      "reponse": "passer à l'itération suivante.",
       "anecdote": "Il est à noter que cette instruction peut être associée à un label, comme expliqué dans la documentation de Mozilla.",
       "imgAnswer": "assets/img/quizz_javascript/Answer/8.jpeg"
     },
@@ -548,7 +548,7 @@
         "0.12",
         "0"
       ],
-      "réponse": "0",
+      "reponse": "0",
       "anecdote": "Le modulo suivi de l'affectation divise la variable iNum par 2 puis affecte le reste de la division à iNum, soit zéro.",
       "imgAnswer": "assets/img/quizz_javascript/Answer/9.jpeg"
     },
@@ -562,7 +562,7 @@
         "indexOf()",
         "localeCompare()"
       ],
-      "réponse": "localeCompare()",
+      "reponse": "localeCompare()",
       "anecdote": "La bonne réponse est localeCompare().",
       "imgAnswer": "assets/img/quizz_javascript/Answer/10.jpeg"
     },
@@ -576,7 +576,7 @@
         "Number et Double.",
         "Number et Integer."
       ],
-      "réponse": "Number.",
+      "reponse": "Number.",
       "anecdote": "JavaScript ne fait pas la différence entre les nombres entiers et décimaux.",
       "imgAnswer": "assets/img/quizz_javascript/Answer/11.jpeg"
     },
@@ -590,7 +590,7 @@
         "JavaScript extensible.",
         "Rien, c’est juste une suite de lettres sans aucune signification."
       ],
-      "réponse": "Asynchronous JavaScript and XML.",
+      "reponse": "Asynchronous JavaScript and XML.",
       "anecdote": "'Asynchronous JavaScript and XML' signifie 'XML et JavaScript asynchrones'. La portée de ce terme est assez floue, en raison de l’énorme effet de mode qui y est associé. Il désigne en général la combinaison d’un ensemble de technologies (JavaScript, DOM, XMLHTTPRequest, (X)HTML, CSS,...) dans le but d’offrir à l'utilisateur un mode de navigation plus réactif et plus proche des interfaces graphiques lourdes.",
       "imgAnswer": "assets/img/quizz_javascript/Answer/12.jpeg"
     },
@@ -604,7 +604,7 @@
         "node.previousSibling.parentNode",
         "node.lastChild.previousSibling"
       ],
-      "réponse": "node.firstChild.nextSibling",
+      "reponse": "node.firstChild.nextSibling",
       "anecdote": "node.childNodes[1] signifie 'le second fils de ce noeud'.",
       "imgAnswer": "assets/img/quizz_javascript/Answer/13.jpeg"
     },
@@ -618,7 +618,7 @@
         "window.onload() = init;",
         "window.onload() = init();"
       ],
-      "réponse": "window.onload = init;",
+      "reponse": "window.onload = init;",
       "anecdote": "On attribue à l'attribut onload de l'objet window ( window.onload) la référence à la fonction init (et non pas le résultat de l'appel à init, que l'on aurait écrit init()).",
       "imgAnswer": "assets/img/quizz_javascript/Answer/14.jpeg"
     },
@@ -632,7 +632,7 @@
         "Quand l'arbre DOM a été construit.",
         "Quand l'arbre DOM a été construit et toutes les ressources chargées (images, ...)."
       ],
-      "réponse": "Quand l'arbre DOM a été construit et toutes les ressources chargées (images, ...).",
+      "reponse": "Quand l'arbre DOM a été construit et toutes les ressources chargées (images, ...).",
       "anecdote": "Ce comportement peut d'ailleurs être parfois gênant si l'on veut éviter un 'clignotement' au chargement de la page. Il faut alors se tourner vers des solutions propriétaires comme l'événement DOMContentLoaded supporté par Firefox et Opera.",
       "imgAnswer": "assets/img/quizz_javascript/Answer/15.jpeg"
     }
