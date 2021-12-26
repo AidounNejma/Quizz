@@ -42,6 +42,17 @@ body{
     background-size: cover;
 }
 
+.content{
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 0 0 5px 10px rgba(0, 0, 0, 0.2);
+    margin: 0 25%;
+    overflow:hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+    text-align: center;
+}
+
 /* Fin Main */
 
 /* Footer */

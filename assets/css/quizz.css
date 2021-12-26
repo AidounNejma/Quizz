@@ -32,6 +32,9 @@
     border: 2px solid black;
 }
 
+#submit {
+    display: none;
+}
 form{
     border: solid 2px black;
     margin: 0 15%;

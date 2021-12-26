@@ -1,10 +1,18 @@
 /* --------------------------------------------------------------- */
+
 /* Création de variable / récupération des élements de ma page QUIZZ */
+
 var img = document.getElementById('img'); //l'image du quizz
 //console.log(img);
 
+var numberQuestion = document.getElementsByClassName('numberQuestion');
+//console.log(numberQuestion);
+
 var question = document.getElementById('question'); //L'endroit des questions
 //console.log(question)
+
+var form = document.getElementById('form'); // Je récupère mon formulaire
+//console.log(form)
 
 var inputName = document.getElementById('inputText'); // L'input pour entrer son nom avant de commencer le test
 //console.log(inputName);
@@ -36,8 +44,11 @@ var title = document.getElementsByClassName('pageTitleChange'); // Titre de la p
 var paragraphStart = document.getElementById('startParagraph'); // Paragraphe avant le début du test, disparait en cliquant sur commencer
 //console.log(paragraphStart)
 
-var submit = document.getElementById('submit'); // Bouton submit du formulaire
-//console.log(submit)
+var finish = document.getElementById('finish'); // Bouton qui fera office de submit du formulaire pour éviter de refresh la page au submit
+//console.log(finish)
+
+var mainContent = document.getElementsByClassName('fakeClass');
+//console.log(mainContent[0]);
 
 /* --------------------------------------------------------------- */
 
@@ -46,8 +57,8 @@ var submit = document.getElementById('submit'); // Bouton submit du formulaire
 var index = 0; /* Pour se positionner dans l'index de mon array */
 number.innerHTML = index; /* J'attribue à l'endroit du numéro de mes questions la variable index */
 var score = 0; /* Pour incrémenter le score */
-const questionArray = []; // Tableau vide pour copier ma data dedans
-const globalData = []; //Tableau vide pour copier la data général de mon fichier JSON
+const questionArray = []; // Tableau vide pour copier ma data globale dedans
+const globalData = []; //Tableau vide pour copier la data aleatoire de mon fichier JSON
 var newName; //va me permettre de stocker le nom du joueur
 
 /* --------------------------------------------------------------- */
@@ -86,9 +97,9 @@ function firstPage(){ //Cette fonction va donner un visuel au premier chargement
         divAnswers[i].style.display = 'none';
     }
     
+    finish.style.display = "none";
     next.style.display = "none";
 
-    submit.style.display = "none";
 }
 window.onload = firstPage(); // j'appelle ma fonction au chargement de la page 
 
@@ -108,7 +119,7 @@ function eraseFirstPage(){ //Cette fonction va enlever le visuel de la première
 
 
     newName = inputName.value// je récupèrerai le nom du joueur à ce niveau là
-    console.log(newName);
+    //console.log(newName);
     displayQuizz(); // Je fais appel à ma fonction displayQuizz au premier clic du bouton commencer 
 }
 
@@ -198,7 +209,9 @@ function displayQuizz(){
         displayQuestion(); // j'affiche mes questions
     }
     if(index >= 10){ /* Si l'index est sup à la longueur de mon array alors */
-        finalSubmit()
+        recordScore();
+        next.style.display = "none";
+        finish.style.display = "inline";
     }
 
 }
@@ -257,28 +270,78 @@ function storeData(){
     let myArray = JSON.parse(localStorage.getItem('game')); // Je stocke dans une variable les données entrées dans le local storage 'game'
     //console.log(myArray)
     
-    if(myArray == null ){ // (|| score > myArrayScore) condition pour savoir si on enregistre le score et le nom dans le local storage ou pas 
+    //if(myArray == null || score > myArrayScore){} condition pour savoir si on enregistre le score et le nom dans le local storage ou pas selon si le score est supérieur à tous un des scores déjà présent
         
-        /* Enregistrement du Nom du joueur dans le local storage*/
-        myArray.push(newName); // j'ajoute à ma variable myArray la valeur du premier input (nom du joueur)
-        localStorage.setItem('game', JSON.stringify(myArray)); // Je le mets dans le local storage 'game'
+    /* Enregistrement du Nom du joueur dans le local storage*/
+    myArray.push(newName); // j'ajoute à ma variable myArray la valeur du premier input (nom du joueur)
+    localStorage.setItem('game', JSON.stringify(myArray)); // Je le mets dans le local storage 'game' sous forme de string
         
-        /* Permet d'enregistrer le score du joueur dans le local storage */
-        let newScore = score;
-        myArray.push(newScore);
-        localStorage.setItem('score', JSON.stringify(myArray));
-    }
+    /* Permet d'enregistrer le score du joueur dans le local storage */
+    let newScore = score;
+    myArray.push(newScore);
+    localStorage.setItem('score', JSON.stringify(myArray));
     
-
 }
 /* --------------------------------------------------------------- */
 
 /* Affichage des résultats */
 
-/* Fonction qui va comparer les resultats de mes réponses aux réponses du fichiers JSON */
+/* Fonction qui va afficher mes résultats */
+function showMyResults(){
+    mainContent[0].classList.toggle('content'); //on modifie la class de la div en 'content' pour qu'elle soit centrée
 
-function compareDatas(){
+    let resultsImage = document.createElement('img'); //on créé un élément img pour contenir nos images
+    //resultsImage.className = "";
+    
+    let resultsQuestion = document.createElement('h4'); // on créé un élément h4 pour contenir les questions
+    //resultsQuestion.className = "";
 
+    let containerUl = document.createElement('ul'); // on créé un élément ul pour contenir nos li
+    //resultsQuestion.className = "";
+
+    let resultsPropositions = document.createElement('li'); // on créé un élément li qui va contenir les propositions
+    //resultsQuestion.className = "";
+
+    let resultsAnecdote = document.createElement('p'); //on créé un élément p pour contenir l'anecdote/l'explication de la réponse du quizz
+    //resultsQuestion.className = "";
+
+    for(let i = 0; i < 10; i++){ // boucle pour récupérer les 10 premieres questions de mon questionArray
+        resultsImage.src = questionArray[i].imgAnswer; // dans la source de ma balise img je mets le lien vers mon image
+        resultsQuestion.innerHTML = questionArray[i].question; // dans mon h4 je mets ma question
+        title[0].innerHTML = "Résultats du "; // dans mon titre je mets "Résultats du"
+        resultsAnecdote.innerHTML = questionArray[i].anecdote; // dans mon paragraphe je mets l'anecdote liée à la question
+
+        for(let n = 0; n < 4; n++){ // boucle for pour 
+            if(questionArray[n].propositions[n] == valueInput[i]){
+                questionArray[n].propositions[n].style.backgroundColor = "green";
+            }
+            if(questionArray[n].propositions[n] != valueInput[i]){
+                questionArray[n].propositions[n].style.backgroundColor = "red";
+            } else{
+                questionArray[n].propositions[n].style.backgroundColor = "none";
+            }
+            resultsPropositions[n].innerHTML = questionArray[n].propositions[n];
+            
+        }
+
+        mainContent[0].appendChild(resultsImage); // dans ma div content j'ajoute l'élément img qui va contenir l'image
+        mainContent[0].appendChild(resultsQuestion); // dans ma div content j'ajoute l'élément h4 qui va contenir la question
+        mainContent[0].appendChild(containerUl); // dans ma div content j'ajoute l'élément ul qui va contenir mon ul
+        containerUl.appendChild(resultsPropositions);// dans mon ul j'ajoute les éléments li qui va contenir mes li
+        mainContent[0].appendChild(resultsAnecdote);// dans ma div content j'ajoute l'élément p qui va contenir mon anecdote
+    }
+
+}
+
+/* --------------------------------------------------------------- */
+
+/* Fonction qui va supprimer l'affichage du quizz */
+function eraseMyQuizz(){
+
+    img.style.display = "none";
+    question.style.display = "none";
+    form.style.display = "none";
+    numberQuestion[0].style.display = "none";
 }
 
 /* --------------------------------------------------------------- */
@@ -288,6 +351,8 @@ function compareDatas(){
 function finalSubmit(){
 
     storeData();// au dernier submit => Je stocke ma data dans le local storage
-
+    eraseMyQuizz(); // appel de ma fonction qui va supprimer l'affichage du quizz
+    showMyResults(); // appel de ma fonction qui va afficher mes quizz
 
 }
+finish.addEventListener('click', finalSubmit); // fonction finalSubmit qui se déclenchera au clic

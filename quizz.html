@@ -21,11 +21,12 @@
         </nav>
     </header>
     <main>
-        <h1 class="pageTitle">Quizz <span class="pageTitleChange"> </span></h1>
+        <div class="fakeClass">
+        <h1 class="pageTitle"><span class="pageTitleChange"> </span> Quizz</h1>
         <h2 class="numberQuestion">Question n°<span class="number" id="number"></span>/<span id="number2">10</span></h2>
         <img src="" alt="" class="img" id="img">
         <h3 class="question" id="question"></h3>
-        <form>
+        <form id="form">
             <p id="startParagraph">Entrez votre nom et cliquez sur le bouton pour commencer votre test !</p>
             <input type="text" placeholder="Veuillez entrer votre nom" id="inputText">
             <div class="answers">
@@ -46,8 +47,10 @@
             </div>
             <button type="button" class="next" id="next">Suivant</button>
             <button type="button" class="next" id="start">Commencer le test</button>
-            <button type="submit" class="next" id="submit" >Terminer le test</button>
+            <button type="button" class="next" id="finish">Terminer le test</button>
+            <button type="submit" class="next" id="submit" ></button>
         </form>
+        </div>
     </main>
     <footer>
         <p>Nejma Aidoun copyrights</p>
