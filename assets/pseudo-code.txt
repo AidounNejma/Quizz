@@ -41,7 +41,7 @@
     for(let i = 0; i < questions.length; i++){
         => Afficher une information complémentaire à l'affichage du score : 
         elem.innerHtml = data.description
-        => Condition pour déterminer l'affichage des réponses : 
+        => Condition pour déterminer l'affichage des réponses (comparer les valeurs stockées dans le local storage à la bonne réponse du Json) : 
         (if bonneReponse){
             elem.backgroundColor = "green"
         } else {

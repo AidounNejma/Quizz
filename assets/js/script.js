@@ -38,9 +38,11 @@ var paragraphStart = document.getElementById('startParagraph'); // Paragraphe av
 
 var submit = document.getElementById('submit'); // Bouton submit du formulaire
 //console.log(submit)
+
 /* --------------------------------------------------------------- */
 
 /* Variables qui vont nous être utiles dans les fonctions */
+
 var index = 0; /* Pour se positionner dans l'index de mon array */
 number.innerHTML = index; /* J'attribue à l'endroit du numéro de mes questions la variable index */
 var score = 0; /* Pour incrémenter le score */
@@ -114,6 +116,7 @@ start.addEventListener('click', eraseFirstPage); // Au clic du bouton commencer 
 /* --------------------------------------------------------------- */
 
 /* Fonction qui va générer un tableau aléatoire */
+
 const shuffleArray = (array) =>{
     array.sort((a, b) => 0.5 - Math.random());
 }
@@ -121,6 +124,7 @@ const shuffleArray = (array) =>{
 /* --------------------------------------------------------------- */
 
 /* Appel du fichier JSON  */
+
 const url = 'package.json'; /* Création constante contenant l'url de notre fichier JSON */
 
 const getData = async() => { //Fonction asyncrone pour récupérer les données de mon JSON
@@ -174,6 +178,7 @@ window.onload = copyArray(); // J'appelle ma fonction au chargement de la page
 /* --------------------------------------------------------------- */
 
 /* Fonction pour afficher tout ça */
+
 function displayQuizz(){
     
     if(index <= questionArray.length){ /* Si l'index est inf ou égal à la longueur de mon array alors */
@@ -227,20 +232,27 @@ function recordScore(){
 
 /* --------------------------------------------------------------- */
 
-/* Fonction pour enregistrer les réponses dans le local Storage du navigateur */
+/* Fonction pour enregistrer les données dans le local Storage du navigateur */
 
-function storeAnswers(){
-    
-    if(localStorage.getItem('answers') == null && localStorage.getItem('score') == null){
-        localStorage.setItem('answers', '[]');
-        localStorage.setItem('score', '[]');
-    }
+/* initialisation de mon tableau "game" */
+if(localStorage.getItem('game') == null){ // si mon tableau n'existe pas
+    localStorage.setItem('game', '[]'); // alors je le créé
+}
 
-    let newValue = suggestionsInput[index].checked.value;
-    let oldValue = JSON.parse(localStorage.getItem('answers'));
-    oldValue.push(newValue);
+let myArray = JSON.parse(localStorage.getItem('game')); // Je stocke dans une variable les données entrées dans le local storage 'game'
+//console.log(myArray)
 
-    localStorage.setItem('answers', JSON.stringify(oldValue));
+function storeData(){
+
+    /* Enregistrement du Nom du joueur */
+    let newName = inputText.value; // variable contenant la valeur du premier input (nom du joueur)
+    myArray.push(newName); // j'ajoute à ma variable myArray la valeur du premier input (nom du joueur)
+    localStorage.setItem('game', JSON.stringify(myArray)); // Je le mets dans le local storage 'game'
+
+    /* Enregistrement des réponses */
+    let newAnswer = suggestionsInput[index].checked.value;
+    myArray.push(newAnswer);
+    localStorage.setItem('game', JSON.stringify(myArray));
 
 }
 
@@ -252,10 +264,19 @@ function finalSubmit(){
     
     /* Permet d'enregistrer le score du joueur dans le local storage */
     let newScore = score;
-    let oldScore = JSON.parse(localStorage.getItem('score'));
-    oldScore.push(newScore);
+    myArray.push(newScore);
+    localStorage.setItem('score', JSON.stringify(myArray));
 
-    localStorage.setItem('score', JSON.stringify(oldScore));
+    /* Redirection vers la page resultats */
+    document.location.href="results.html";
 
+}
+/* --------------------------------------------------------------- */
+
+/* Affichage des résultats */
+
+/* Fonction qui va comparer les resultats du local storage à mes données du fichier JSON */
+
+function compareDatas(){
 
 }
