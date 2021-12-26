@@ -221,11 +221,11 @@ function storeAnswers(){
         localStorage.setItem('score', '[]');
     }
 
-    let new_value = suggestionsInput[index].checked.value;
-    let old_value = JSON.parse(localStorage.getItem('answers'));
-    old_value.push(new_value);
+    let newValue = suggestionsInput[index].checked.value;
+    let oldValue = JSON.parse(localStorage.getItem('answers'));
+    oldValue.push(newValue);
 
-    localStorage.setItem('answers', JSON.stringify(old_value));
+    localStorage.setItem('answers', JSON.stringify(oldValue));
 
 }
 
