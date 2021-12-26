@@ -48,6 +48,7 @@ number.innerHTML = index; /* J'attribue à l'endroit du numéro de mes questions
 var score = 0; /* Pour incrémenter le score */
 const questionArray = []; // Tableau vide pour copier ma data dedans
 const globalData = []; //Tableau vide pour copier la data général de mon fichier JSON
+var newName; //va me permettre de stocker le nom du joueur
 
 /* --------------------------------------------------------------- */
 
@@ -106,9 +107,9 @@ function eraseFirstPage(){ //Cette fonction va enlever le visuel de la première
     start.style.display = "none";
 
 
-
+    newName = inputName.value// je récupèrerai le nom du joueur à ce niveau là
+    console.log(newName);
     displayQuizz(); // Je fais appel à ma fonction displayQuizz au premier clic du bouton commencer 
-    console.log(inputName.value)// je récupèrerai le nom du joueur à ce niveau là
 }
 
 start.addEventListener('click', eraseFirstPage); // Au clic du bouton commencer le test, la "première page" s'efface pour laisser place au test
@@ -183,22 +184,21 @@ window.onload = copyArray(); // J'appelle ma fonction au chargement de la page
 function displayQuizz(){
     
     if(index < 10){ /* Si l'index est inf ou égal à la longueur de mon array alors */
-        index++; // J'incrémente mon index
-        displayQuestion();
-        //storeAnswers()
-        //recordScore()
-
-        /* Test récupération des valeurs de l'input radio qui sera dans une fonction */
+    
+        /* Récupération des valeurs de l'input radio qui sera dans une fonction */
         for(let m = 0; m < suggestionsInput.length; m++){ // boucle pour tous les inputs radio
             if (suggestionsInput[m].type === 'radio' && suggestionsInput[m].checked) {// si l'input est de type radio et qu'il est coché alors
-                console.log(suggestionsInput[m].value); //pour l'instant je console.log la value 
+                valueInput = suggestionsInput[m].value; //pour l'instant je console.log la value 
                 suggestionsInput[m].removeAttribute('checked'); //tentative infructueuse de supprimer l'attribut checked s'il est checked
+                
+                recordScore(); //Appel de ma fonction d'enregistrement du score
             }
         }
-
+        
+        displayQuestion(); // j'affiche mes questions
     }
     if(index >= 10){ /* Si l'index est sup à la longueur de mon array alors */
-        //finalSubmit()
+        finalSubmit()
     }
 
 }
@@ -213,6 +213,7 @@ next.addEventListener('click', displayQuizz); // fonction displayQuizz qui se d�
 function displayQuestion(){
     //console.log(questionArray);
     /* Incrémenter le nombre de questions */
+    index++; // J'incrémente mon index
     number.innerHTML = index; // J'attribue à l'endroit du numéro des questions mon index
     number2.innerHTML = 10; // J'attribue 10 à la longueur de mon test 
 
@@ -233,44 +234,50 @@ function displayQuestion(){
 /* Pour incrémenter le score à chaque bonne réponse */
 function recordScore(){
     
-    if(questionArray[index].reponse == suggestionsInput[index].checked.value){ // Si la réponse stockée dans mon questionArray (la bonne réponse) est égale à la valeur de l'input radio qui est cochée alors:
+    if(questionArray[index].reponse == valueInput){ // Si la réponse stockée dans mon questionArray (la bonne réponse) est égale à la valeur de l'input radio qui est cochée alors:
         score++; // J'incrémente de 1
         
     } else { //Sinon
         score + 0; // J'ajoute 0
     } 
-    console.log(score);
+    return score;
 }
 
 /* --------------------------------------------------------------- */
 
 /* Fonction pour enregistrer les données dans le local Storage du navigateur */
 
-/* initialisation de mon tableau "game" */
-if(localStorage.getItem('game') == null){ // si mon tableau n'existe pas
-    localStorage.setItem('game', '[]'); // alors je le créé
-}
-
-let myArray = JSON.parse(localStorage.getItem('game')); // Je stocke dans une variable les données entrées dans le local storage 'game'
-//console.log(myArray)
-
 function storeData(){
-
-    /* Enregistrement du Nom du joueur */
-    let newName = inputText.value; // variable contenant la valeur du premier input (nom du joueur)
-    myArray.push(newName); // j'ajoute à ma variable myArray la valeur du premier input (nom du joueur)
-    localStorage.setItem('game', JSON.stringify(myArray)); // Je le mets dans le local storage 'game'
-
-    /* Enregistrement des réponses */
-    for(let m = 0; m < suggestionsInput.length; m++){
-        if (suggestionsInput[m].type === 'radio' && suggestionsInput[m].checked) {
-            value = suggestionsInput[m].value;       
-        }
+    
+    /* Initialisation de mon tableau "game" */
+    if(localStorage.getItem('game') == null){ // si mon tableau n'existe pas
+        localStorage.setItem('game', '[]'); // alors je le créé
     }
     
-    let newAnswer = value;
-    myArray.push(newAnswer);
-    localStorage.setItem('game', JSON.stringify(myArray));
+    let myArray = JSON.parse(localStorage.getItem('game')); // Je stocke dans une variable les données entrées dans le local storage 'game'
+    //console.log(myArray)
+    
+    if(myArray == null ){ // (|| score > myArrayScore) condition pour savoir si on enregistre le score et le nom dans le local storage ou pas 
+        
+        /* Enregistrement du Nom du joueur dans le local storage*/
+        myArray.push(newName); // j'ajoute à ma variable myArray la valeur du premier input (nom du joueur)
+        localStorage.setItem('game', JSON.stringify(myArray)); // Je le mets dans le local storage 'game'
+        
+        /* Permet d'enregistrer le score du joueur dans le local storage */
+        let newScore = score;
+        myArray.push(newScore);
+        localStorage.setItem('score', JSON.stringify(myArray));
+    }
+    
+
+}
+/* --------------------------------------------------------------- */
+
+/* Affichage des résultats */
+
+/* Fonction qui va comparer les resultats de mes réponses aux réponses du fichiers JSON */
+
+function compareDatas(){
 
 }
 
@@ -279,22 +286,8 @@ function storeData(){
 /* Fonction qui s'enclenche lors du dernier submit*/
 
 function finalSubmit(){
-    
-    /* Permet d'enregistrer le score du joueur dans le local storage */
-    let newScore = score;
-    myArray.push(newScore);
-    localStorage.setItem('score', JSON.stringify(myArray));
 
-    /* Redirection vers la page resultats */
-    document.location.href="results.html";
+    storeData();// au dernier submit => Je stocke ma data dans le local storage
 
-}
-/* --------------------------------------------------------------- */
-
-/* Affichage des résultats */
-
-/* Fonction qui va comparer les resultats du local storage à mes données du fichier JSON */
-
-function compareDatas(){
 
 }
