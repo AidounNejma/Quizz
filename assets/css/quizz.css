@@ -23,6 +23,15 @@
     font-size: 20px;
 }
 
+#inputText{
+    padding: 1%;
+    width: 200px;
+    margin: 3% 0;
+    border-radius: 9px;
+    font-style: italic;
+    border: 2px solid black;
+}
+
 form{
     border: solid 2px black;
     margin: 0 15%;

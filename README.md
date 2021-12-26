@@ -1,11 +1,12 @@
 # Quizz HTML/CSS/JAVASCRIPT
 
+## Installer json-server
+```bash
+npm install -g json-server
+```
 
 ## Allumer le serveur pour la "database" json
-```bash 
-npm package.json
-```
-OU
+
 ```bash 
 json-server --watch package.json
 ```

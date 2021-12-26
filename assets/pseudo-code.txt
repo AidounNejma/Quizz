@@ -9,7 +9,7 @@
 
 
 3 - Générateur de questions aléatoires
-    => Créer une fonction shuffle qui permettra de générer des questions aléatoiredans tout le fichier JSON
+    => Créer une fonction shuffle qui permettra de générer des questions aléatoires dans tout le fichier JSON
     function shuffle(){
          array.sort((a, b) => 0.5 - Math.random()); 
     }

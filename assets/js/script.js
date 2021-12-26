@@ -1,43 +1,51 @@
 /* --------------------------------------------------------------- */
 /* Création de variable / récupération des élements de ma page QUIZZ */
-let img = document.getElementById('img');
+var img = document.getElementById('img'); //l'image du quizz
 //console.log(img);
 
-let question = document.getElementById('question');
+var question = document.getElementById('question'); //L'endroit des questions
 //console.log(question)
 
-let suggestionsLabel = document.getElementsByClassName('suggestionsLabel');
+var inputName = document.getElementById('inputText'); // L'input pour entrer son nom avant de commencer le test
+//console.log(inputName);
+
+var divAnswers = document.getElementsByClassName('answers'); // les div contenant mes inputs+label
+//console.log(divAnswers)
+
+var suggestionsLabel = document.getElementsByClassName('suggestionsLabel'); // Le label des input du formulaire
 //console.log(suggestionsLabel.item(0));
 
-let suggestionsInput = document.getElementsByClassName('suggestionsInput');
+var suggestionsInput = document.getElementsByClassName('suggestionsInput'); // Les inputs radios de mon formulaire
 //console.log(suggestionsInput)
 
-let number = document.getElementById('number');
+var number = document.getElementById('number'); // Le premier chiffre pour les questions (Question n°chiffre/15)
 //console.log(number)
 
-let number2 = document.getElementById('number2');
+var number2 = document.getElementById('number2'); // Le deuxième chiffre pour les questions (Question n°0/chiffre)
 //console.log(number2)
 
-let next = document.getElementById('next');
+var next = document.getElementById('next'); // Bouton suivant
 //console.log(next)
 
-let start = document.getElementById('start');
+var start = document.getElementById('start'); // Bouton commencer la partie
 //console.log(start)
 
-let title = document.getElementsByClassName('pageTitleChange');
+var title = document.getElementsByClassName('pageTitleChange'); // Titre de la page (ex: QUIZZ HTML, QUIZZ CSS...etc)
 //console.log(title[0])
 
-let paragraphStart = document.getElementById('startParagraph');
+var paragraphStart = document.getElementById('startParagraph'); // Paragraphe avant le début du test, disparait en cliquant sur commencer
 //console.log(paragraphStart)
 
-let submit = document.getElementById('submit');
+var submit = document.getElementById('submit'); // Bouton submit du formulaire
 //console.log(submit)
 /* --------------------------------------------------------------- */
 
 /* Variables qui vont nous être utiles dans les fonctions */
 var index = 0; /* Pour se positionner dans l'index de mon array */
-let score = 0; /* Pour incrémenter le score */
+number.innerHTML = index; /* J'attribue à l'endroit du numéro de mes questions la variable index */
+var score = 0; /* Pour incrémenter le score */
 var questionArray = []; // Tableau vide pour copier ma data dedans
+var globalData = []; //Tableau vide pour copier la data général de mon fichier JSON
 
 /* --------------------------------------------------------------- */
 
@@ -45,8 +53,8 @@ var questionArray = []; // Tableau vide pour copier ma data dedans
 
 var currentUrl = document.location.href;
 //console.log(' URL : \n' + currentUrl);
-var currentUrl = currentUrl.replace(/\/$/, ""); //Je supprimer le dernier slash de l'url 
-lastPieceUrl = currentUrl.substring(currentUrl.lastIndexOf("/") + 1); // on stocke dans lastPieceUrl uniquement la dernière partie de l'URL qui nous intéresse
+var currentUrl = currentUrl.replace(/\/$/, ""); //Je supprime le dernier slash de l'url 
+lastPieceUrl = currentUrl.substring(currentUrl.lastIndexOf("/") + 1); // je stocke dans lastPieceUrl uniquement la dernière partie de l'URL qui m'intéresse
 //console.log('Fin Url : ' + lastPieceUrl)
 
 /* --------------------------------------------------------------- */
@@ -71,10 +79,10 @@ function firstPage(){ //Cette fonction va donner un visuel au premier chargement
         img.src = "assets/img/javascript.jpg";
     }
 
-    for(let i = 0; i < suggestionsInput.length; i++){
-        suggestionsInput[i].style.display = 'none';
+    for(let i = 0; i < divAnswers.length; i++){
+        divAnswers[i].style.display = 'none';
     }
-
+    
     next.style.display = "none";
 
     submit.style.display = "none";
@@ -85,23 +93,27 @@ window.onload = firstPage(); // j'appelle ma fonction au chargement de la page
 
 /* Fonction pour supprimer la première page */
 
-function eraseFirstPage(){ //Cette fonction va enlever le visuel de la premier page (fonction au dessus) au clic de "commencer le test"
-    for(let i = 0; i < suggestionsInput.length; i++){
-        suggestionsInput[i].style.display = 'inline';
-    }
+function eraseFirstPage(){ //Cette fonction va enlever le visuel de la première page (fonction au dessus) au clic de "commencer le test"
     
+    for(let i = 0; i < divAnswers.length; i++){
+        divAnswers[i].style.display = 'block';
+    }
+    inputName. style.display = "none";
     paragraphStart.style.display = 'none';
     next.style.display = "inline";
     start.style.display = "none";
-    displayQuizz()
+
+
+
+    displayQuizz(); // Je fais appel à ma fonction displayQuizz au premier clic du bouton commencer 
 }
 
-start.addEventListener('click', eraseFirstPage);
+start.addEventListener('click', eraseFirstPage); // Au clic du bouton commencer le test, la "première page" s'efface pour laisser place au test
 
 
 /* --------------------------------------------------------------- */
 
-/* Fonction qui va faire un tableau aléatoire */
+/* Fonction qui va générer un tableau aléatoire */
 const shuffleArray = (array) =>{
     array.sort((a, b) => 0.5 - Math.random());
 }
@@ -113,34 +125,37 @@ const url = 'package.json'; /* Création constante contenant l'url de notre fich
 
 const getData = async() => { //Fonction asyncrone pour récupérer les données de mon JSON
     const response = await fetch(url); // fetch de mon url
-    const data = await response.json(); // je récupère la reponse de ma promesse et je la mets au format JSONs
+    const data = await response.json(); // Je récupère la reponse de ma promesse et je la mets au format JSON
     
-    //conditions pour récupérer les datas qui nous intéresse selon le clic de la page précédente
-    if (lastPieceUrl == "quizz.html?random") { //On récupère toute la data (ne fonctionne pas encore)
-        //console.log(data);
-        shuffleArray(data); //je shuffle mon array en faisant appel à la fonction que j'ai créé au dessus
-        return data; // je retourne ma data
+    //conditions pour récupérer les datas qui m'intéresse selon le clic de la page précédente
+    if (lastPieceUrl == "quizz.html?random") { //Je récupère toute la data
+        //console.log(data)
+        globalData = data.HTML.concat(data.CSS, data.Javascript);// J'utilise la fonction concat pour concaténer les valeurs des 3 tableaux dans un seul
+        //console.log(globalData)
+        shuffleArray(globalData); //je shuffle mon array en faisant appel à la fonction que j'ai créé au dessus
+        return globalData; // je retourne ma data
     }
     
-    if (lastPieceUrl == "quizz.html?html") {// On récupère le HTML
+    if (lastPieceUrl == "quizz.html?html") {// Je récupère le HTML
         //console.log(data.HTML)
         shuffleArray(data.HTML);
         return data.HTML;
     }
     
-    if (lastPieceUrl == "quizz.html?css") { // On récupère le CSS
+    if (lastPieceUrl == "quizz.html?css") { // Je récupère le CSS
         //console.log(data.CSS)
         shuffleArray(data.CSS);
         return data.CSS;
     }
 
-    if (lastPieceUrl == "quizz.html?javascript") { // On récupère le Javascript
+    if (lastPieceUrl == "quizz.html?javascript") { // Je récupère le Javascript
         //console.log(data.Javascript)
         shuffleArray(data.Javascript);
         return data.Javascript;
     }
 }
-window.onload = getData(); // j'appelle ma fonction au chargement de la page 
+window.onload = getData(); // J'appelle ma fonction au chargement de la page 
+
 /* --------------------------------------------------------------- */
 
 /* Copie de l'array */
@@ -153,7 +168,7 @@ const copyArray = async(data)=>{
     //console.log(questionArray);
 }
 
-window.onload = copyArray(); // j'appelle ma fonction au chargement de la page 
+window.onload = copyArray(); // J'appelle ma fonction au chargement de la page 
 //console.log(questionArray);
 
 /* --------------------------------------------------------------- */
@@ -172,19 +187,19 @@ function displayQuizz(){
 
 }
 
-next.addEventListener('click', displayQuizz);
+next.addEventListener('click', displayQuizz); // fonction displayQuizz qui se déclenche à chaque clic
 
 /* --------------------------------------------------------------- */
 
 /* Fonction qui va afficher les questions */
-number.innerHTML = index;
+
 
 function displayQuestion(){
     console.log(questionArray);
     /* Incrémenter le nombre de questions */
-    index++;
-    number.innerHTML = index;
-    number2.innerHTML = questionArray.length;
+    index++; // J'incrémente mon index
+    number.innerHTML = index; // J'attribue à l'endroit du numéro des questions mon index
+    number2.innerHTML = questionArray.length; // J'attribue la taille de l'array (15)
 
     /* Affectation des valeurs de l'array à mes variables HTML */
     question.innerHTML = questionArray[index].question;
@@ -203,10 +218,10 @@ function displayQuestion(){
 /* Pour incrémenter le score à chaque bonne réponse */
 function recordScore(){
     
-    if(questionArray[index].réponse == suggestionsInput[index].checked.value){ // Si la réponse stockée dans mon questionArray (la bonne réponse) est égale à la valeur de l'input radio qui est coché alors:
-        score++; // on incrémente de 1
-    } else { //sinon
-        score + 0; // on ajoute 0
+    if(questionArray[index].réponse == suggestionsInput[index].checked.value){ // Si la réponse stockée dans mon questionArray (la bonne réponse) est égale à la valeur de l'input radio qui est cochée alors:
+        score++; // J'incrémente de 1
+    } else { //Sinon
+        score + 0; // J'ajoute 0
     } 
 }
 
@@ -241,4 +256,6 @@ function finalSubmit(){
     oldScore.push(newScore);
 
     localStorage.setItem('score', JSON.stringify(oldScore));
+
+
 }
