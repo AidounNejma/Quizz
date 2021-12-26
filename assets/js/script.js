@@ -108,6 +108,7 @@ function eraseFirstPage(){ //Cette fonction va enlever le visuel de la première
 
 
     displayQuizz(); // Je fais appel à ma fonction displayQuizz au premier clic du bouton commencer 
+    console.log(inputName.value)// je récupèrerai le nom du joueur à ce niveau là
 }
 
 start.addEventListener('click', eraseFirstPage); // Au clic du bouton commencer le test, la "première page" s'efface pour laisser place au test
@@ -181,13 +182,22 @@ window.onload = copyArray(); // J'appelle ma fonction au chargement de la page
 
 function displayQuizz(){
     
-    if(index <= questionArray.length){ /* Si l'index est inf ou égal à la longueur de mon array alors */
+    if(index < 10){ /* Si l'index est inf ou égal à la longueur de mon array alors */
         index++; // J'incrémente mon index
         displayQuestion();
         //storeAnswers()
         //recordScore()
+
+        /* Test récupération des valeurs de l'input radio qui sera dans une fonction */
+        for(let m = 0; m < suggestionsInput.length; m++){ // boucle pour tous les inputs radio
+            if (suggestionsInput[m].type === 'radio' && suggestionsInput[m].checked) {// si l'input est de type radio et qu'il est coché alors
+                console.log(suggestionsInput[m].value); //pour l'instant je console.log la value 
+                suggestionsInput[m].removeAttribute('checked'); //tentative infructueuse de supprimer l'attribut checked s'il est checked
+            }
+        }
+
     }
-    if(index > questionArray.length){ /* Si l'index est sup à la longueur de mon array alors */
+    if(index >= 10){ /* Si l'index est sup à la longueur de mon array alors */
         //finalSubmit()
     }
 
@@ -201,10 +211,10 @@ next.addEventListener('click', displayQuizz); // fonction displayQuizz qui se d�
 
 
 function displayQuestion(){
-    console.log(questionArray);
+    //console.log(questionArray);
     /* Incrémenter le nombre de questions */
     number.innerHTML = index; // J'attribue à l'endroit du numéro des questions mon index
-    number2.innerHTML = questionArray.length; // J'attribue la taille de l'array (15)
+    number2.innerHTML = 10; // J'attribue 10 à la longueur de mon test 
 
     /* Affectation des valeurs de l'array à mes variables HTML */
     question.innerHTML = questionArray[index].question;
@@ -225,9 +235,11 @@ function recordScore(){
     
     if(questionArray[index].reponse == suggestionsInput[index].checked.value){ // Si la réponse stockée dans mon questionArray (la bonne réponse) est égale à la valeur de l'input radio qui est cochée alors:
         score++; // J'incrémente de 1
+        
     } else { //Sinon
         score + 0; // J'ajoute 0
     } 
+    console.log(score);
 }
 
 /* --------------------------------------------------------------- */
@@ -250,7 +262,13 @@ function storeData(){
     localStorage.setItem('game', JSON.stringify(myArray)); // Je le mets dans le local storage 'game'
 
     /* Enregistrement des réponses */
-    let newAnswer = suggestionsInput[index].checked.value;
+    for(let m = 0; m < suggestionsInput.length; m++){
+        if (suggestionsInput[m].type === 'radio' && suggestionsInput[m].checked) {
+            value = suggestionsInput[m].value;       
+        }
+    }
+    
+    let newAnswer = value;
     myArray.push(newAnswer);
     localStorage.setItem('game', JSON.stringify(myArray));
 
