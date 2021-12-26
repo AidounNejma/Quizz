@@ -56,15 +56,19 @@ lastPieceUrl = currentUrl.substring(currentUrl.lastIndexOf("/") + 1); // on stoc
 function firstPage(){ //Cette fonction va donner un visuel au premier chargement de la page
     if(lastPieceUrl == "quizz.html?random"){
         title[0].innerHTML = "Aléatoire";
+        img.src = "assets/img/arrows-pointing-randomly-with-copy-space.jpg";
     }
     if (lastPieceUrl == "quizz.html?html") {
         title[0].innerHTML = "HTML";
+        img.src = "assets/img/html.jpg";
     }
     if (lastPieceUrl == "quizz.html?css") {
         title[0].innerHTML = "CSS";
+        img.src = "assets/img/css.jpg";
     }
     if (lastPieceUrl == "quizz.html?javascript") {
         title[0].innerHTML = "Javascript";
+        img.src = "assets/img/javascript.jpg";
     }
 
     for(let i = 0; i < suggestionsInput.length; i++){
