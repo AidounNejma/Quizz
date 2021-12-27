@@ -1,7 +1,11 @@
 
+
+/* Je voulais teste ça pour enregistrer mes data dans le local storage */
+
   /* Initialisation de mon tableau "game" */
   if(localStorage.getItem('game') == null){ // si mon tableau n'existe pas
     localStorage.setItem('game', '[]'); // alors je le créé
+
     let myArray = JSON.parse(localStorage.getItem('game'));
     /* Enregistrement du Nom du joueur dans le local storage*/
     myArray.push(newName); // j'ajoute à ma variable myArray la valeur du premier input (nom du joueur)

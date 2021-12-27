@@ -125,9 +125,6 @@ function eraseFirstPage(){ //Cette fonction va enlever le visuel de la première
     displayQuizz(); // Je fais appel à ma fonction displayQuizz au premier clic du bouton commencer 
 }
 
-
-
-
 /* --------------------------------------------------------------- */
 
 /* Fonction qui va générer un tableau aléatoire */
@@ -218,7 +215,6 @@ function displayQuizz(){
     }
 
 }
-
 
 
 /* --------------------------------------------------------------- */
@@ -377,7 +373,8 @@ function finalSubmit(){
 
 }
 
-window.addEventListener('load', async function (e) { 
+/* J'ai regroupé tous mes addEventListeners au même endroit et par ordre chronologique */
+window.addEventListener('load', async function () { 
     await firstPage();
     await getData();
     await copyArray();
