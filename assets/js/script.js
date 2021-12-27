@@ -60,6 +60,8 @@ var score = 0; /* Pour incrémenter le score */
 const questionArray = []; // Tableau vide pour copier ma data globale dedans
 const globalData = []; //Tableau vide pour copier la data aleatoire de mon fichier JSON
 var newName; //va me permettre de stocker le nom du joueur
+var valueInput = []; // va me permettre de stocker la valeur des inputs que j'ai sélectionné à chaque fois 
+var id = []; // va me permettre de stocker les id de chaque questions sur laquelle je passe
 
 /* --------------------------------------------------------------- */
 
@@ -101,7 +103,7 @@ function firstPage(){ //Cette fonction va donner un visuel au premier chargement
     next.style.display = "none";
 
 }
-window.onload = firstPage(); // j'appelle ma fonction au chargement de la page 
+//window.onload = firstPage(); // j'appelle ma fonction au chargement de la page 
 
 /* --------------------------------------------------------------- */
 
@@ -123,7 +125,7 @@ function eraseFirstPage(){ //Cette fonction va enlever le visuel de la première
     displayQuizz(); // Je fais appel à ma fonction displayQuizz au premier clic du bouton commencer 
 }
 
-start.addEventListener('click', eraseFirstPage); // Au clic du bouton commencer le test, la "première page" s'efface pour laisser place au test
+
 
 
 /* --------------------------------------------------------------- */
@@ -171,7 +173,7 @@ const getData = async() => { //Fonction asyncrone pour récupérer les données 
         return data.Javascript;
     }
 }
-window.onload = getData(); // J'appelle ma fonction au chargement de la page 
+//window.onload = getData(); // J'appelle ma fonction au chargement de la page 
 
 /* --------------------------------------------------------------- */
 
@@ -180,12 +182,14 @@ window.onload = getData(); // J'appelle ma fonction au chargement de la page
 const copyArray = async(data)=>{
     const myData = await getData(data);
     //console.log(myData)
-    questionArray.push(...myData); //Je stocke dans mon array vide (questionArray) => myData qui contient mes données du fichier JSON
+    questionArray.push(...myData.slice(0, 10)); //Je stocke dans mon array vide (questionArray) => myData qui contient mes données du fichier JSON
+    console.log(questionArray);
     return questionArray; //Je retourne questionArray
-    //console.log(questionArray);
+
 }
 
-window.onload = copyArray(); // J'appelle ma fonction au chargement de la page 
+//window.onload = copyArray(); // J'appelle ma fonction au chargement de la page 
+
 //console.log(questionArray);
 
 /* --------------------------------------------------------------- */
@@ -195,28 +199,27 @@ window.onload = copyArray(); // J'appelle ma fonction au chargement de la page
 function displayQuizz(){
     
     if(index < 10){ /* Si l'index est inf ou égal à la longueur de mon array alors */
-    
+        index++; // J'incrémente mon index
         /* Récupération des valeurs de l'input radio qui sera dans une fonction */
         for(let m = 0; m < suggestionsInput.length; m++){ // boucle pour tous les inputs radio
             if (suggestionsInput[m].type === 'radio' && suggestionsInput[m].checked) {// si l'input est de type radio et qu'il est coché alors
-                valueInput = suggestionsInput[m].value; //pour l'instant je console.log la value 
-                suggestionsInput[m].removeAttribute('checked'); //tentative infructueuse de supprimer l'attribut checked s'il est checked
-                
-                recordScore(); //Appel de ma fonction d'enregistrement du score
+                valueInput.push(suggestionsInput[m].value); //pour l'instant je console.log la value 
+                recordScore(index); //Appel de ma fonction d'enregistrement du score
+                //console.log(valueInput);
             }
         }
         
         displayQuestion(); // j'affiche mes questions
     }
     if(index >= 10){ /* Si l'index est sup à la longueur de mon array alors */
-        recordScore();
+        recordScore(index);
         next.style.display = "none";
         finish.style.display = "inline";
     }
 
 }
 
-next.addEventListener('click', displayQuizz); // fonction displayQuizz qui se déclenche à chaque clic
+
 
 /* --------------------------------------------------------------- */
 
@@ -224,11 +227,12 @@ next.addEventListener('click', displayQuizz); // fonction displayQuizz qui se d�
 
 
 function displayQuestion(){
-    //console.log(questionArray);
+    console.log(questionArray);
     /* Incrémenter le nombre de questions */
-    index++; // J'incrémente mon index
     number.innerHTML = index; // J'attribue à l'endroit du numéro des questions mon index
     number2.innerHTML = 10; // J'attribue 10 à la longueur de mon test 
+    id = questionArray[index].id; //Je stocke l'id de chaque question sur laquelle je passe dans mon array id
+    //console.log(id);
 
     /* Affectation des valeurs de l'array à mes variables HTML */
     question.innerHTML = questionArray[index].question;
@@ -245,15 +249,18 @@ function displayQuestion(){
 /* --------------------------------------------------------------- */
 
 /* Pour incrémenter le score à chaque bonne réponse */
-function recordScore(){
+function recordScore(index){
     
     if(questionArray[index].reponse == valueInput){ // Si la réponse stockée dans mon questionArray (la bonne réponse) est égale à la valeur de l'input radio qui est cochée alors:
-        score++; // J'incrémente de 1
+        score ++ ; // J'incrémente de 1
         
     } else { //Sinon
         score + 0; // J'ajoute 0
     } 
     return score;
+   //console.log(score);
+   //console.log(valueInput);
+   //console.log(questionArray[index].reponse)
 }
 
 /* --------------------------------------------------------------- */
@@ -268,7 +275,6 @@ function storeData(){
     }
     
     let myArray = JSON.parse(localStorage.getItem('game')); // Je stocke dans une variable les données entrées dans le local storage 'game'
-    //console.log(myArray)
     
     //if(myArray == null || score > myArrayScore){} condition pour savoir si on enregistre le score et le nom dans le local storage ou pas selon si le score est supérieur à tous un des scores déjà présent
         
@@ -279,7 +285,7 @@ function storeData(){
     /* Permet d'enregistrer le score du joueur dans le local storage */
     let newScore = score;
     myArray.push(newScore);
-    localStorage.setItem('score', JSON.stringify(myArray));
+    localStorage.setItem('game', JSON.stringify(myArray));
     
 }
 /* --------------------------------------------------------------- */
@@ -287,49 +293,65 @@ function storeData(){
 /* Affichage des résultats */
 
 /* Fonction qui va afficher mes résultats */
-function showMyResults(){
+const showMyResults = (index) => {
+    title[0].innerHTML = "Résultats du "; // dans mon titre je mets "Résultats du"
+    numberQuestion[0].innerHTML = "Note : " + score + "/10";
     mainContent[0].classList.toggle('content'); //on modifie la class de la div en 'content' pour qu'elle soit centrée
-
-    let resultsImage = document.createElement('img'); //on créé un élément img pour contenir nos images
-    //resultsImage.className = "";
     
-    let resultsQuestion = document.createElement('h4'); // on créé un élément h4 pour contenir les questions
-    //resultsQuestion.className = "";
+    console.log(questionArray)
+    questionArray.forEach(data => {
+        //console.log(data)
 
-    let containerUl = document.createElement('ul'); // on créé un élément ul pour contenir nos li
-    //resultsQuestion.className = "";
+        let resultsDiv = document.createElement('div'); // div qui va contenir tous nos éléments
+        resultsDiv.className = "resultsDiv";
 
-    let resultsPropositions = document.createElement('li'); // on créé un élément li qui va contenir les propositions
-    //resultsQuestion.className = "";
+        let resultsNumber = document.createElement('p'); //on créé un élément p pour contenir nos number
+        resultsNumber.className = "number";
 
-    let resultsAnecdote = document.createElement('p'); //on créé un élément p pour contenir l'anecdote/l'explication de la réponse du quizz
-    //resultsQuestion.className = "";
+        let resultsImage = document.createElement('img'); //on créé un élément img pour contenir nos images
+        resultsImage.className = "resultsImg";
+        
+        let resultsQuestion = document.createElement('h4'); // on créé un élément h4 pour contenir les questions
+        resultsQuestion.className = "resultsQuestion";
 
-    for(let i = 0; i < 10; i++){ // boucle pour récupérer les 10 premieres questions de mon questionArray
-        resultsImage.src = questionArray[i].imgAnswer; // dans la source de ma balise img je mets le lien vers mon image
-        resultsQuestion.innerHTML = questionArray[i].question; // dans mon h4 je mets ma question
-        title[0].innerHTML = "Résultats du "; // dans mon titre je mets "Résultats du"
-        resultsAnecdote.innerHTML = questionArray[i].anecdote; // dans mon paragraphe je mets l'anecdote liée à la question
+        let containerUl = document.createElement('ul'); // on créé un élément ul pour contenir nos li
+        containerUl.className = "containerUl";
 
-        for(let n = 0; n < 4; n++){ // boucle for pour 
-            if(questionArray[n].propositions[n] == valueInput[i]){
-                questionArray[n].propositions[n].style.backgroundColor = "green";
+        let resultsPropositions = document.createElement('li'); // on créé un élément li qui va contenir les propositions
+        resultsPropositions.className = "resultsPropositions";
+
+        let resultsAnecdote = document.createElement('p'); //on créé un élément p pour contenir l'anecdote/l'explication de la réponse du quizz
+        resultsAnecdote.className = "resultsAnecdote";
+        
+        resultsNumber.innerHTML = data;
+        resultsImage.src = data.imgAnswer; // dans la source de ma balise img je mets le lien vers mon image
+        resultsQuestion.innerHTML = data.question; // dans mon h4 je mets ma question
+        resultsAnecdote.innerHTML = data.anecdote; // dans mon paragraphe je mets l'anecdote liée à la question
+
+            for(let i = 0; i < data.propositions.length; i++){ // boucle for pour aller dans la longueur de mon tableau data.propositions
+
+            resultsPropositions.innerHTML = data.propositions[i];
+
+            if(data.reponse == valueInput[index]){
+                resultsPropositions.style.backgroundColor = "green";
             }
-            if(questionArray[n].propositions[n] != valueInput[i]){
-                questionArray[n].propositions[n].style.backgroundColor = "red";
+            if(data.reponse != valueInput[index]){
+                resultsPropositions.style.backgroundColor = "red";
             } else{
-                questionArray[n].propositions[n].style.backgroundColor = "none";
-            }
-            resultsPropositions[n].innerHTML = questionArray[n].propositions[n];
-            
-        }
-
-        mainContent[0].appendChild(resultsImage); // dans ma div content j'ajoute l'élément img qui va contenir l'image
-        mainContent[0].appendChild(resultsQuestion); // dans ma div content j'ajoute l'élément h4 qui va contenir la question
-        mainContent[0].appendChild(containerUl); // dans ma div content j'ajoute l'élément ul qui va contenir mon ul
+                resultsPropositions.style.backgroundColor = "none";
+            } 
+        } 
+        
+        mainContent[0].appendChild(resultsDiv);// dans ma div mainContent, j'ajoute la div qui va contenir chaque question
+        resultsDiv.appendChild(resultsNumber); // dans ma div content j'ajoute le numéro des questions
+        resultsDiv.appendChild(resultsImage); // dans ma div content j'ajoute l'élément img qui va contenir l'image
+        resultsDiv.appendChild(resultsQuestion); // dans ma div content j'ajoute l'élément h4 qui va contenir la question
+        resultsDiv.appendChild(containerUl); // dans ma div content j'ajoute l'élément ul qui va contenir mon ul
         containerUl.appendChild(resultsPropositions);// dans mon ul j'ajoute les éléments li qui va contenir mes li
-        mainContent[0].appendChild(resultsAnecdote);// dans ma div content j'ajoute l'élément p qui va contenir mon anecdote
-    }
+        resultsDiv.appendChild(resultsAnecdote);// dans ma div content j'ajoute l'élément p qui va contenir mon anecdote
+        });
+        
+    //})
 
 }
 
@@ -341,7 +363,6 @@ function eraseMyQuizz(){
     img.style.display = "none";
     question.style.display = "none";
     form.style.display = "none";
-    numberQuestion[0].style.display = "none";
 }
 
 /* --------------------------------------------------------------- */
@@ -352,7 +373,15 @@ function finalSubmit(){
 
     storeData();// au dernier submit => Je stocke ma data dans le local storage
     eraseMyQuizz(); // appel de ma fonction qui va supprimer l'affichage du quizz
-    showMyResults(); // appel de ma fonction qui va afficher mes quizz
+    showMyResults(index); // appel de ma fonction qui va afficher mes quizz
 
 }
-finish.addEventListener('click', finalSubmit); // fonction finalSubmit qui se déclenchera au clic
+
+window.addEventListener('load', async function (e) { 
+    await firstPage();
+    await getData();
+    await copyArray();
+    start.addEventListener('click', eraseFirstPage); // Au clic du bouton commencer le test, la "première page" s'efface pour laisser place au test
+    next.addEventListener('click', displayQuizz); // fonction displayQuizz qui se déclenche à chaque clic
+    finish.addEventListener('click', finalSubmit); // fonction finalSubmit qui se déclenchera au clic
+});

@@ -1,6 +1,7 @@
 /* MAIN */
 .pageTitle{
     text-align: center;
+    padding: 2% 0;
 }
 
 .numberQuestion{
@@ -72,3 +73,36 @@ form .next:hover{
     transition: 1s;
 }
 /* FIN MAIN */
+
+/* MAIN RESULTS */
+.resultsDiv{
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 4%;
+    margin: 3%;
+}
+
+.resultsImg{
+    padding: 4% 4%;
+    width: 100%;
+}
+
+.resultsQuestion{
+    padding: 2% 2%;
+}
+
+.containerUl{
+    width: 100%;
+    padding: 2% 12%;
+}
+
+.resultsPropositions{
+    font-weight: 400;
+}
+
+.resultsAnecdote{
+    padding: 0 9%;
+    font-style: italic;
+    font-size: 15px;
+    font-weight: lighter;
+}
