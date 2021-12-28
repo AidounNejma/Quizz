@@ -98,6 +98,7 @@ form .next:hover{
 
 .resultsPropositions{
     font-weight: 400;
+    list-style: none;
 }
 
 .resultsAnecdote{

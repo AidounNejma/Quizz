@@ -120,7 +120,7 @@ function eraseFirstPage(){ //Cette fonction va enlever le visuel de la première
     start.style.display = "none";
 
 
-    newName = inputName.value// je récupèrerai le nom du joueur à ce niveau là
+    newName = inputName.value// j'attribue à ma variable newName la valeur de l'inputName qui contient le nom du joueur
     //console.log(newName);
     displayQuestion(); // Je fais appel à ma fonction displayQuizz au premier clic du bouton commencer 
 }
@@ -258,10 +258,9 @@ function recordScore(index){
     } else { //Sinon
         score + 0; // J'ajoute 0
     } 
-
-    console.log("score : " + score);
-    console.log("valeur de l'input : " + lastValueInput);
-    console.log("reponse :" + questionArray[index].reponse);
+    // console.log("score : " + score);
+    // console.log("valeur de l'input : " + lastValueInput);
+    // console.log("reponse :" + questionArray[index].reponse);
     return score;
 }
 
@@ -299,12 +298,12 @@ const showMyResults = (index) => {
     title[0].innerHTML = "Résultats du "; // dans mon titre je mets "Résultats du"
     numberQuestion[0].innerHTML = "Note : " + score + "/10";
     mainContent[0].classList.toggle('content'); //on modifie la class de la div en 'content' pour qu'elle soit centrée
-    
-    console.log(questionArray);
+    //console.log(questionArray);
 
+    index = 0; // j'initialise mon index à 0
     questionArray.forEach(data => {
         //console.log(data)
-
+        /* Création de mes éléments HTML */
         let resultsDiv = document.createElement('div'); // div qui va contenir tous nos éléments
         resultsDiv.className = "resultsDiv";
 
@@ -323,7 +322,8 @@ const showMyResults = (index) => {
         let resultsAnecdote = document.createElement('p'); //on créé un élément p pour contenir l'anecdote/l'explication de la réponse du quizz
         resultsAnecdote.className = "resultsAnecdote";
         
-        resultsNumber.innerHTML = data;
+        index++; // j'incrémente mon index de 1 à chaque affichage de question
+        resultsNumber.innerHTML = "Question n°" + index; // j'ajoute le numéro de la question
         resultsImage.src = data.imgAnswer; // dans la source de ma balise img je mets le lien vers mon image
         resultsQuestion.innerHTML = data.question; // dans mon h4 je mets ma question
         resultsAnecdote.innerHTML = data.anecdote; // dans mon paragraphe je mets l'anecdote liée à la question
@@ -335,14 +335,14 @@ const showMyResults = (index) => {
 
             resultsPropositions.innerHTML += data.propositions[i];
 
-            if(data.reponse == valueInput[index]){
+           /*  if(valueInput[index] == data.reponse[i]){
                 resultsPropositions.style.backgroundColor = "green";
             }
-            if(data.reponse != valueInput[index]){
+            if(valueInput[index] != data.reponse[i]){
                 resultsPropositions.style.backgroundColor = "red";
             } else{
                 resultsPropositions.style.backgroundColor = "none";
-            } 
+            }  */
 
             containerUl.appendChild(resultsPropositions);// dans mon ul j'ajoute les éléments li qui va contenir mes li
         } 
@@ -373,7 +373,7 @@ function eraseMyQuizz(){
 
 /* Fonction qui s'enclenche lors du dernier submit*/
 
-function finalSubmit(){
+function finalSubmit(index){
 
     storeData();// au dernier submit => Je stocke ma data dans le local storage
     eraseMyQuizz(); // appel de ma fonction qui va supprimer l'affichage du quizz
