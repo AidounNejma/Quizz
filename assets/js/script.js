@@ -50,6 +50,8 @@ var finish = document.getElementById('finish'); // Bouton qui fera office de sub
 var mainContent = document.getElementsByClassName('fakeClass');
 //console.log(mainContent[0]);
 
+var displayScoresData = document.getElementById('displayScores');
+//console.log(displayScoresData);
 /* --------------------------------------------------------------- */
 
 /* Variables qui vont nous être utiles dans les fonctions */
@@ -62,6 +64,7 @@ var globalData = []; //Tableau vide pour copier la data aleatoire de mon fichier
 var newName; //va me permettre de stocker le nom du joueur
 var valueInput = []; // va me permettre de stocker la valeur des inputs que j'ai sélectionné à chaque fois 
 var lastValueInput; // va me permettre de stocker la dernière valeur de l'array valueInput
+var arrayNameScore = [];
 
 /* --------------------------------------------------------------- */
 
@@ -102,6 +105,7 @@ function firstPage(){ //Cette fonction va donner un visuel au premier chargement
     finish.style.display = "none";
     next.style.display = "none";
 
+    sortLocalStorageData();
 }
 //window.onload = firstPage(); // j'appelle ma fonction au chargement de la page 
 
@@ -177,14 +181,13 @@ const getData = async() => { //Fonction asyncrone pour récupérer les données 
 
 const copyArray = async(data)=>{
     const myData = await getData(data);
-   // console.log(myData)
+    // console.log(myData)
     questionArray.push(...myData.slice(0, 10)); //Je stocke dans mon array vide (questionArray) => myData qui contient mes données du fichier JSON
     //console.log(questionArray);
     return questionArray; //Je retourne questionArray
 
 }
 
-//console.log(questionArray);
 
 /* --------------------------------------------------------------- */
 
@@ -270,24 +273,80 @@ function recordScore(index){
 
 function storeData(){
     
-    /* Initialisation de mon tableau "game" */
-    if(localStorage.getItem('game') == null){ // si mon tableau n'existe pas
-        localStorage.setItem('game', '[]'); // alors je le créé
+     /* Initialisation de mon tableau "game" */
+    if(localStorage.getItem('name') == null && localStorage.getItem('score') == null){ // si mes tableaux nom et score n'existent pas
+        
+        localStorage.setItem('name', '[]'); // alors je le créé
+        localStorage.setItem('score', '[]'); // alors je le créé
+    } 
+        let nameArray = JSON.parse(localStorage.getItem('name'));// je récupère au format de tableau mes array
+        let scoreArray = JSON.parse(localStorage.getItem('score'));
+        //console.log(scoreArray);
+
+        recordDataForLocalStorage(nameArray, scoreArray); // je push ma data dans le local storage
+    
+}
+
+/* --------------------------------------------------------------- */
+
+/* Push les datas dans le local storage */
+function recordDataForLocalStorage(array1, array2){
+    //Enregistrement du Nom du joueur dans le local storage
+    array1.push(newName); // j'ajoute à ma variable myArray la valeur du premier input (nom du joueur)
+    localStorage.setItem('name', JSON.stringify(array1)); // Je le mets dans le local storage 'game' sous forme de string
+                    
+    //Permet d'enregistrer le score du joueur dans le local storage 
+    array2.push(score);
+    localStorage.setItem('score', JSON.stringify(array2));
+}
+
+/* --------------------------------------------------------------- */
+
+/* Filtrer array s'il a atteint la taille max de 10 */
+function sortLocalStorageData(){
+    
+    if(localStorage.getItem('name') == null && localStorage.getItem('score') == null){ 
+        
+        return "Aucun score enregistré";
+
     }
-    
-    let myArray = JSON.parse(localStorage.getItem('game')); // Je stocke dans une variable les données entrées dans le local storage 'game'
-    
-    //if(myArray == null || score > myArrayScore){} condition pour savoir si on enregistre le score et le nom dans le local storage ou pas selon si le score est supérieur à tous un des scores déjà présent
+    else{
+        let nameArray = JSON.parse(localStorage.getItem('name'));
+        let scoreArray = JSON.parse(localStorage.getItem('score'));
         
-    /* Enregistrement du Nom du joueur dans le local storage*/
-    myArray.push(newName); // j'ajoute à ma variable myArray la valeur du premier input (nom du joueur)
-    localStorage.setItem('game', JSON.stringify(myArray)); // Je le mets dans le local storage 'game' sous forme de string
+        for (let objectIndex = 0; objectIndex < nameArray.length; objectIndex++) {
+            nameScore = {
+                name: nameArray[objectIndex],
+                score: scoreArray[objectIndex]
+            };
+            arrayNameScore.push(nameScore);
+            
+        }
         
-    /* Permet d'enregistrer le score du joueur dans le local storage */
-    let newScore = score;
-    myArray.push(newScore);
-    localStorage.setItem('game', JSON.stringify(myArray));
+        arrayNameScore.sort(function(a, b) { 
+            return b.score - a.score  ||  a.name.localeCompare(b.name);
+        });
+
+        //console.log(arrayNameScore)
+
+        if(arrayNameScore.length > 5){ //si la longueur mon objet "arrayNameScore" est supérieur à 5
+            arrayNameScore.splice(0, 5); // je coupe de 0 à 5
+        }
+
+        displayScores(arrayNameScore); //appel de ma fonction pour display les meilleurs scores
+    }
+}
+/* --------------------------------------------------------------- */
+/* Affichage des scores */
+function displayScores(array){
     
+    for (let index = 0; index < array.length; index++) {
+        let paragraph = document.createElement('p');
+        paragraph.innerHTML += array[index].name + " : " + array[index].score;
+
+
+        displayScoresData.appendChild(paragraph);
+    }
 }
 /* --------------------------------------------------------------- */
 
@@ -295,14 +354,15 @@ function storeData(){
 
 /* Fonction qui va afficher mes résultats */
 const showMyResults = (index) => {
+    
     title[0].innerHTML = "Résultats du "; // dans mon titre je mets "Résultats du"
     numberQuestion[0].innerHTML = "Note : " + score + "/10";
     mainContent[0].classList.toggle('content'); //on modifie la class de la div en 'content' pour qu'elle soit centrée
-    //console.log(questionArray);
-
+    
     index = 0; // j'initialise mon index à 0
+
     questionArray.forEach(data => {
-        //console.log(data)
+
         /* Création de mes éléments HTML */
         let resultsDiv = document.createElement('div'); // div qui va contenir tous nos éléments
         resultsDiv.className = "resultsDiv";
@@ -313,6 +373,8 @@ const showMyResults = (index) => {
         let resultsImage = document.createElement('img'); //on créé un élément img pour contenir nos images
         resultsImage.className = "resultsImg";
         
+        let resultsPropositions;
+
         let resultsQuestion = document.createElement('h4'); // on créé un élément h4 pour contenir les questions
         resultsQuestion.className = "resultsQuestion";
 
@@ -322,30 +384,33 @@ const showMyResults = (index) => {
         let resultsAnecdote = document.createElement('p'); //on créé un élément p pour contenir l'anecdote/l'explication de la réponse du quizz
         resultsAnecdote.className = "resultsAnecdote";
         
+        for(let i = 0; i < data.propositions.length; i++){ // boucle for pour aller dans la longueur de mon tableau data.propositions
+            
+            resultsPropositions = document.createElement('li'); // on créé un élément li qui va contenir les propositions
+            resultsPropositions.className = "resultsPropositions";
+
+            resultsPropositions.innerHTML += data.propositions[i];
+            
+            containerUl.appendChild(resultsPropositions);// dans mon ul j'ajoute les éléments li qui va contenir mes li
+        } 
+        for(let n = 0; n < resultsPropositions.length; n++){
+            if(valueInput[index] == data.reponse){
+                resultsPropositions[n].style.backgroundColor = "green";
+            }
+            if(valueInput[index] != data.reponse){
+                resultsPropositions[n].style.backgroundColor = "red";
+            } else{
+                resultsPropositions[n].style.backgroundColor = "none";
+            } 
+        }
+
         index++; // j'incrémente mon index de 1 à chaque affichage de question
         resultsNumber.innerHTML = "Question n°" + index; // j'ajoute le numéro de la question
         resultsImage.src = data.imgAnswer; // dans la source de ma balise img je mets le lien vers mon image
         resultsQuestion.innerHTML = data.question; // dans mon h4 je mets ma question
         resultsAnecdote.innerHTML = data.anecdote; // dans mon paragraphe je mets l'anecdote liée à la question
+        
     
-        for(let i = 0; i < data.propositions.length; i++){ // boucle for pour aller dans la longueur de mon tableau data.propositions
-            
-            let resultsPropositions = document.createElement('li'); // on créé un élément li qui va contenir les propositions
-            resultsPropositions.className = "resultsPropositions";
-
-            resultsPropositions.innerHTML += data.propositions[i];
-
-           /*  if(valueInput[index] == data.reponse[i]){
-                resultsPropositions.style.backgroundColor = "green";
-            }
-            if(valueInput[index] != data.reponse[i]){
-                resultsPropositions.style.backgroundColor = "red";
-            } else{
-                resultsPropositions.style.backgroundColor = "none";
-            }  */
-
-            containerUl.appendChild(resultsPropositions);// dans mon ul j'ajoute les éléments li qui va contenir mes li
-        } 
         
         mainContent[0].appendChild(resultsDiv);// dans ma div mainContent, j'ajoute la div qui va contenir chaque question
         resultsDiv.appendChild(resultsNumber); // dans ma div content j'ajoute le numéro des questions

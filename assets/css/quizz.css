@@ -98,7 +98,6 @@ form .next:hover{
 
 .resultsPropositions{
     font-weight: 400;
-    list-style: none;
 }
 
 .resultsAnecdote{
@@ -106,4 +105,15 @@ form .next:hover{
     font-style: italic;
     font-size: 15px;
     font-weight: lighter;
+}
+
+#displayScores{
+    text-align: center;
+    padding: 3% 0;
+    border: 2px solid black;
+    border-radius: 6px;
+    margin: 3% 15%;
+}
+.scoresTitle{
+    padding: 1% 0;
 }
