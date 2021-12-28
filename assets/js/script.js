@@ -194,7 +194,19 @@ const copyArray = async(data)=>{
 /* Fonction pour afficher tout ça */
 
 function displayQuizz(){
-    
+    // decouper en plusieurs étapes
+    // step 1 : je récupère la réponse de l'utilisateur pour la question en cours
+
+    // step 2 : je vérifie si la réponse est correcte pour la question en cours
+
+    // step 3 : j'enregistre le score de la question en cours
+
+    // step 4 : je vérifie si le quizz est terminé
+
+    // step 5.a : si le quizz est terminé, j'affiche le score
+
+    // step 5.b : si le quizz n'est pas terminé, j'affiche la question suivante
+
     if(index < 10){ /* Si l'index est inf ou égal à la longueur de mon array alors */
         index++; // J'incrémente mon index
         /* Récupération des valeurs de l'input radio qui sera dans une fonction */
@@ -323,7 +335,7 @@ const showMyResults = (index) => {
         resultsImage.src = data.imgAnswer; // dans la source de ma balise img je mets le lien vers mon image
         resultsQuestion.innerHTML = data.question; // dans mon h4 je mets ma question
         resultsAnecdote.innerHTML = data.anecdote; // dans mon paragraphe je mets l'anecdote liée à la question
-
+            // créer 4 li et les append à container ul dans la boucle
             for(let i = 0; i < data.propositions.length; i++){ // boucle for pour aller dans la longueur de mon tableau data.propositions
 
             resultsPropositions.innerHTML = data.propositions[i];
@@ -376,6 +388,7 @@ function finalSubmit(){
 /* J'ai regroupé tous mes addEventListeners au même endroit et par ordre chronologique */
 window.addEventListener('load', async function () { 
     await firstPage();
+    // to remove
     await getData();
     await copyArray();
     start.addEventListener('click', eraseFirstPage); // Au clic du bouton commencer le test, la "première page" s'efface pour laisser place au test
