@@ -127,6 +127,8 @@ function eraseFirstPage(){ //Cette fonction va enlever le visuel de la première
     newName = inputName.value// j'attribue à ma variable newName la valeur de l'inputName qui contient le nom du joueur
     //console.log(newName);
     displayQuestion(); // Je fais appel à ma fonction displayQuizz au premier clic du bouton commencer 
+
+    displayScoresData.style.display = "none"; // au clic, la div contenant le top 5 des scores disparait
 }
 
 /* --------------------------------------------------------------- */
@@ -214,7 +216,12 @@ function displayQuizz(){
     // step 4 : je vérifie si le quizz est terminé
     // step 5.a : si le quizz n'est pas terminé, j'affiche la question suivante
     if(index < questionArray.length){ /* Si l'index est inf ou égal à la longueur de mon array alors */
-        displayQuestion(); // j'affiche mes questions
+        
+            if(suggestionsInput[0].checked || suggestionsInput[1].checked || suggestionsInput[2].checked || suggestionsInput[3].checked){ // désolé, décidément je n'aime pas les boucles
+                displayQuestion(); // j'affiche mes questions
+            }else{
+                alert('Vous devez renseigner un champs !'); 
+            } 
     }
      // step 5.b : si le quizz est terminé, j'affiche le score
     if(index >= questionArray.length){ /* Si l'index est sup à la longueur de mon array alors */
@@ -307,29 +314,27 @@ function sortLocalStorageData(){
     
     if(localStorage.getItem('name') == null && localStorage.getItem('score') == null){ 
         
-        return "Aucun score enregistré";
+        dontDislayScores();
 
     }
     else{
+
+        /* Récupération de mes variables pour accéder au localStorage */
         let nameArray = JSON.parse(localStorage.getItem('name'));
         let scoreArray = JSON.parse(localStorage.getItem('score'));
         
         for (let objectIndex = 0; objectIndex < nameArray.length; objectIndex++) {//boucle pour créer des objets en fonction de ce qu'il y a dans mon localstorage
             nameScore = {
-                name: nameArray[objectIndex],
-                score: scoreArray[objectIndex]
+                name: nameArray[objectIndex],// j'ajoute dans mon item name: tous les items du tableau nameArray
+                score: scoreArray[objectIndex] // j'ajoute à score tous les items de mon tableau scoreArray
             };
             arrayNameScore.push(nameScore);
             
         }
-        
-        arrayNameScore.sort(function(a, b) { // fonction de tri pour comparer que les scores
+        /* fonction de tri pour comparer que les scores */
+        arrayNameScore.sort(function(a, b) { 
             return b.score - a.score  ||  a.name.localeCompare(b.name);
         });
-
-        //console.log(arrayNameScore)
-
-        //arrayNameScore.slice(0, 5); // je coupe de 0 à 5
         
         var sliced = arrayNameScore.slice(0,5);
         //console.log(sliced);
@@ -347,6 +352,14 @@ function displayScores(array){
 
         displayScoresData.appendChild(paragraph);// je mets chaque p dans ma div
     }
+}
+
+function dontDislayScores(){
+    let paragraph2 = document.createElement('p');// je créé un élément p
+
+    paragraph2.innerHTML += "Aucun score n'est enregistré dans la base de données.";
+    
+    displayScoresData.appendChild(paragraph2);// je mets mon paragraphe dans ma div
 }
 /* --------------------------------------------------------------- */
 
@@ -384,6 +397,7 @@ const showMyResults = (index) => {
         let resultsAnecdote = document.createElement('p'); //on créé un élément p pour contenir l'anecdote/l'explication de la réponse du quizz
         resultsAnecdote.className = "resultsAnecdote";
         
+        
         for(let i = 0; i < data.propositions.length; i++){ // boucle for pour aller dans la longueur de mon tableau data.propositions
             
             resultsPropositions = document.createElement('li'); // on créé un élément li qui va contenir les propositions
@@ -391,33 +405,40 @@ const showMyResults = (index) => {
 
             resultsPropositions.innerHTML += data.propositions[i];
             
-            containerUl.appendChild(resultsPropositions);// dans mon ul j'ajoute les éléments li qui va contenir mes li
-        } 
-        for(let n = 0; n < resultsPropositions.length; n++){
-            if(valueInput[index] == data.reponse){
-                resultsPropositions[n].style.backgroundColor = "green";
+            //console.log(valueInput[index]);
+            //console.log(data.reponse);
+            
+            /* Pour changer la couleur du li en fonction de la réponse (ne fonctionne pas encore) */
+            for(let n = 0; n < resultsPropositions.length; n++){
+                if(valueInput[index] == data.reponse){
+                    resultsPropositions[n].className.add("green");
+                }
+                else{
+                    resultsPropositions[n].className.add("red");
+                }
             }
-            if(valueInput[index] != data.reponse){
-                resultsPropositions[n].style.backgroundColor = "red";
-            } else{
-                resultsPropositions[n].style.backgroundColor = "none";
-            } 
-        }
-
+            //console.log(resultsPropositions);
+            containerUl.appendChild(resultsPropositions);// dans mon ul j'ajoute les éléments li qui va contenir mes li
+            
+        } 
+        
+        
+        
         index++; // j'incrémente mon index de 1 à chaque affichage de question
         resultsNumber.innerHTML = "Question n°" + index; // j'ajoute le numéro de la question
         resultsImage.src = data.imgAnswer; // dans la source de ma balise img je mets le lien vers mon image
         resultsQuestion.innerHTML = data.question; // dans mon h4 je mets ma question
         resultsAnecdote.innerHTML = data.anecdote; // dans mon paragraphe je mets l'anecdote liée à la question
         
-    
-        
+
         mainContent[0].appendChild(resultsDiv);// dans ma div mainContent, j'ajoute la div qui va contenir chaque question
         resultsDiv.appendChild(resultsNumber); // dans ma div content j'ajoute le numéro des questions
         resultsDiv.appendChild(resultsImage); // dans ma div content j'ajoute l'élément img qui va contenir l'image
         resultsDiv.appendChild(resultsQuestion); // dans ma div content j'ajoute l'élément h4 qui va contenir la question
         resultsDiv.appendChild(containerUl); // dans ma div content j'ajoute l'élément ul qui va contenir mon ul
         resultsDiv.appendChild(resultsAnecdote);// dans ma div content j'ajoute l'élément p qui va contenir mon anecdote
+
+        
         });
         
     //})

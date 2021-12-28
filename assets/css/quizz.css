@@ -117,3 +117,11 @@ form .next:hover{
 .scoresTitle{
     padding: 1% 0;
 }
+
+.red{
+    background-color: red;
+}
+
+.green{
+    background-color: greenyellow;
+}
