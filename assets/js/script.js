@@ -314,7 +314,7 @@ function sortLocalStorageData(){
         let nameArray = JSON.parse(localStorage.getItem('name'));
         let scoreArray = JSON.parse(localStorage.getItem('score'));
         
-        for (let objectIndex = 0; objectIndex < nameArray.length; objectIndex++) {
+        for (let objectIndex = 0; objectIndex < nameArray.length; objectIndex++) {//boucle pour créer des objets en fonction de ce qu'il y a dans mon localstorage
             nameScore = {
                 name: nameArray[objectIndex],
                 score: scoreArray[objectIndex]
@@ -323,29 +323,29 @@ function sortLocalStorageData(){
             
         }
         
-        arrayNameScore.sort(function(a, b) { 
+        arrayNameScore.sort(function(a, b) { // fonction de tri pour comparer que les scores
             return b.score - a.score  ||  a.name.localeCompare(b.name);
         });
 
         //console.log(arrayNameScore)
 
-        if(arrayNameScore.length > 5){ //si la longueur mon objet "arrayNameScore" est supérieur à 5
-            arrayNameScore.splice(0, 5); // je coupe de 0 à 5
-        }
-
-        displayScores(arrayNameScore); //appel de ma fonction pour display les meilleurs scores
+        //arrayNameScore.slice(0, 5); // je coupe de 0 à 5
+        
+        var sliced = arrayNameScore.slice(0,5);
+        //console.log(sliced);
+        
+        displayScores(sliced); //appel de ma fonction pour display les meilleurs scores
     }
 }
 /* --------------------------------------------------------------- */
 /* Affichage des scores */
 function displayScores(array){
-    
-    for (let index = 0; index < array.length; index++) {
-        let paragraph = document.createElement('p');
-        paragraph.innerHTML += array[index].name + " : " + array[index].score;
+    for (let index = 0; index < array.length; index++) { //boucle pour passer dans tout mon array
+        let paragraph = document.createElement('p'); // création de balises p
 
+        paragraph.innerHTML += array[index].name + " : " + array[index].score;// dans chaque innerHtml de mes paragraphes, je leur mets les données de mon array
 
-        displayScoresData.appendChild(paragraph);
+        displayScoresData.appendChild(paragraph);// je mets chaque p dans ma div
     }
 }
 /* --------------------------------------------------------------- */
