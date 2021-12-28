@@ -58,10 +58,10 @@ var index = 0; /* Pour se positionner dans l'index de mon array */
 number.innerHTML = index; /* J'attribue à l'endroit du numéro de mes questions la variable index */
 var score = 0; /* Pour incrémenter le score */
 const questionArray = []; // Tableau vide pour copier ma data globale dedans
-const globalData = []; //Tableau vide pour copier la data aleatoire de mon fichier JSON
+var globalData = []; //Tableau vide pour copier la data aleatoire de mon fichier JSON
 var newName; //va me permettre de stocker le nom du joueur
 var valueInput = []; // va me permettre de stocker la valeur des inputs que j'ai sélectionné à chaque fois 
-var id = []; // va me permettre de stocker les id de chaque questions sur laquelle je passe
+var lastValueInput; // va me permettre de stocker la dernière valeur de l'array valueInput
 
 /* --------------------------------------------------------------- */
 
@@ -122,7 +122,7 @@ function eraseFirstPage(){ //Cette fonction va enlever le visuel de la première
 
     newName = inputName.value// je récupèrerai le nom du joueur à ce niveau là
     //console.log(newName);
-    displayQuizz(); // Je fais appel à ma fonction displayQuizz au premier clic du bouton commencer 
+    displayQuestion(); // Je fais appel à ma fonction displayQuizz au premier clic du bouton commencer 
 }
 
 /* --------------------------------------------------------------- */
@@ -170,7 +170,6 @@ const getData = async() => { //Fonction asyncrone pour récupérer les données 
         return data.Javascript;
     }
 }
-//window.onload = getData(); // J'appelle ma fonction au chargement de la page 
 
 /* --------------------------------------------------------------- */
 
@@ -178,14 +177,12 @@ const getData = async() => { //Fonction asyncrone pour récupérer les données 
 
 const copyArray = async(data)=>{
     const myData = await getData(data);
-    //console.log(myData)
+   // console.log(myData)
     questionArray.push(...myData.slice(0, 10)); //Je stocke dans mon array vide (questionArray) => myData qui contient mes données du fichier JSON
-    console.log(questionArray);
+    //console.log(questionArray);
     return questionArray; //Je retourne questionArray
 
 }
-
-//window.onload = copyArray(); // J'appelle ma fonction au chargement de la page 
 
 //console.log(questionArray);
 
@@ -194,37 +191,35 @@ const copyArray = async(data)=>{
 /* Fonction pour afficher tout ça */
 
 function displayQuizz(){
-    // decouper en plusieurs étapes
-    // step 1 : je récupère la réponse de l'utilisateur pour la question en cours
 
-    // step 2 : je vérifie si la réponse est correcte pour la question en cours
-
-    // step 3 : j'enregistre le score de la question en cours
-
-    // step 4 : je vérifie si le quizz est terminé
-
-    // step 5.a : si le quizz est terminé, j'affiche le score
-
-    // step 5.b : si le quizz n'est pas terminé, j'affiche la question suivante
-
-    if(index < 10){ /* Si l'index est inf ou égal à la longueur de mon array alors */
-        index++; // J'incrémente mon index
-        /* Récupération des valeurs de l'input radio qui sera dans une fonction */
-        for(let m = 0; m < suggestionsInput.length; m++){ // boucle pour tous les inputs radio
-            if (suggestionsInput[m].type === 'radio' && suggestionsInput[m].checked) {// si l'input est de type radio et qu'il est coché alors
-                valueInput.push(suggestionsInput[m].value); //pour l'instant je console.log la value 
-                recordScore(index); //Appel de ma fonction d'enregistrement du score
-                //console.log(valueInput);
-            }
+    // step 1 : je récupère la réponse de l'utilisateur pour la question en cours dans mon array valueInput
+    for(let m = 0; m < suggestionsInput.length; m++){ // boucle pour tous les inputs radio
+        if (suggestionsInput[m].type === 'radio' && suggestionsInput[m].checked) {// si l'input est de type radio et qu'il est coché alors
+            valueInput.push(suggestionsInput[m].value); //je push la value courante dans mon array value 
+            //console.log("array valueInput : " + valueInput)
         }
-        
+    }
+
+    /* Récupération de la dernière valeur de mon array value input */
+    lastValueInput = valueInput[valueInput.length -1];
+    //console.log(lastValueInput);
+
+    recordScore(index); //appel de ma fonction score pour incrémenter
+
+    index++; // J'incrémente mon index
+    
+    // step 4 : je vérifie si le quizz est terminé
+    // step 5.a : si le quizz n'est pas terminé, j'affiche la question suivante
+    if(index < questionArray.length){ /* Si l'index est inf ou égal à la longueur de mon array alors */
         displayQuestion(); // j'affiche mes questions
     }
-    if(index >= 10){ /* Si l'index est sup à la longueur de mon array alors */
-        recordScore(index);
+     // step 5.b : si le quizz est terminé, j'affiche le score
+    if(index >= questionArray.length){ /* Si l'index est sup à la longueur de mon array alors */
+        
         next.style.display = "none";
         finish.style.display = "inline";
     }
+
 
 }
 
@@ -235,12 +230,10 @@ function displayQuizz(){
 
 
 function displayQuestion(){
-    console.log(questionArray);
+    //console.log(questionArray);
     /* Incrémenter le nombre de questions */
     number.innerHTML = index; // J'attribue à l'endroit du numéro des questions mon index
     number2.innerHTML = 10; // J'attribue 10 à la longueur de mon test 
-    id = questionArray[index].id; //Je stocke l'id de chaque question sur laquelle je passe dans mon array id
-    //console.log(id);
 
     /* Affectation des valeurs de l'array à mes variables HTML */
     question.innerHTML = questionArray[index].question;
@@ -258,17 +251,18 @@ function displayQuestion(){
 
 /* Pour incrémenter le score à chaque bonne réponse */
 function recordScore(index){
-    
-    if(questionArray[index].reponse == valueInput){ // Si la réponse stockée dans mon questionArray (la bonne réponse) est égale à la valeur de l'input radio qui est cochée alors:
-        score ++ ; // J'incrémente de 1
-        
+    // step 2 : je vérifie si la réponse est correcte pour la question en cours
+    if(questionArray[index].reponse == lastValueInput){// Si la réponse stockée dans mon questionArray (la bonne réponse) est égale à la valeur de l'input radio qui est cochée alors:
+        // step 3 : j'enregistre le score de la question en cours
+        score ++ ; // J'incrémente mon score de 1
     } else { //Sinon
         score + 0; // J'ajoute 0
     } 
+
+    console.log("score : " + score);
+    console.log("valeur de l'input : " + lastValueInput);
+    console.log("reponse :" + questionArray[index].reponse);
     return score;
-   //console.log(score);
-   //console.log(valueInput);
-   //console.log(questionArray[index].reponse)
 }
 
 /* --------------------------------------------------------------- */
@@ -306,7 +300,8 @@ const showMyResults = (index) => {
     numberQuestion[0].innerHTML = "Note : " + score + "/10";
     mainContent[0].classList.toggle('content'); //on modifie la class de la div en 'content' pour qu'elle soit centrée
     
-    console.log(questionArray)
+    console.log(questionArray);
+
     questionArray.forEach(data => {
         //console.log(data)
 
@@ -325,9 +320,6 @@ const showMyResults = (index) => {
         let containerUl = document.createElement('ul'); // on créé un élément ul pour contenir nos li
         containerUl.className = "containerUl";
 
-        let resultsPropositions = document.createElement('li'); // on créé un élément li qui va contenir les propositions
-        resultsPropositions.className = "resultsPropositions";
-
         let resultsAnecdote = document.createElement('p'); //on créé un élément p pour contenir l'anecdote/l'explication de la réponse du quizz
         resultsAnecdote.className = "resultsAnecdote";
         
@@ -335,10 +327,13 @@ const showMyResults = (index) => {
         resultsImage.src = data.imgAnswer; // dans la source de ma balise img je mets le lien vers mon image
         resultsQuestion.innerHTML = data.question; // dans mon h4 je mets ma question
         resultsAnecdote.innerHTML = data.anecdote; // dans mon paragraphe je mets l'anecdote liée à la question
-            // créer 4 li et les append à container ul dans la boucle
-            for(let i = 0; i < data.propositions.length; i++){ // boucle for pour aller dans la longueur de mon tableau data.propositions
+    
+        for(let i = 0; i < data.propositions.length; i++){ // boucle for pour aller dans la longueur de mon tableau data.propositions
+            
+            let resultsPropositions = document.createElement('li'); // on créé un élément li qui va contenir les propositions
+            resultsPropositions.className = "resultsPropositions";
 
-            resultsPropositions.innerHTML = data.propositions[i];
+            resultsPropositions.innerHTML += data.propositions[i];
 
             if(data.reponse == valueInput[index]){
                 resultsPropositions.style.backgroundColor = "green";
@@ -348,6 +343,8 @@ const showMyResults = (index) => {
             } else{
                 resultsPropositions.style.backgroundColor = "none";
             } 
+
+            containerUl.appendChild(resultsPropositions);// dans mon ul j'ajoute les éléments li qui va contenir mes li
         } 
         
         mainContent[0].appendChild(resultsDiv);// dans ma div mainContent, j'ajoute la div qui va contenir chaque question
@@ -355,7 +352,6 @@ const showMyResults = (index) => {
         resultsDiv.appendChild(resultsImage); // dans ma div content j'ajoute l'élément img qui va contenir l'image
         resultsDiv.appendChild(resultsQuestion); // dans ma div content j'ajoute l'élément h4 qui va contenir la question
         resultsDiv.appendChild(containerUl); // dans ma div content j'ajoute l'élément ul qui va contenir mon ul
-        containerUl.appendChild(resultsPropositions);// dans mon ul j'ajoute les éléments li qui va contenir mes li
         resultsDiv.appendChild(resultsAnecdote);// dans ma div content j'ajoute l'élément p qui va contenir mon anecdote
         });
         
@@ -388,8 +384,6 @@ function finalSubmit(){
 /* J'ai regroupé tous mes addEventListeners au même endroit et par ordre chronologique */
 window.addEventListener('load', async function () { 
     await firstPage();
-    // to remove
-    await getData();
     await copyArray();
     start.addEventListener('click', eraseFirstPage); // Au clic du bouton commencer le test, la "première page" s'efface pour laisser place au test
     next.addEventListener('click', displayQuizz); // fonction displayQuizz qui se déclenche à chaque clic
