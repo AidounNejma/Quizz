@@ -401,13 +401,6 @@ const showMyResults = (index) => {
             
             resultsPropositions = document.createElement('li'); // on créé un élément li qui va contenir les propositions
             resultsPropositions.className = "resultsPropositions";
-            
-            if(valueInput[index] == data.reponse){
-                resultsPropositions.classList.add("green");
-            }
-            else{
-                resultsPropositions.classList.add("red");
-            }
                 
             resultsPropositions.innerHTML += data.propositions[i];
             
@@ -415,6 +408,22 @@ const showMyResults = (index) => {
             console.log(data.reponse);
 
             
+            if(valueInput[index] == data.reponse){
+                if(resultsPropositions.innerHTML == valueInput[index]){
+                    resultsPropositions.classList.add("green");
+                }
+                else{
+                    resultsPropositions.style.backgroundColor = "none";
+                }
+            }
+            if(valueInput[index] != data.reponse){
+                if(resultsPropositions.innerHTML == valueInput[index]){
+                    resultsPropositions.classList.add("red");
+                }
+                else{
+                    resultsPropositions.style.backgroundColor = "none";
+                }
+            }
             //console.log(resultsPropositions);
             containerUl.appendChild(resultsPropositions);// dans mon ul j'ajoute les éléments li qui va contenir mes li
             
