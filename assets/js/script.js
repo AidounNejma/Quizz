@@ -65,7 +65,6 @@ var newName; //va me permettre de stocker le nom du joueur
 var valueInput = []; // va me permettre de stocker la valeur des inputs que j'ai sélectionné à chaque fois 
 var lastValueInput; // va me permettre de stocker la dernière valeur de l'array valueInput
 var arrayNameScore = [];
-
 /* --------------------------------------------------------------- */
 
 /* Récupération de la variable passée dans l'URL */
@@ -189,7 +188,6 @@ const copyArray = async(data)=>{
     return questionArray; //Je retourne questionArray
 
 }
-
 
 /* --------------------------------------------------------------- */
 
@@ -397,26 +395,26 @@ const showMyResults = (index) => {
         let resultsAnecdote = document.createElement('p'); //on créé un élément p pour contenir l'anecdote/l'explication de la réponse du quizz
         resultsAnecdote.className = "resultsAnecdote";
         
-        
+    
+
         for(let i = 0; i < data.propositions.length; i++){ // boucle for pour aller dans la longueur de mon tableau data.propositions
             
             resultsPropositions = document.createElement('li'); // on créé un élément li qui va contenir les propositions
             resultsPropositions.className = "resultsPropositions";
-
+            
+            if(valueInput[index] == data.reponse){
+                resultsPropositions.classList.add("green");
+            }
+            else{
+                resultsPropositions.classList.add("red");
+            }
+                
             resultsPropositions.innerHTML += data.propositions[i];
             
-            //console.log(valueInput[index]);
-            //console.log(data.reponse);
+            console.log(valueInput[index]);
+            console.log(data.reponse);
+
             
-            /* Pour changer la couleur du li en fonction de la réponse (ne fonctionne pas encore) */
-            for(let n = 0; n < resultsPropositions.length; n++){
-                if(valueInput[index] == data.reponse){
-                    resultsPropositions[n].className.add("green");
-                }
-                else{
-                    resultsPropositions[n].className.add("red");
-                }
-            }
             //console.log(resultsPropositions);
             containerUl.appendChild(resultsPropositions);// dans mon ul j'ajoute les éléments li qui va contenir mes li
             
