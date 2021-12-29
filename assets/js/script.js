@@ -395,19 +395,17 @@ const showMyResults = (index) => {
         let resultsAnecdote = document.createElement('p'); //on créé un élément p pour contenir l'anecdote/l'explication de la réponse du quizz
         resultsAnecdote.className = "resultsAnecdote";
         
-    
+        let resultsBonneReponse = document.createElement('p'); // on créé un élément p pour contenir la bonne réponse attendue
+        resultsBonneReponse.className = "resultsBonneReponse";
 
         for(let i = 0; i < data.propositions.length; i++){ // boucle for pour aller dans la longueur de mon tableau data.propositions
             
             resultsPropositions = document.createElement('li'); // on créé un élément li qui va contenir les propositions
             resultsPropositions.className = "resultsPropositions";
                 
-            resultsPropositions.innerHTML += data.propositions[i];
-            
-            console.log(valueInput[index]);
-            console.log(data.reponse);
+            resultsPropositions.innerHTML += data.propositions[i]; //on ajoute la data dans nos li
 
-            
+            /* Condition pour changer la couleur des inputs en fonction des réponses sélectionnées par l'utilisateur */
             if(valueInput[index] == data.reponse){
                 if(resultsPropositions.innerHTML == valueInput[index]){
                     resultsPropositions.classList.add("green");
@@ -424,7 +422,7 @@ const showMyResults = (index) => {
                     resultsPropositions.style.backgroundColor = "none";
                 }
             }
-            //console.log(resultsPropositions);
+            
             containerUl.appendChild(resultsPropositions);// dans mon ul j'ajoute les éléments li qui va contenir mes li
             
         } 
@@ -436,6 +434,7 @@ const showMyResults = (index) => {
         resultsImage.src = data.imgAnswer; // dans la source de ma balise img je mets le lien vers mon image
         resultsQuestion.innerHTML = data.question; // dans mon h4 je mets ma question
         resultsAnecdote.innerHTML = data.anecdote; // dans mon paragraphe je mets l'anecdote liée à la question
+        resultsBonneReponse.innerHTML = "Réponse attendue : " + data.reponse;
         
 
         mainContent[0].appendChild(resultsDiv);// dans ma div mainContent, j'ajoute la div qui va contenir chaque question
@@ -443,6 +442,7 @@ const showMyResults = (index) => {
         resultsDiv.appendChild(resultsImage); // dans ma div content j'ajoute l'élément img qui va contenir l'image
         resultsDiv.appendChild(resultsQuestion); // dans ma div content j'ajoute l'élément h4 qui va contenir la question
         resultsDiv.appendChild(containerUl); // dans ma div content j'ajoute l'élément ul qui va contenir mon ul
+        resultsDiv.appendChild(resultsBonneReponse);
         resultsDiv.appendChild(resultsAnecdote);// dans ma div content j'ajoute l'élément p qui va contenir mon anecdote
 
         

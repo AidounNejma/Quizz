@@ -118,10 +118,16 @@ form .next:hover{
     padding: 1% 0;
 }
 
+.resultsBonneReponse{
+    font-weight: bold;
+    color: red;
+    padding: 2% 0;
+}
+
 .red{
-    background-color: red;
+    background-color: #e63b3be3;
 }
 
 .green{
-    background-color: greenyellow;
+    background-color: #5bcc3ee0;
 }
