@@ -60,8 +60,8 @@ var index = 0; /* Pour se positionner dans l'index de mon array */
 number.innerHTML = index; /* J'attribue à l'endroit du numéro de mes questions la variable index */
 var score = 0; /* Pour incrémenter le score */
 const questionArray = []; // Tableau vide pour copier ma data globale dedans
-var globalData = []; //Tableau vide pour copier la data aleatoire de mon fichier JSON
-var newName; //va me permettre de stocker le nom du joueur
+var globalData = []; //Tableau vide pour copier la data de la page "aleatoire" de mon fichier JSON
+var newName; //va me permettre de stocker le nom du joueur courant
 var valueInput = []; // va me permettre de stocker la valeur des inputs que j'ai sélectionné à chaque fois 
 var lastValueInput; // va me permettre de stocker la dernière valeur de l'array valueInput
 var arrayNameScore = [];// va me permettre de stocker les objets score et name pour afficher le top 5 des scores
@@ -104,9 +104,8 @@ function firstPage(){ //Cette fonction va donner un visuel au premier chargement
     finish.style.display = "none";
     next.style.display = "none";
 
-    sortLocalStorageData();
+    sortLocalStorageData();// appel de ma fonction pour trier mon local storage
 }
-//window.onload = firstPage(); // j'appelle ma fonction au chargement de la page 
 
 /* --------------------------------------------------------------- */
 
@@ -217,7 +216,7 @@ function displayQuizz(){
             if(suggestionsInput[0].checked || suggestionsInput[1].checked || suggestionsInput[2].checked || suggestionsInput[3].checked){ // désolé, décidément je n'aime pas les boucles
                 displayQuestion(); // j'affiche mes questions
             }else{
-                alert('Vous devez renseigner un champs !'); 
+                alert('Vous devez renseigner un champs !'); // sinon je créé une alerte qui aura pour but de forcer l'utilisateur à cliquer sur un input
             } 
     }
      // step 5.b : si le quizz est terminé, j'affiche le score
@@ -246,7 +245,7 @@ function displayQuestion(){
     question.innerHTML = questionArray[index].question;
     img.src = questionArray[index].image;
 
-    for(let n = 0; n < 4; n++){
+    for(let n = 0; n < 4; n++){// boucle pour prendre tous mes inputs et mes labels
         suggestionsLabel[n].innerHTML = questionArray[index].propositions[n];
         suggestionsLabel[n].setAttribute("for", questionArray[index].propositions[n]);
         suggestionsInput[n].setAttribute("value", questionArray[index].propositions[n]);
@@ -295,6 +294,7 @@ function storeData(){
 
 /* Push les datas dans le local storage */
 function recordDataForLocalStorage(array1, array2){
+
     //Enregistrement du Nom du joueur dans le local storage
     array1.push(newName); // j'ajoute à ma variable myArray la valeur du premier input (nom du joueur)
     localStorage.setItem('name', JSON.stringify(array1)); // Je le mets dans le local storage 'game' sous forme de string
@@ -426,8 +426,6 @@ const showMyResults = (index) => {
             
         } 
         
-        
-        
         index++; // j'incrémente mon index de 1 à chaque affichage de question
         resultsNumber.innerHTML = "Question n°" + index; // j'ajoute le numéro de la question
         resultsImage.src = data.imgAnswer; // dans la source de ma balise img je mets le lien vers mon image
@@ -444,7 +442,6 @@ const showMyResults = (index) => {
         resultsDiv.appendChild(resultsBonneReponse);
         resultsDiv.appendChild(resultsAnecdote);// dans ma div content j'ajoute l'élément p qui va contenir mon anecdote
 
-        
         });
         
     //})
