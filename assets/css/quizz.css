@@ -72,9 +72,30 @@ form .next:hover{
     color: white;
     transition: 1s;
 }
+
+.suggestionsLabel{
+    cursor: pointer;
+}
+
+.suggestionsLabel:hover{
+    background-color: #00000046;
+}
+
+.suggestionsInput:hover + .suggestionsLabel{ /* quand je hover un input son label change de background-color */
+    background-color: #00000046;
+}
+
+.suggestionsInput:focus + .suggestionsLabel{ /* Quand un input est sélectionné, son label change de couleur */
+    color: rgb(145, 23, 23);
+}
+
 /* FIN MAIN */
 
-/* MAIN RESULTS */
+/* THE RESULTS */
+.resultsNumber {
+    font-weight: bold;
+    font-size: 18px;
+}
 .resultsDiv{
     border: 1px solid black;
     border-radius: 7px;
@@ -122,6 +143,7 @@ form .next:hover{
     font-weight: bold;
     color: red;
     padding: 2% 0;
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
 }
 
 .red{
@@ -130,4 +152,151 @@ form .next:hover{
 
 .green{
     background-color: #5bcc3ee0;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width:1024px) and (orientation: landscape){
+    
+    .pageTitle {
+        font-size: 40px;
+    }
+
+    .numberQuestion {
+        font-size: 35px;
+    }
+    
+    .resultsImg {
+        padding: 4% 1%;
+
+    }
+
+    .resultsNumber {
+        font-size: 28px;
+    }
+
+    .resultsQuestion {
+        font-size: 28px;
+    }
+
+    .containerUl {
+        font-size: 22px;
+    }
+
+    .resultsBonneReponse {
+        font-size: 22px;
+    }
+
+    .resultsAnecdote {
+        padding: 0px 1%;
+        font-size: 20px;
+    }
+}
+/* Ipad */
+@media screen and (max-width:768px){
+    .img {
+        padding: 2% 5%;
+    }
+
+    form {
+        margin: 0 5%;
+    }
+
+    #displayScores {
+        margin: 3% 5%;
+    }
+
+    .pageTitle {
+        font-size: 45px;
+    }
+
+    .numberQuestion {
+        font-size: 37px;
+    }
+
+    .resultsDiv {
+        padding: 4% 1%;
+        margin: 3% 0;
+    }
+
+    .resultsNumber {
+        font-size: 34px;
+    }
+
+    .resultsImg {
+        padding: 4% 0;
+    }
+
+    .resultsQuestion {
+        font-size: 26px;
+    }
+
+    .containerUl {
+        font-size: 26px;
+    }
+
+    .resultsBonneReponse {
+        font-size: 26px;
+    }
+
+    .resultsAnecdote {
+        padding: 0 5%;
+        font-size: 24px;
+    }
+
+}
+
+/* Pour gérer les questions */
+@media screen and (max-width:568px){
+    .question {
+        text-align: center;
+        padding-bottom: 2%;
+        font-size: 20px;
+    }
+}
+
+/* Iphone 6/7/8 */
+@media screen and (max-width: 414px){
+    
+    .img {
+        padding: 4% 1%;
+    }
+
+    .pageTitle {
+        font-size: 25px;
+        padding-top: 6%;
+    }
+
+    .numberQuestion {
+        font-size: 24px;
+    }
+
+    .resultsNumber {
+        font-size: 22px;
+    }
+
+    .resultsImg {
+        padding: 4% 1%;
+    }
+
+    form {
+        margin: 3% 5%;
+    }
+
+    .resultsQuestion {
+        font-size: 22px;
+    }
+
+    .containerUl {
+        font-size: 19px;
+    }
+
+    .resultsBonneReponse {
+        font-size: 21px;
+    }
+
+    .resultsAnecdote {
+        padding: 0 2%;
+        font-size: 18px;
+    }
 }

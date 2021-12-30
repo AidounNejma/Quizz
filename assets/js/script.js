@@ -64,7 +64,7 @@ var globalData = []; //Tableau vide pour copier la data aleatoire de mon fichier
 var newName; //va me permettre de stocker le nom du joueur
 var valueInput = []; // va me permettre de stocker la valeur des inputs que j'ai sélectionné à chaque fois 
 var lastValueInput; // va me permettre de stocker la dernière valeur de l'array valueInput
-var arrayNameScore = [];
+var arrayNameScore = [];// va me permettre de stocker les objets score et name pour afficher le top 5 des scores
 /* --------------------------------------------------------------- */
 
 /* Récupération de la variable passée dans l'URL */
@@ -121,7 +121,6 @@ function eraseFirstPage(){ //Cette fonction va enlever le visuel de la première
     paragraphStart.style.display = 'none';
     next.style.display = "inline";
     start.style.display = "none";
-
 
     newName = inputName.value// j'attribue à ma variable newName la valeur de l'inputName qui contient le nom du joueur
     //console.log(newName);
@@ -224,8 +223,8 @@ function displayQuizz(){
      // step 5.b : si le quizz est terminé, j'affiche le score
     if(index >= questionArray.length){ /* Si l'index est sup à la longueur de mon array alors */
         
-        next.style.display = "none";
-        finish.style.display = "inline";
+        next.style.display = "none"; //je retire le bouton suivant
+        finish.style.display = "inline"; // j'affiche le bouton terminer le test
     }
 
 
@@ -310,12 +309,12 @@ function recordDataForLocalStorage(array1, array2){
 /* Filtrer array s'il a atteint la taille max de 10 */
 function sortLocalStorageData(){
     
-    if(localStorage.getItem('name') == null && localStorage.getItem('score') == null){ 
+    if(localStorage.getItem('name') == null && localStorage.getItem('score') == null){ // si dans mon local storage, la clé name et score n'existent pas alors:
         
-        dontDislayScores();
+        dontDislayScores();// j'envoie la fonction dontDisplayScores
 
     }
-    else{
+    else{ //sinon : 
 
         /* Récupération de mes variables pour accéder au localStorage */
         let nameArray = JSON.parse(localStorage.getItem('name'));
@@ -326,15 +325,15 @@ function sortLocalStorageData(){
                 name: nameArray[objectIndex],// j'ajoute dans mon item name: tous les items du tableau nameArray
                 score: scoreArray[objectIndex] // j'ajoute à score tous les items de mon tableau scoreArray
             };
-            arrayNameScore.push(nameScore);
+            arrayNameScore.push(nameScore);// dans mon tableau arrayNameScore je stocke mes objets
             
         }
         /* fonction de tri pour comparer que les scores */
         arrayNameScore.sort(function(a, b) { 
-            return b.score - a.score  ||  a.name.localeCompare(b.name);
+            return b.score - a.score  ||  a.name.localeCompare(b.name); // ça me trie les objets du plus haut score au plus petit
         });
         
-        var sliced = arrayNameScore.slice(0,5);
+        var sliced = arrayNameScore.slice(0,5); // je coupe mon array de 0 à 5 (je ne garde que les scores les plus élevés)
         //console.log(sliced);
         
         displayScores(sliced); //appel de ma fonction pour display les meilleurs scores
@@ -367,7 +366,7 @@ function dontDislayScores(){
 const showMyResults = (index) => {
     
     title[0].innerHTML = "Résultats du "; // dans mon titre je mets "Résultats du"
-    numberQuestion[0].innerHTML = "Note : " + score + "/10";
+    numberQuestion[0].innerHTML = "🎉 Note : " + score + "/10 🎉";
     mainContent[0].classList.toggle('content'); //on modifie la class de la div en 'content' pour qu'elle soit centrée
     
     index = 0; // j'initialise mon index à 0
@@ -379,7 +378,7 @@ const showMyResults = (index) => {
         resultsDiv.className = "resultsDiv";
 
         let resultsNumber = document.createElement('p'); //on créé un élément p pour contenir nos number
-        resultsNumber.className = "number";
+        resultsNumber.className = "resultsNumber";
 
         let resultsImage = document.createElement('img'); //on créé un élément img pour contenir nos images
         resultsImage.className = "resultsImg";

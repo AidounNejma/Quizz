@@ -42,6 +42,10 @@ body{
     background-size: cover;
 }
 
+main{
+    padding-bottom: 5%;
+}
+
 .content{
     /* offset-x | offset-y | blur-radius | spread-radius | color */
     box-shadow: 0 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -59,10 +63,30 @@ body{
 footer {
     text-align: center;
     margin-top: 2%;
-    padding: 2% 0;
+    padding: 8% 0;
+    background-color: #343030;
 }
 
 footer p{
     font-weight: bold;
+    color: white;
 }
 /* Fin Footer */
+
+/* RESPONSIVE */
+@media screen and (max-width:1024px)
+{ 
+    .content{
+        margin: auto;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:568px)
+{ 
+        .content{
+            margin: 0;
+            width: 100%;
+        }
+
+}
